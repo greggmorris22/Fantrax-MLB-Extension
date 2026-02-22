@@ -38,11 +38,13 @@ Modify the Chrome extension's background script to:
 
 ## Plan Steps
 
-- [ ] Present these options to the user for selection.
-- [ ] Based on the user's choice, write the corresponding script/workflow.
-- [ ] Make any necessary updates to `generate_map.py` or the extension.
-- [ ] Test the solution to ensure it updates correctly and robustly.
+- [x] Present these options to the user for selection.
+- [x] Based on the user's choice, write the corresponding script/workflow.
+- [x] Make any necessary updates to `generate_map.py` or the extension.
+- [x] Test the solution to ensure it updates correctly and robustly.
 
-## Review (Pending)
+## Review (Completed)
 
-- Needs User Selection.
+- User selected Option 2 (GitHub Actions).
+- Provided `.md` file with instructions to set up GitHub PAT and push to personal account.
+- GitHub actions `.yml` is fully built and committed to the local `main` branch.
