@@ -1,0 +1,55 @@
+.fantrax-linker-links {
+    display: inline-flex !important;
+    gap: 4px !important;
+    margin-left: 6px !important;
+    /* Space after the existing Fantrax icons */
+    vertical-align: middle !important;
+    line-height: 1 !important;
+    position: relative !important;
+    /* Move up slightly to align better with text and small icons on the second line */
+    top: -1px;
+}
+
+.fantrax-linker-circle {
+    width: 8px !important;
+    height: 8px !important;
+    flex-shrink: 0 !important;
+    /* Prevent squashing */
+    aspect-ratio: 1 / 1 !important;
+    /* Force square shape */
+    border-radius: 0% !important;
+    transform: rotate(45deg) !important;
+    display: block !important;
+    cursor: pointer !important;
+    transition: transform 0.1s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-sizing: border-box !important;
+    margin: 2px !important;
+    /* Add space for the corners when rotated */
+}
+
+.fantrax-linker-circle:hover {
+    transform: rotate(45deg) scale(1.25) !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.fantrax-linker-fangraphs {
+    background-color: #28a745 !important;
+    /* Green */
+}
+
+.fantrax-linker-savant {
+    background: linear-gradient(90deg, #0000ff 50%, #ff0000 50%) !important;
+    border: none !important;
+    border-radius: 50% !important;
+    /* Make it a circle */
+    transform: none !important;
+    /* Remove rotation */
+}
+
+/* Ensure the secondary info line allows our icons to sit at the end */
+.scorer__info__positions {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+}

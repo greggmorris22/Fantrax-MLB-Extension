@@ -1,0 +1,113 @@
+let playerMap = {};
+let isLoaded = false;
+
+// Load the map from the extension
+console.log('Fantrax Linker: Loading player map...');
+fetch(chrome.runtime.getURL('player_map.json'))
+    .then(response => response.json())
+    .then(data => {
+        playerMap = data;
+        isLoaded = true;
+        console.log('Fantrax Linker: Player map loaded with ' + Object.keys(data).length + ' entries.');
+        init();
+    })
+    .catch(err => console.error('Fantrax Linker: Error loading player map:', err));
+
+function init() {
+    const observer = new MutationObserver((mutations) => {
+        processPage();
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+
+    processPage();
+}
+
+function processPage() {
+    if (!isLoaded) return;
+
+    const selectors = [
+        '.scorer__info__name a',
+        'a[href*="playerProfile.go"]',
+        'a[href*="/player/"]',
+        '.player-linker a'
+    ];
+
+    const playerLinks = document.querySelectorAll(selectors.join(', '));
+
+    playerLinks.forEach(link => {
+        if (link.classList.contains('fantrax-linker-processed')) return;
+
+        let name = link.textContent.trim();
+        if (!name) return;
+
+        let cleanName = name
+            .replace(/\s*\([\w\d]+\)\s*$/, '')
+            .replace(/\s+[A-Z,1-9\/]{1,6}$/, '')
+            .trim()
+            .toLowerCase();
+
+        let playerData = playerMap[cleanName];
+
+        if (!playerData && cleanName.includes(',')) {
+            const parts = cleanName.split(',').map(p => p.trim());
+            if (parts.length === 2) {
+                const reverseName = `${parts[1]} ${parts[0]}`;
+                playerData = playerMap[reverseName];
+                if (playerData) cleanName = reverseName;
+            }
+        }
+
+        if (playerData) {
+            injectLinks(link, playerData);
+        }
+
+        link.classList.add('fantrax-linker-processed');
+    });
+}
+
+function injectLinks(element, data) {
+    // Find the container for the second line (positions, team, icons)
+    const scorerInfo = element.closest('.scorer__info');
+    let targetContainer = null;
+
+    if (scorerInfo) {
+        targetContainer = scorerInfo.querySelector('.scorer__info__positions');
+    }
+
+    // If no specific container found (old UI), fallback to after the element itself
+    if (!targetContainer) {
+        targetContainer = element.parentNode;
+    }
+
+    // Check if already injected
+    if (targetContainer.querySelector('.fantrax-linker-links')) return;
+
+    const container = document.createElement('span');
+    container.className = 'fantrax-linker-links';
+
+    if (data.fg) {
+        const fgLink = document.createElement('a');
+        const slug = data.fg_slug || 'player';
+        fgLink.href = `https://www.fangraphs.com/players/${slug}/${data.fg}/stats`;
+        fgLink.target = '_blank';
+        fgLink.title = 'View on Fangraphs';
+        fgLink.className = 'fantrax-linker-circle fantrax-linker-fangraphs';
+        container.appendChild(fgLink);
+    }
+
+    if (data.mlbam) {
+        const savantLink = document.createElement('a');
+        savantLink.href = `https://baseballsavant.mlb.com/savant-player/${data.mlbam}`;
+        savantLink.target = '_blank';
+        savantLink.title = 'View on Baseball Savant';
+        savantLink.className = 'fantrax-linker-circle fantrax-linker-savant';
+        container.appendChild(savantLink);
+    }
+
+    // Append to the end of the container (after positions/team/icons)
+    targetContainer.appendChild(container);
+}
