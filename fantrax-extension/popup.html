@@ -3,6 +3,12 @@
 
 <head>
     <title>Fantrax Linker</title>
+    <!-- 
+      This <style> block dictates the look of the tiny popup window 
+      that appears when you click the extension icon in Chrome's toolbar. 
+      It is entirely separate from the styles.css file (which handles 
+      the injected buttons on the actual Fantrax page). 
+    -->
     <style>
         body {
             width: 200px;
@@ -53,13 +59,17 @@
             transform: none;
         }
 
-        /* Teal */
     </style>
 </head>
 
 <body>
+    <!-- Main Title -->
     <h1>Fantrax Linker</h1>
+    
+    <!-- Status message -->
     <div class="status">Extension is active.</div>
+    
+    <!-- Legend explaining what the icons mean -->
     <div class="legend">
         <div class="item">
             <div class="diamond green"></div>
