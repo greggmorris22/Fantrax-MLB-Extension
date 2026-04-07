@@ -5,7 +5,7 @@ def generate_player_map():
     player_map = {}
     
     try:
-        with open('../data/SFBB Player ID Map - PLAYERIDMAP.csv', 'r', encoding='latin-1') as f:
+        with open('players.csv', 'r', encoding='latin-1') as f:
             reader = csv.DictReader(f)
             for row in reader:
                 # Get the name variations
@@ -42,46 +42,7 @@ def generate_player_map():
                                 reverse_name = f"{parts[1]} {parts[0]}"
                                 player_map[reverse_name] = data
 
-        # Process minor league/missing players from Google Sheet export
-        try:
-            with open('../data/minor_leaguers.csv', 'r', encoding='utf-8') as f:
-                reader = csv.DictReader(f)
-                count_added = 0
-                for row in reader:
-                    name = row.get('Name', '').strip().lower()
-                    fg_id = row.get('ID_fg', '').strip()
-                    
-                    if not (name and fg_id):
-                        continue
-                    
-                    # Generate slug
-                    fg_slug = name.replace(' ', '-').replace('.', '').replace("'", "")
-                    
-                    data = {
-                        "mlbam": None,
-                        "fg": fg_id,
-                        "fg_slug": fg_slug
-                    }
-                    
-                    # Update or Add
-                    if name not in player_map:
-                        player_map[name] = data
-                        count_added += 1
-                    else:
-                        # Existing player, check if missing FG ID
-                        if not player_map[name].get('fg'):
-                            player_map[name]['fg'] = fg_id
-                            if not player_map[name].get('fg_slug'):
-                                player_map[name]['fg_slug'] = fg_slug
-                            count_added += 1
-                            
-                print(f"Propagated {count_added} updates from minor_leaguers.csv")
-        except FileNotFoundError:
-            print("minor_leaguers.csv not found, skipping.")
-        except Exception as e:
-            print(f"Error processing minor_leaguers.csv: {e}")
-
-        with open('../fantrax-extension/player_map.json', 'w') as f:
+        with open('fantrax-extension/player_map.json', 'w') as f:
             json.dump(player_map, f, indent=2)
         
         print(f"Generated map with {len(player_map)} variations.")

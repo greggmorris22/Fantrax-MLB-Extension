@@ -4,12 +4,7 @@
     "version": "1.0",
     "description": "Adds links to Fangraphs and Baseball Savant for players on Fantrax roster pages.",
     "permissions": [
-        "storage",
-        "alarms"
-    ],
-    "host_permissions": [
-        "*://docs.google.com/spreadsheets/*",
-        "*://raw.githubusercontent.com/*"
+        "storage"
     ],
     "content_scripts": [
         {
@@ -31,5 +26,15 @@
     },
     "background": {
         "service_worker": "background.js"
-    }
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "player_map.json"
+            ],
+            "matches": [
+                "*://*.fantrax.com/*"
+            ]
+        }
+    ]
 }

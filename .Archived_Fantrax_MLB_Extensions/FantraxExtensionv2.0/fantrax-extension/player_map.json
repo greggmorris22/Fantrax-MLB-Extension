@@ -364,12 +364,12 @@
     "fg": "6732",
     "fg_slug": "zoilo-almonte"
   },
-  "albert almora jr.": {
+  "albert almora": {
     "mlbam": "546991",
     "fg": "14109",
     "fg_slug": "albert-almora-jr"
   },
-  "albert almora": {
+  "albert almora jr.": {
     "mlbam": "546991",
     "fg": "14109",
     "fg_slug": "albert-almora-jr"
@@ -428,11 +428,6 @@
     "mlbam": "682626",
     "fg": "26121",
     "fg_slug": "francisco-alvarez"
-  },
-  "hayden alvarez": {
-    "mlbam": "820986",
-    "fg": "sa3023906",
-    "fg_slug": "hayden-alvarez"
   },
   "henderson alvarez": {
     "mlbam": "506693",
@@ -629,12 +624,12 @@
     "fg": "16233",
     "fg_slug": "tejay-antone"
   },
-  "norichika aoki": {
+  "nori aoki": {
     "mlbam": "493114",
     "fg": "13075",
     "fg_slug": "nori-aoki"
   },
-  "nori aoki": {
+  "norichika aoki": {
     "mlbam": "493114",
     "fg": "13075",
     "fg_slug": "nori-aoki"
@@ -694,11 +689,6 @@
     "fg": "697",
     "fg_slug": "jp-arencibia"
   },
-  "franklin arias": {
-    "mlbam": "808265",
-    "fg": "sa3021845",
-    "fg_slug": "franklin-arias"
-  },
   "gabriel arias": {
     "mlbam": "672356",
     "fg": "22563",
@@ -734,11 +724,6 @@
     "fg": "19290",
     "fg_slug": "randy-arozarena"
   },
-  "aiva arquette": {
-    "mlbam": "804109",
-    "fg": "sa3026235",
-    "fg_slug": "aiva-arquette"
-  },
   "luis arraez": {
     "mlbam": "650333",
     "fg": "18568",
@@ -768,11 +753,6 @@
     "mlbam": "624414",
     "fg": "16434",
     "fg_slug": "christian-arroyo"
-  },
-  "edwin arroyo": {
-    "mlbam": "695490",
-    "fg": "sa3017626",
-    "fg_slug": "edwin-arroyo"
   },
   "michael arroyo": {
     "mlbam": "703197",
@@ -924,12 +904,12 @@
     "fg": "18030",
     "fg_slug": "harrison-bader"
   },
-  "ji hwan bae": {
+  "ji-hwan bae": {
     "mlbam": "678225",
     "fg": "23818",
     "fg_slug": "ji-hwan-bae"
   },
-  "ji-hwan bae": {
+  "ji hwan bae": {
     "mlbam": "678225",
     "fg": "23818",
     "fg_slug": "ji-hwan-bae"
@@ -1659,12 +1639,12 @@
     "fg": "14131",
     "fg_slug": "greg-bird"
   },
-  "jacob bird": {
+  "jake bird": {
     "mlbam": "656234",
     "fg": "21267",
     "fg_slug": "jake-bird"
   },
-  "jake bird": {
+  "jacob bird": {
     "mlbam": "656234",
     "fg": "21267",
     "fg_slug": "jake-bird"
@@ -1804,12 +1784,12 @@
     "fg": "11247",
     "fg_slug": "jabari-blash"
   },
-  "j.j. bleday": {
+  "jj bleday": {
     "mlbam": "668709",
     "fg": "26368",
     "fg_slug": "jj-bleday"
   },
-  "jj bleday": {
+  "j.j. bleday": {
     "mlbam": "668709",
     "fg": "26368",
     "fg_slug": "jj-bleday"
@@ -1888,11 +1868,6 @@
     "mlbam": "425827",
     "fg": "1667",
     "fg_slug": "jeremy-bonderman"
-  },
-  "caleb bonemer": {
-    "mlbam": "815352",
-    "fg": "sa3067043",
-    "fg_slug": "caleb-bonemer"
   },
   "emilio bonifacio": {
     "mlbam": "466988",
@@ -2114,11 +2089,6 @@
     "fg": "17678",
     "fg_slug": "alex-bregman"
   },
-  "tyler bremner": {
-    "mlbam": "803285",
-    "fg": "sa3027644",
-    "fg_slug": "tyler-bremner"
-  },
   "brandon brennan": {
     "mlbam": "592165",
     "fg": "13527",
@@ -2204,22 +2174,17 @@
     "fg": "sa3009808",
     "fg_slug": "juan-brito"
   },
-  "roldy brito": {
-    "mlbam": "821041",
-    "fg": "sa3023917",
-    "fg_slug": "roldy-brito"
-  },
   "socrates brito": {
     "mlbam": "593647",
     "fg": "12944",
     "fg_slug": "socrates-brito"
   },
-  "zack britton": {
+  "zach britton": {
     "mlbam": "502154",
     "fg": "3240",
     "fg_slug": "zack-britton"
   },
-  "zach britton": {
+  "zack britton": {
     "mlbam": "502154",
     "fg": "3240",
     "fg_slug": "zack-britton"
@@ -2239,12 +2204,12 @@
     "fg": "19384",
     "fg_slug": "trenton-brooks"
   },
-  "michael brosseau": {
+  "mike brosseau": {
     "mlbam": "670712",
     "fg": "19683",
     "fg_slug": "mike-brosseau"
   },
-  "mike brosseau": {
+  "michael brosseau": {
     "mlbam": "670712",
     "fg": "19683",
     "fg_slug": "mike-brosseau"
@@ -2434,11 +2399,6 @@
     "fg": "512",
     "fg_slug": "aj-burnett"
   },
-  "r.a. dickey": {
-    "mlbam": "285079",
-    "fg": "1245",
-    "fg_slug": "ra-dickey"
-  },
   "alex burnett": {
     "mlbam": "488751",
     "fg": "4065",
@@ -2604,11 +2564,6 @@
     "fg": "21707",
     "fg_slug": "oswaldo-cabrera"
   },
-  "juneiker caceres": {
-    "mlbam": "821181",
-    "fg": "sa3024329",
-    "fg_slug": "juneiker-caceres"
-  },
   "jac caglianone": {
     "mlbam": "695506",
     "fg": "35041",
@@ -2633,16 +2588,6 @@
     "mlbam": "683357",
     "fg": "27496",
     "fg_slug": "owen-caissie"
-  },
-  "robert calaz": {
-    "mlbam": "806978",
-    "fg": "sa3021078",
-    "fg_slug": "robert-calaz"
-  },
-  "slade caldwell": {
-    "mlbam": "815154",
-    "fg": "sa3066460",
-    "fg_slug": "slade-caldwell"
   },
   "kole calhoun": {
     "mlbam": "594777",
@@ -2688,11 +2633,6 @@
     "mlbam": "491708",
     "fg": "8992",
     "fg_slug": "arquimedes-caminero"
-  },
-  "cam caminiti": {
-    "mlbam": "807284",
-    "fg": "sa3025607",
-    "fg_slug": "cam-caminiti"
   },
   "junior caminero": {
     "mlbam": "691406",
@@ -2904,11 +2844,6 @@
     "fg": "2746",
     "fg_slug": "joel-carreno"
   },
-  "cole carrigg": {
-    "mlbam": "694249",
-    "fg": "sa3022596",
-    "fg_slug": "cole-carrigg"
-  },
   "corbin carroll": {
     "mlbam": "682998",
     "fg": "25878",
@@ -3109,11 +3044,6 @@
     "fg": "36",
     "fg_slug": "xavier-cedeno"
   },
-  "felnin celesten": {
-    "mlbam": "806958",
-    "fg": "sa3023381",
-    "fg_slug": "felnin-celesten"
-  },
   "gilberto celestino": {
     "mlbam": "665482",
     "fg": "20233",
@@ -3249,12 +3179,12 @@
     "fg": "7571",
     "fg_slug": "lonnie-chisenhall"
   },
-  "jazz chisholm jr.": {
+  "jazz chisholm": {
     "mlbam": "665862",
     "fg": "20454",
     "fg_slug": "jazz-chisholm-jr"
   },
-  "jazz chisholm": {
+  "jazz chisholm jr.": {
     "mlbam": "665862",
     "fg": "20454",
     "fg_slug": "jazz-chisholm-jr"
@@ -3283,16 +3213,6 @@
     "mlbam": "694192",
     "fg": "28806",
     "fg_slug": "jackson-chourio"
-  },
-  "jaison chourio": {
-    "mlbam": "702693",
-    "fg": "sa3018399",
-    "fg_slug": "jaison-chourio"
-  },
-  "kendry chourio": {
-    "mlbam": "830402",
-    "fg": "sa3067545",
-    "fg_slug": "kendry-chourio"
   },
   "vinnie chulk": {
     "mlbam": "425562",
@@ -3348,11 +3268,6 @@
     "mlbam": "650644",
     "fg": "19479",
     "fg_slug": "aaron-civale"
-  },
-  "brandon clarke": {
-    "mlbam": "700251",
-    "fg": "sa3067144",
-    "fg_slug": "brandon-clarke"
   },
   "chris clarke": {
     "mlbam": "669247",
@@ -3519,11 +3434,6 @@
     "fg": "31583",
     "fg_slug": "zach-cole"
   },
-  "cam collier": {
-    "mlbam": "702253",
-    "fg": "sa3020131",
-    "fg_slug": "cam-collier"
-  },
   "isaac collins": {
     "mlbam": "686555",
     "fg": "25477",
@@ -3593,11 +3503,6 @@
     "mlbam": "543045",
     "fg": "14457",
     "fg_slug": "adam-conley"
-  },
-  "ethan conrad": {
-    "mlbam": "828255",
-    "fg": "sa3029266",
-    "fg_slug": "ethan-conrad"
   },
   "jose constanza": {
     "mlbam": "468429",
@@ -3715,16 +3620,16 @@
     "fg_slug": "kevin-correia"
   },
   "carlos cortes": {
-    "mlbam": "666126",
+    "mlbam": "665532",
     "fg": "21842",
     "fg_slug": "carlos-cortes"
   },
-  "nestor cortes": {
+  "nestor cortes jr.": {
     "mlbam": "641482",
     "fg": "17874",
     "fg_slug": "nestor-cortes"
   },
-  "nestor cortes jr.": {
+  "nestor cortes": {
     "mlbam": "641482",
     "fg": "17874",
     "fg_slug": "nestor-cortes"
@@ -4079,20 +3984,10 @@
     "fg": "13074",
     "fg_slug": "yu-darvish"
   },
-  "charles davalan": {
-    "mlbam": "804560",
-    "fg": "sa3029860",
-    "fg_slug": "charles-davalan"
-  },
   "david davalillo": {
     "mlbam": "699314",
     "fg": "sa3020448",
     "fg_slug": "david-davalillo"
-  },
-  "bo davidson": {
-    "mlbam": "815589",
-    "fg": "sa3022706",
-    "fg_slug": "bo-davidson"
   },
   "matt davidson": {
     "mlbam": "571602",
@@ -4199,11 +4094,6 @@
     "fg": "3371",
     "fg_slug": "alejandro-de-aza"
   },
-  "slater de brun": {
-    "mlbam": "828173",
-    "fg": "sa3069257",
-    "fg_slug": "slater-de-brun"
-  },
   "jaff decker": {
     "mlbam": "543094",
     "fg": "7945",
@@ -4294,22 +4184,17 @@
     "fg": "15463",
     "fg_slug": "jose-de-leon"
   },
-  "luis de leon": {
-    "mlbam": "801725",
-    "fg": "sa3019283",
-    "fg_slug": "luis-de-leon"
-  },
   "randall delgado": {
     "mlbam": "517414",
     "fg": "5985",
     "fg_slug": "randall-delgado"
   },
-  "nicky delmonico": {
+  "nick delmonico": {
     "mlbam": "547170",
     "fg": "13157",
     "fg_slug": "nicky-delmonico"
   },
-  "nick delmonico": {
+  "nicky delmonico": {
     "mlbam": "547170",
     "fg": "13157",
     "fg_slug": "nicky-delmonico"
@@ -4368,11 +4253,6 @@
     "mlbam": "456121",
     "fg": "4400",
     "fg_slug": "chris-denorfia"
-  },
-  "josue de paula": {
-    "mlbam": "800543",
-    "fg": "sa3018591",
-    "fg_slug": "josue-de-paula"
   },
   "mark derosa": {
     "mlbam": "136660",
@@ -4543,6 +4423,11 @@
     "mlbam": "572816",
     "fg": "10762",
     "fg_slug": "corey-dickerson"
+  },
+  "r.a. dickey": {
+    "mlbam": "285079",
+    "fg": "1245",
+    "fg_slug": "ra-dickey"
   },
   "brandon dickson": {
     "mlbam": "505447",
@@ -4844,11 +4729,6 @@
     "fg": "26295",
     "fg_slug": "oliver-dunn"
   },
-  "alfredo duno": {
-    "mlbam": "806957",
-    "fg": "sa3021066",
-    "fg_slug": "alfredo-duno"
-  },
   "jon duplantier": {
     "mlbam": "641541",
     "fg": "19546",
@@ -4934,12 +4814,12 @@
     "fg": "1153",
     "fg_slug": "jim-edmonds"
   },
-  "carl edwards jr.": {
+  "carl edwards": {
     "mlbam": "605218",
     "fg": "13607",
     "fg_slug": "carl-edwards"
   },
-  "carl edwards": {
+  "carl edwards jr.": {
     "mlbam": "605218",
     "fg": "13607",
     "fg_slug": "carl-edwards"
@@ -5214,11 +5094,6 @@
     "fg": "12950",
     "fg_slug": "phillip-evans"
   },
-  "a.j. ewing": {
-    "mlbam": "805999",
-    "fg": "sa3022963",
-    "fg_slug": "aj-ewing"
-  },
   "luis exposito": {
     "mlbam": "458701",
     "fg": "4398",
@@ -5229,12 +5104,12 @@
     "fg": "19874",
     "fg_slug": "alex-faedo"
   },
-  "peter fairbanks": {
+  "pete fairbanks": {
     "mlbam": "664126",
     "fg": "17998",
     "fg_slug": "pete-fairbanks"
   },
-  "pete fairbanks": {
+  "peter fairbanks": {
     "mlbam": "664126",
     "fg": "17998",
     "fg_slug": "pete-fairbanks"
@@ -5268,11 +5143,6 @@
     "mlbam": "571656",
     "fg": "14814",
     "fg_slug": "buck-farmer"
-  },
-  "jonny farmelo": {
-    "mlbam": "806071",
-    "fg": "sa3023362",
-    "fg_slug": "jonny-farmelo"
   },
   "kyle farmer": {
     "mlbam": "571657",
@@ -5364,12 +5234,12 @@
     "fg": "21840",
     "fg_slug": "freddy-fermin"
   },
-  "jose fermin": {
+  "jos\u00e3\u00a9 ferm\u00e3\u00adn": {
     "mlbam": "665877",
     "fg": "21746",
     "fg_slug": "jos\u00e3\u00a9-ferm\u00e3\u00adn"
   },
-  "jos\u00e3\u00a9 ferm\u00e3\u00adn": {
+  "jose fermin": {
     "mlbam": "665877",
     "fg": "21746",
     "fg_slug": "jos\u00e3\u00a9-ferm\u00e3\u00adn"
@@ -5444,11 +5314,6 @@
     "fg": "3926",
     "fg_slug": "casey-fien"
   },
-  "gavin fien": {
-    "mlbam": "815818",
-    "fg": "sa3069166",
-    "fg_slug": "gavin-fien"
-  },
   "mike fiers": {
     "mlbam": "571666",
     "fg": "7754",
@@ -5483,11 +5348,6 @@
     "mlbam": "640448",
     "fg": "15009",
     "fg_slug": "kyle-finnegan"
-  },
-  "andrew fischer": {
-    "mlbam": "702652",
-    "fg": "sa3031366",
-    "fg_slug": "andrew-fischer"
   },
   "braydon fisher": {
     "mlbam": "680755",
@@ -5543,11 +5403,6 @@
     "mlbam": "623167",
     "fg": "13896",
     "fg_slug": "chris-flexen"
-  },
-  "edward florentino": {
-    "mlbam": "821273",
-    "fg": "sa3023944",
-    "fg_slug": "edward-florentino"
   },
   "jesus flores": {
     "mlbam": "435520",
@@ -5809,11 +5664,6 @@
     "fg": "29622",
     "fg_slug": "sal-frelick"
   },
-  "ethan frey": {
-    "mlbam": "703676",
-    "fg": "sa3031717",
-    "fg_slug": "ethan-frey"
-  },
   "carlos frias": {
     "mlbam": "516910",
     "fg": "3547",
@@ -5918,11 +5768,6 @@
     "mlbam": "605242",
     "fg": "13218",
     "fg_slug": "michael-fulmer"
-  },
-  "kody funderburk": {
-    "mlbam": "681892",
-    "fg": "24993",
-    "fg_slug": "kody-funderburk"
   },
   "charlie furbush": {
     "mlbam": "518703",
@@ -6224,11 +6069,6 @@
     "fg": "8402",
     "fg_slug": "steve-geltz"
   },
-  "angel genao": {
-    "mlbam": "694197",
-    "fg": "sa3015706",
-    "fg_slug": "angel-genao"
-  },
   "scooter gennett": {
     "mlbam": "571697",
     "fg": "10339",
@@ -6243,11 +6083,6 @@
     "mlbam": "694355",
     "fg": "27784",
     "fg_slug": "tyler-gentry"
-  },
-  "nate george": {
-    "mlbam": "825582",
-    "fg": "sa3067128",
-    "fg_slug": "nate-george"
   },
   "michael gerber": {
     "mlbam": "595222",
@@ -6328,11 +6163,6 @@
     "mlbam": "543216",
     "fg": "9009",
     "fg_slug": "conor-gillaspie"
-  },
-  "theo gillen": {
-    "mlbam": "815394",
-    "fg": "sa3025565",
-    "fg_slug": "theo-gillen"
   },
   "luis gil": {
     "mlbam": "661563",
@@ -6509,20 +6339,10 @@
     "fg": "13369",
     "fg_slug": "erik-gonzalez"
   },
-  "gabriel gonzalez": {
-    "mlbam": "694224",
-    "fg": "sa3015723",
-    "fg_slug": "gabriel-gonzalez"
-  },
   "gio gonzalez": {
     "mlbam": "461829",
     "fg": "7448",
     "fg_slug": "gio-gonzalez"
-  },
-  "josuar gonzalez": {
-    "mlbam": "829034",
-    "fg": "sa3067675",
-    "fg_slug": "josuar-gonzalez"
   },
   "luis gonzalez": {
     "mlbam": "670768",
@@ -6684,12 +6504,12 @@
     "fg": "15046",
     "fg_slug": "trevor-gott"
   },
-  "lourdes gurriel": {
+  "lourdes gurriel jr.": {
     "mlbam": "666971",
     "fg": "19238",
     "fg_slug": "lourdes-gurriel-jr"
   },
-  "lourdes gurriel jr.": {
+  "lourdes gurriel": {
     "mlbam": "666971",
     "fg": "19238",
     "fg_slug": "lourdes-gurriel-jr"
@@ -7089,11 +6909,6 @@
     "fg": "18076",
     "fg_slug": "matt-hall"
   },
-  "steele hall": {
-    "mlbam": "829162",
-    "fg": "sa3069249",
-    "fg_slug": "steele-hall"
-  },
   "seth halvorsen": {
     "mlbam": "678020",
     "fg": "33294",
@@ -7339,12 +7154,12 @@
     "fg": "3299",
     "fg_slug": "chris-hatcher"
   },
-  "thomas hatch": {
+  "tom hatch": {
     "mlbam": "641672",
     "fg": "19264",
     "fg_slug": "thomas-hatch"
   },
-  "tom hatch": {
+  "thomas hatch": {
     "mlbam": "641672",
     "fg": "19264",
     "fg_slug": "thomas-hatch"
@@ -7629,11 +7444,6 @@
     "fg": "918",
     "fg_slug": "ramon-hernandez"
   },
-  "seth hernandez": {
-    "mlbam": "815825",
-    "fg": "sa3069247",
-    "fg_slug": "seth-hernandez"
-  },
   "teoscar hernandez": {
     "mlbam": "606192",
     "fg": "13066",
@@ -7703,11 +7513,6 @@
     "mlbam": "687792",
     "fg": "26389",
     "fg_slug": "dj-herz"
-  },
-  "ben hess": {
-    "mlbam": "696292",
-    "fg": "sa3033725",
-    "fg_slug": "ben-hess"
   },
   "david hess": {
     "mlbam": "605276",
@@ -7918,11 +7723,6 @@
     "mlbam": "518813",
     "fg": "7196",
     "fg_slug": "greg-holland"
-  },
-  "ethan holliday": {
-    "mlbam": "815787",
-    "fg": "sa3069100",
-    "fg_slug": "ethan-holliday"
   },
   "jackson holliday": {
     "mlbam": "702616",
@@ -8200,7 +8000,7 @@
     "fg_slug": "raisel-iglesias"
   },
   "tatsuya imai": {
-    "mlbam": "837227",
+    "mlbam": null,
     "fg": "sa3062955",
     "fg_slug": "tatsuya-imai"
   },
@@ -8629,11 +8429,6 @@
     "fg": "97",
     "fg_slug": "chipper-jones"
   },
-  "druw jones": {
-    "mlbam": "702258",
-    "fg": "sa3020676",
-    "fg_slug": "druw-jones"
-  },
   "garrett jones": {
     "mlbam": "434540",
     "fg": "2714",
@@ -8683,11 +8478,6 @@
     "mlbam": "622100",
     "fg": "19533",
     "fg_slug": "taylor-jones"
-  },
-  "blaze jordan": {
-    "mlbam": "691458",
-    "fg": "sa3014537",
-    "fg_slug": "blaze-jordan"
   },
   "taylor jordan": {
     "mlbam": "518863",
@@ -8744,12 +8534,12 @@
     "fg": "31437",
     "fg_slug": "jace-jung"
   },
-  "joshua jung": {
+  "josh jung": {
     "mlbam": "673962",
     "fg": "26299",
     "fg_slug": "joshua-jung"
   },
-  "josh jung": {
+  "joshua jung": {
     "mlbam": "673962",
     "fg": "26299",
     "fg_slug": "joshua-jung"
@@ -8759,12 +8549,12 @@
     "fg": "13119",
     "fg_slug": "taylor-jungmann"
   },
-  "jake junis": {
+  "jakob junis": {
     "mlbam": "596001",
     "fg": "13619",
     "fg_slug": "jakob-junis"
   },
-  "jakob junis": {
+  "jake junis": {
     "mlbam": "596001",
     "fg": "13619",
     "fg_slug": "jakob-junis"
@@ -8804,12 +8594,12 @@
     "fg": "sa3012665",
     "fg_slug": "baek-ho-kang"
   },
-  "jung ho kang": {
+  "jung-ho kang": {
     "mlbam": "628356",
     "fg": "17182",
     "fg_slug": "jung-ho-kang"
   },
-  "jung-ho kang": {
+  "jung ho kang": {
     "mlbam": "628356",
     "fg": "17182",
     "fg_slug": "jung-ho-kang"
@@ -8969,12 +8759,12 @@
     "fg": "993",
     "fg_slug": "jason-kendall"
   },
-  "howard kendrick": {
+  "howie kendrick": {
     "mlbam": "435062",
     "fg": "4229",
     "fg_slug": "howie-kendrick"
   },
-  "howie kendrick": {
+  "howard kendrick": {
     "mlbam": "435062",
     "fg": "4229",
     "fg_slug": "howie-kendrick"
@@ -9054,11 +8844,6 @@
     "fg": "20633",
     "fg_slug": "yusei-kikuchi"
   },
-  "dax kilby": {
-    "mlbam": "828076",
-    "fg": "sa3069080",
-    "fg_slug": "dax-kilby"
-  },
   "caleb kilian": {
     "mlbam": "668873",
     "fg": "26213",
@@ -9079,12 +8864,12 @@
     "fg": "27506",
     "fg_slug": "ha-seong-kim"
   },
-  "hyun soo kim": {
+  "hyun-soo kim": {
     "mlbam": "547957",
     "fg": "18718",
     "fg_slug": "hyun-soo-kim"
   },
-  "hyun-soo kim": {
+  "hyun soo kim": {
     "mlbam": "547957",
     "fg": "18718",
     "fg_slug": "hyun-soo-kim"
@@ -9094,12 +8879,12 @@
     "fg": "35322",
     "fg_slug": "hyeseong-kim"
   },
-  "kwang-hyun kim": {
+  "kwang hyun kim": {
     "mlbam": "547942",
     "fg": "27458",
     "fg_slug": "kwang-hyun-kim"
   },
-  "kwang hyun kim": {
+  "kwang-hyun kim": {
     "mlbam": "547942",
     "fg": "27458",
     "fg_slug": "kwang-hyun-kim"
@@ -9129,20 +8914,10 @@
     "fg": "22051",
     "fg_slug": "john-king"
   },
-  "johnny king": {
-    "mlbam": "803516",
-    "fg": "sa3067123",
-    "fg_slug": "johnny-king"
-  },
   "michael king": {
     "mlbam": "650633",
     "fg": "19853",
     "fg_slug": "michael-king"
-  },
-  "seaver king": {
-    "mlbam": "814409",
-    "fg": "sa3025414",
-    "fg_slug": "seaver-king"
   },
   "tyler kinley": {
     "mlbam": "641755",
@@ -9749,11 +9524,6 @@
     "fg": "20437",
     "fg_slug": "royce-lewis"
   },
-  "tyson lewis": {
-    "mlbam": "815653",
-    "fg": "sa3066822",
-    "fg_slug": "tyson-lewis"
-  },
   "domingo leyba": {
     "mlbam": "642736",
     "fg": "16404",
@@ -9964,12 +9734,12 @@
     "fg": "25379",
     "fg_slug": "sam-long"
   },
-  "shed long jr.": {
+  "shed long": {
     "mlbam": "643418",
     "fg": "16542",
     "fg_slug": "shed-long-jr"
   },
-  "shed long": {
+  "shed long jr.": {
     "mlbam": "643418",
     "fg": "16542",
     "fg_slug": "shed-long-jr"
@@ -10029,12 +9799,12 @@
     "fg": "17085",
     "fg_slug": "pablo-lopez"
   },
-  "rafael lopez": {
+  "raffy lopez": {
     "mlbam": "607257",
     "fg": "12606",
     "fg_slug": "raffy-lopez"
   },
-  "raffy lopez": {
+  "rafael lopez": {
     "mlbam": "607257",
     "fg": "12606",
     "fg_slug": "raffy-lopez"
@@ -10869,11 +10639,6 @@
     "fg": "15402",
     "fg_slug": "jack-mayfield"
   },
-  "kash mayfield": {
-    "mlbam": "824026",
-    "fg": "sa3067104",
-    "fg_slug": "kash-mayfield"
-  },
   "jacob may": {
     "mlbam": "594576",
     "fg": "14876",
@@ -10989,12 +10754,12 @@
     "fg": "25690",
     "fg_slug": "grant-mccray"
   },
-  "lance mccullers jr.": {
+  "lance mccullers": {
     "mlbam": "621121",
     "fg": "14120",
     "fg_slug": "lance-mccullers-jr"
   },
-  "lance mccullers": {
+  "lance mccullers jr.": {
     "mlbam": "621121",
     "fg": "14120",
     "fg_slug": "lance-mccullers-jr"
@@ -11259,11 +11024,6 @@
     "fg": "sa295188",
     "fg_slug": "ernesto-mejia"
   },
-  "esteban mejia": {
-    "mlbam": "821757",
-    "fg": "sa3024583",
-    "fg_slug": "esteban-mejia"
-  },
   "francisco mejia": {
     "mlbam": "642336",
     "fg": "16403",
@@ -11434,11 +11194,6 @@
     "fg": "27474",
     "fg_slug": "max-meyer"
   },
-  "noble meyer": {
-    "mlbam": "800611",
-    "fg": "sa3022945",
-    "fg_slug": "noble-meyer"
-  },
   "keynan middleton": {
     "mlbam": "641871",
     "fg": "15264",
@@ -11598,11 +11353,6 @@
     "mlbam": "670224",
     "fg": "26374",
     "fg_slug": "kameron-misner"
-  },
-  "blake mitchell": {
-    "mlbam": "805810",
-    "fg": "sa3022756",
-    "fg_slug": "blake-mitchell"
   },
   "bryan mitchell": {
     "mlbam": "571951",
@@ -11774,11 +11524,6 @@
     "fg": "7244",
     "fg_slug": "tyler-moore"
   },
-  "emil morales": {
-    "mlbam": "815896",
-    "fg": "sa3023887",
-    "fg_slug": "emil-morales"
-  },
   "franklin morales": {
     "mlbam": "462985",
     "fg": "5088",
@@ -11863,11 +11608,6 @@
     "mlbam": "691003",
     "fg": "sa3022919",
     "fg_slug": "tre-morgan"
-  },
-  "shotaro morii": {
-    "mlbam": "829679",
-    "fg": "sa3067343",
-    "fg_slug": "shotaro-morii"
   },
   "shawn morimando": {
     "mlbam": "596049",
@@ -12314,11 +12054,6 @@
     "fg": "1556",
     "fg_slug": "wil-nieves"
   },
-  "arjun nimmala": {
-    "mlbam": "805796",
-    "fg": "sa3022892",
-    "fg_slug": "arjun-nimmala"
-  },
   "brandon nimmo": {
     "mlbam": "607043",
     "fg": "12927",
@@ -12719,12 +12454,12 @@
     "fg": "571",
     "fg_slug": "roy-oswalt"
   },
-  "michel ota\u00e3\u00b1ez": {
+  "michel otanez": {
     "mlbam": "671305",
     "fg": "22533",
     "fg_slug": "michel-ota\u00e3\u00b1ez"
   },
-  "michel otanez": {
+  "michel ota\u00e3\u00b1ez": {
     "mlbam": "671305",
     "fg": "22533",
     "fg_slug": "michel-ota\u00e3\u00b1ez"
@@ -12774,12 +12509,12 @@
     "fg": "22487",
     "fg_slug": "johan-oviedo"
   },
-  "juan carlos oviedo": {
+  "juan oviedo": {
     "mlbam": "434663",
     "fg": "2886",
     "fg_slug": "juan-oviedo"
   },
-  "juan oviedo": {
+  "juan carlos oviedo": {
     "mlbam": "434663",
     "fg": "2886",
     "fg_slug": "juan-oviedo"
@@ -12859,12 +12594,12 @@
     "fg": "19818",
     "fg_slug": "josh-palacios"
   },
-  "richard palacios": {
+  "richie palacios": {
     "mlbam": "680700",
     "fg": "24589",
     "fg_slug": "richie-palacios"
   },
-  "richie palacios": {
+  "richard palacios": {
     "mlbam": "680700",
     "fg": "24589",
     "fg_slug": "richie-palacios"
@@ -12948,11 +12683,6 @@
     "mlbam": "592620",
     "fg": "11624",
     "fg_slug": "jarrett-parker"
-  },
-  "jojo parker": {
-    "mlbam": "828098",
-    "fg": "sa3069248",
-    "fg_slug": "jojo-parker"
   },
   "kyle parker": {
     "mlbam": "592621",
@@ -13084,11 +12814,6 @@
     "fg": "14332",
     "fg_slug": "joel-payamps"
   },
-  "braylon payne": {
-    "mlbam": "815520",
-    "fg": "sa3025647",
-    "fg_slug": "braylon-payne"
-  },
   "mark payton": {
     "mlbam": "592622",
     "fg": "16042",
@@ -13169,11 +12894,6 @@
     "fg": "934",
     "fg_slug": "carlos-pena"
   },
-  "elian pena": {
-    "mlbam": "829033",
-    "fg": "sa3067674",
-    "fg_slug": "elian-pena"
-  },
   "felix pena": {
     "mlbam": "570240",
     "fg": "13403",
@@ -13188,11 +12908,6 @@
     "mlbam": "665161",
     "fg": "21636",
     "fg_slug": "jeremy-pena"
-  },
-  "luis pena": {
-    "mlbam": "821270",
-    "fg": "sa3024134",
-    "fg_slug": "luis-pena"
   },
   "ramiro pena": {
     "mlbam": "455369",
@@ -13644,12 +13359,12 @@
     "fg": "sa3007243",
     "fg_slug": "andrew-politi"
   },
-  "aj pollock": {
+  "a.j. pollock": {
     "mlbam": "572041",
     "fg": "9256",
     "fg_slug": "aj-pollock"
   },
-  "a.j. pollock": {
+  "aj pollock": {
     "mlbam": "572041",
     "fg": "9256",
     "fg_slug": "aj-pollock"
@@ -13869,11 +13584,6 @@
     "fg": "13546",
     "fg_slug": "roman-quinn"
   },
-  "eduardo quintero": {
-    "mlbam": "808234",
-    "fg": "sa3021208",
-    "fg_slug": "eduardo-quintero"
-  },
   "humberto quintero": {
     "mlbam": "279827",
     "fg": "1824",
@@ -13908,11 +13618,6 @@
     "mlbam": "666142",
     "fg": "21846",
     "fg_slug": "cole-ragans"
-  },
-  "bryce rainer": {
-    "mlbam": "800614",
-    "fg": "sa3066592",
-    "fg_slug": "bryce-rainer"
   },
   "tanner rainey": {
     "mlbam": "663432",
@@ -14314,10 +14019,10 @@
     "fg": "18360",
     "fg_slug": "austin-riley"
   },
-  "gabriel rincones jr.": {
+  "gabriel rincones": {
     "mlbam": "687282",
     "fg": "sa3020758",
-    "fg_slug": "gabriel-rincones-jr"
+    "fg_slug": "gabriel-rincones"
   },
   "alex rios": {
     "mlbam": "425567",
@@ -14539,11 +14244,6 @@
     "fg": "22310",
     "fg_slug": "chris-rodriguez"
   },
-  "cris rodriguez": {
-    "mlbam": "829038",
-    "fg": "sa3066593",
-    "fg_slug": "cris-rodriguez"
-  },
   "dereck rodriguez": {
     "mlbam": "605446",
     "fg": "14509",
@@ -14634,11 +14334,6 @@
     "fg": "20794",
     "fg_slug": "manuel-rodriguez"
   },
-  "rainiel rodriguez": {
-    "mlbam": "823787",
-    "fg": "sa3023987",
-    "fg_slug": "rainiel-rodriguez"
-  },
   "randy rodriguez": {
     "mlbam": "678495",
     "fg": "23974",
@@ -14713,11 +14408,6 @@
     "mlbam": "643511",
     "fg": "15541",
     "fg_slug": "tyler-rogers"
-  },
-  "jefferson rojas": {
-    "mlbam": "800473",
-    "fg": "sa3018571",
-    "fg_slug": "jefferson-rojas"
   },
   "josh rojas": {
     "mlbam": "668942",
@@ -15054,12 +14744,12 @@
     "fg": "29514",
     "fg_slug": "river-ryan"
   },
-  "hyun jin ryu": {
+  "hyun-jin ryu": {
     "mlbam": "547943",
     "fg": "14444",
     "fg_slug": "hyun-jin-ryu"
   },
-  "hyun-jin ryu": {
+  "hyun jin ryu": {
     "mlbam": "547943",
     "fg": "14444",
     "fg_slug": "hyun-jin-ryu"
@@ -15234,11 +14924,6 @@
     "fg": "7507",
     "fg_slug": "jonathan-sanchez"
   },
-  "juan sanchez": {
-    "mlbam": "825646",
-    "fg": "sa3067129",
-    "fg_slug": "juan-sanchez"
-  },
   "sixto sanchez": {
     "mlbam": "664350",
     "fg": "19680",
@@ -15408,11 +15093,6 @@
     "mlbam": "622250",
     "fg": "18323",
     "fg_slug": "josh-sborz"
-  },
-  "caden scarborough": {
-    "mlbam": "807291",
-    "fg": "sa3025060",
-    "fg_slug": "caden-scarborough"
   },
   "jordan schafer": {
     "mlbam": "457788",
@@ -15769,12 +15449,12 @@
     "fg": "10855",
     "fg_slug": "chasen-shreve"
   },
-  "j.b. shuck": {
+  "jb shuck": {
     "mlbam": "543776",
     "fg": "6677",
     "fg_slug": "jb-shuck"
   },
-  "jb shuck": {
+  "j.b. shuck": {
     "mlbam": "543776",
     "fg": "6677",
     "fg_slug": "jb-shuck"
@@ -15839,12 +15519,12 @@
     "fg": "31912",
     "fg_slug": "chandler-simpson"
   },
-  "lucas sims": {
+  "luke sims": {
     "mlbam": "608371",
     "fg": "13470",
     "fg_slug": "lucas-sims"
   },
-  "luke sims": {
+  "lucas sims": {
     "mlbam": "608371",
     "fg": "13470",
     "fg_slug": "lucas-sims"
@@ -15854,12 +15534,12 @@
     "fg": "25377",
     "fg_slug": "brady-singer"
   },
-  "jonathan singleton": {
+  "jon singleton": {
     "mlbam": "572138",
     "fg": "10441",
     "fg_slug": "jon-singleton"
   },
-  "jon singleton": {
+  "jonathan singleton": {
     "mlbam": "572138",
     "fg": "10441",
     "fg_slug": "jon-singleton"
@@ -15873,11 +15553,6 @@
     "mlbam": "642350",
     "fg": "17452",
     "fg_slug": "jose-siri"
-  },
-  "mike sirota": {
-    "mlbam": "701527",
-    "fg": "sa3042374",
-    "fg_slug": "mike-sirota"
   },
   "chance sisco": {
     "mlbam": "642082",
@@ -15938,11 +15613,6 @@
     "mlbam": "642083",
     "fg": "15231",
     "fg_slug": "aaron-slegers"
-  },
-  "ryan sloan": {
-    "mlbam": "815549",
-    "fg": "sa3067131",
-    "fg_slug": "ryan-sloan"
   },
   "kevin slowey": {
     "mlbam": "458713",
@@ -16184,12 +15854,12 @@
     "fg": "sa3011695",
     "fg_slug": "noah-song"
   },
-  "sung-moon song": {
+  "sung-mun song": {
     "mlbam": "823550",
     "fg": "sa3012529",
     "fg_slug": "sung-moon-song"
   },
-  "sung-mun song": {
+  "sung-moon song": {
     "mlbam": "823550",
     "fg": "sa3012529",
     "fg_slug": "sung-moon-song"
@@ -16774,11 +16444,6 @@
     "fg": "11674",
     "fg_slug": "jameson-taillon"
   },
-  "eduardo tait": {
-    "mlbam": "806953",
-    "fg": "sa3022162",
-    "fg_slug": "eduardo-tait"
-  },
   "hisanori takahashi": {
     "mlbam": "538227",
     "fg": "10091",
@@ -16879,12 +16544,12 @@
     "fg": "17359",
     "fg_slug": "josh-taylor"
   },
-  "michael taylor": {
+  "michael a. taylor": {
     "mlbam": "572191",
     "fg": "11489",
     "fg_slug": "michael-a-taylor"
   },
-  "michael a. taylor": {
+  "michael taylor": {
     "mlbam": "572191",
     "fg": "11489",
     "fg_slug": "michael-a-taylor"
@@ -17149,11 +16814,6 @@
     "fg": "15906",
     "fg_slug": "lewis-thorpe"
   },
-  "james tibbs iii": {
-    "mlbam": "696486",
-    "fg": "sa3025333",
-    "fg_slug": "james-tibbs-iii"
-  },
   "blade tidwell": {
     "mlbam": "694918",
     "fg": "sa3020177",
@@ -17389,12 +17049,12 @@
     "fg": "16953",
     "fg_slug": "chadwick-tromp"
   },
-  "nick tropeano": {
+  "nicholas tropeano": {
     "mlbam": "607374",
     "fg": "12385",
     "fg_slug": "nicholas-tropeano"
   },
-  "nicholas tropeano": {
+  "nick tropeano": {
     "mlbam": "607374",
     "fg": "12385",
     "fg_slug": "nicholas-tropeano"
@@ -17403,11 +17063,6 @@
     "mlbam": "545361",
     "fg": "10155",
     "fg_slug": "mike-trout"
-  },
-  "tommy troy": {
-    "mlbam": "694371",
-    "fg": "sa3022561",
-    "fg_slug": "tommy-troy"
   },
   "mark trumbo": {
     "mlbam": "444432",
@@ -17504,12 +17159,12 @@
     "fg": "14677",
     "fg_slug": "duane-underwood-jr"
   },
-  "melvin upton jr.": {
+  "melvin upton": {
     "mlbam": "425834",
     "fg": "5015",
     "fg_slug": "melvin-upton-jr"
   },
-  "melvin upton": {
+  "melvin upton jr.": {
     "mlbam": "425834",
     "fg": "5015",
     "fg_slug": "melvin-upton-jr"
@@ -17564,12 +17219,12 @@
     "fg": "14441",
     "fg_slug": "henry-urrutia"
   },
-  "gio urshela": {
+  "giovanny urshela": {
     "mlbam": "570482",
     "fg": "10681",
     "fg_slug": "gio-urshela"
   },
-  "giovanny urshela": {
+  "gio urshela": {
     "mlbam": "570482",
     "fg": "10681",
     "fg_slug": "gio-urshela"
@@ -17764,12 +17419,12 @@
     "fg": "27770",
     "fg_slug": "zac-veen"
   },
-  "vincent velasquez": {
+  "vince velasquez": {
     "mlbam": "592826",
     "fg": "11189",
     "fg_slug": "vince-velasquez"
   },
-  "vince velasquez": {
+  "vincent velasquez": {
     "mlbam": "592826",
     "fg": "11189",
     "fg_slug": "vince-velasquez"
@@ -17788,11 +17443,6 @@
     "mlbam": "676369",
     "fg": "23359",
     "fg_slug": "nelson-velazquez"
-  },
-  "ralphy velazquez": {
-    "mlbam": "806252",
-    "fg": "sa3023013",
-    "fg_slug": "ralphy-velazquez"
   },
   "will venable": {
     "mlbam": "461416",
@@ -18484,11 +18134,6 @@
     "fg": "sa3023268",
     "fg_slug": "thomas-white"
   },
-  "tommy white": {
-    "mlbam": "695720",
-    "fg": "sa3025383",
-    "fg_slug": "tommy-white"
-  },
   "tyler white": {
     "mlbam": "643603",
     "fg": "15564",
@@ -18608,11 +18253,6 @@
     "mlbam": "425883",
     "fg": "1703",
     "fg_slug": "dontrelle-willis"
-  },
-  "eli willits": {
-    "mlbam": "816113",
-    "fg": "sa3069164",
-    "fg_slug": "eli-willits"
   },
   "gavin williams": {
     "mlbam": "668909",
@@ -18779,17 +18419,12 @@
     "fg": "12804",
     "fg_slug": "matt-wisler"
   },
-  "kyson witherspoon": {
-    "mlbam": "804817",
-    "fg": "sa3045487",
-    "fg_slug": "kyson-witherspoon"
-  },
-  "bobby witt jr.": {
+  "robert witt": {
     "mlbam": "677951",
     "fg": "25764",
     "fg_slug": "robert-witt"
   },
-  "robert witt": {
+  "bobby witt jr.": {
     "mlbam": "677951",
     "fg": "25764",
     "fg_slug": "robert-witt"
@@ -18858,11 +18493,6 @@
     "mlbam": "663765",
     "fg": "18674",
     "fg_slug": "jake-woodford"
-  },
-  "gage wood": {
-    "mlbam": "805906",
-    "fg": "sa3045536",
-    "fg_slug": "gage-wood"
   },
   "hunter wood": {
     "mlbam": "621056",
@@ -18939,12 +18569,12 @@
     "fg": "19665",
     "fg_slug": "kyle-wright"
   },
-  "mike wright": {
+  "mike wright jr.": {
     "mlbam": "605541",
     "fg": "12586",
     "fg_slug": "mike-wright-jr"
   },
-  "mike wright jr.": {
+  "mike wright": {
     "mlbam": "605541",
     "fg": "12586",
     "fg_slug": "mike-wright-jr"
@@ -19059,12 +18689,12 @@
     "fg": "18333",
     "fg_slug": "alex-young"
   },
-  "andrew young": {
+  "andy young": {
     "mlbam": "670370",
     "fg": "19521",
     "fg_slug": "andy-young"
   },
-  "andy young": {
+  "andrew young": {
     "mlbam": "670370",
     "fg": "19521",
     "fg_slug": "andy-young"
@@ -19089,12 +18719,12 @@
     "fg": "2140",
     "fg_slug": "delmon-young"
   },
-  "eric young": {
+  "eric young jr.": {
     "mlbam": "458913",
     "fg": "7158",
     "fg_slug": "eric-young-jr"
   },
-  "eric young jr.": {
+  "eric young": {
     "mlbam": "458913",
     "fg": "7158",
     "fg_slug": "eric-young-jr"
@@ -19208,2570 +18838,5 @@
     "mlbam": "543964",
     "fg": "12876",
     "fg_slug": "tony-zych"
-  },
-  "leodalis de vries": {
-    "mlbam": null,
-    "fg": "sa3023363",
-    "fg_slug": "leodalis-de-vries"
-  },
-  "luis robert jr.": {
-    "mlbam": null,
-    "fg": "20043",
-    "fg_slug": "luis-robert-jr"
-  },
-  "luis garcia jr.": {
-    "mlbam": null,
-    "fg": "20391",
-    "fg_slug": "luis-garcia-jr"
-  },
-  "c.j. kayfus": {
-    "mlbam": null,
-    "fg": "33704",
-    "fg_slug": "cj-kayfus"
-  },
-  "aroon escobar": {
-    "mlbam": null,
-    "fg": "sa3018463",
-    "fg_slug": "aroon-escobar"
-  },
-  "michael soroka": {
-    "mlbam": null,
-    "fg": "18383",
-    "fg_slug": "michael-soroka"
-  },
-  "jhonny level": {
-    "mlbam": null,
-    "fg": "sa3023898",
-    "fg_slug": "jhonny-level"
-  },
-  "billy carlson": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "billy-carlson"
-  },
-  "dasan hill": {
-    "mlbam": null,
-    "fg": "sa3067070",
-    "fg_slug": "dasan-hill"
-  },
-  "david shields": {
-    "mlbam": null,
-    "fg": "sa3067433",
-    "fg_slug": "david-shields"
-  },
-  "xavier neyens": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "xavier-neyens"
-  },
-  "aidan smith": {
-    "mlbam": null,
-    "fg": "sa3022611",
-    "fg_slug": "aidan-smith"
-  },
-  "ike irish": {
-    "mlbam": null,
-    "fg": "sa3034445",
-    "fg_slug": "ike-irish"
-  },
-  "luke adams": {
-    "mlbam": null,
-    "fg": "sa3020135",
-    "fg_slug": "luke-adams"
-  },
-  "josh adamczewski": {
-    "mlbam": null,
-    "fg": "sa3023168",
-    "fg_slug": "josh-adamczewski"
-  },
-  "kevin alvarez": {
-    "mlbam": null,
-    "fg": "sa3067677",
-    "fg_slug": "kevin-alvarez"
-  },
-  "sam antonacci": {
-    "mlbam": null,
-    "fg": "sa3025363",
-    "fg_slug": "sam-antonacci"
-  },
-  "devin taylor": {
-    "mlbam": null,
-    "fg": "sa3043560",
-    "fg_slug": "devin-taylor"
-  },
-  "braylon doughty": {
-    "mlbam": null,
-    "fg": "sa3067030",
-    "fg_slug": "braylon-doughty"
-  },
-  "devin fitz-gerald": {
-    "mlbam": null,
-    "fg": "sa3067320",
-    "fg_slug": "devin-fitz-gerald"
-  },
-  "marco dinges": {
-    "mlbam": null,
-    "fg": "sa3025495",
-    "fg_slug": "marco-dinges"
-  },
-  "mitch voit": {
-    "mlbam": null,
-    "fg": "sa3044552",
-    "fg_slug": "mitch-voit"
-  },
-  "wehiwa aloy": {
-    "mlbam": null,
-    "fg": "sa3025961",
-    "fg_slug": "wehiwa-aloy"
-  },
-  "ching-hsien ko": {
-    "mlbam": null,
-    "fg": "sa3025230",
-    "fg_slug": "ching-hsien-ko"
-  },
-  "daniel eagen": {
-    "mlbam": null,
-    "fg": "sa3030728",
-    "fg_slug": "daniel-eagen"
-  },
-  "brendan summerhill": {
-    "mlbam": null,
-    "fg": "sa3043325",
-    "fg_slug": "brendan-summerhill"
-  },
-  "demetrio crisantes": {
-    "mlbam": null,
-    "fg": "sa3021051",
-    "fg_slug": "demetrio-crisantes"
-  },
-  "jace laviolette": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "jace-laviolette"
-  },
-  "michael forret": {
-    "mlbam": null,
-    "fg": "sa3023479",
-    "fg_slug": "michael-forret"
-  },
-  "lujames groover": {
-    "mlbam": null,
-    "fg": "sa3022887",
-    "fg_slug": "lujames-groover"
-  },
-  "joseph sullivan": {
-    "mlbam": null,
-    "fg": "sa3025413",
-    "fg_slug": "joseph-sullivan"
-  },
-  "jose corniell": {
-    "mlbam": null,
-    "fg": "27984",
-    "fg_slug": "jose-corniell"
-  },
-  "robert hassell iii": {
-    "mlbam": null,
-    "fg": "27482",
-    "fg_slug": "robert-hassell-iii"
-  },
-  "charlee soto": {
-    "mlbam": null,
-    "fg": "sa3023450",
-    "fg_slug": "charlee-soto"
-  },
-  "dauri fernandez": {
-    "mlbam": null,
-    "fg": "sa3024327",
-    "fg_slug": "dauri-fernandez"
-  },
-  "luke dickerson": {
-    "mlbam": null,
-    "fg": "sa3067329",
-    "fg_slug": "luke-dickerson"
-  },
-  "gage stanifer": {
-    "mlbam": null,
-    "fg": "sa3021731",
-    "fg_slug": "gage-stanifer"
-  },
-  "josh hammond": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "josh-hammond"
-  },
-  "gavin kilen": {
-    "mlbam": null,
-    "fg": "sa3035353",
-    "fg_slug": "gavin-kilen"
-  },
-  "jonathan santucci": {
-    "mlbam": null,
-    "fg": "sa3041559",
-    "fg_slug": "jonathan-santucci"
-  },
-  "christian oppor": {
-    "mlbam": null,
-    "fg": "sa3022950",
-    "fg_slug": "christian-oppor"
-  },
-  "kruz schoolcraft": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "kruz-schoolcraft"
-  },
-  "dakota jordan": {
-    "mlbam": null,
-    "fg": "sa3025601",
-    "fg_slug": "dakota-jordan"
-  },
-  "alex clemmey": {
-    "mlbam": null,
-    "fg": "sa3023421",
-    "fg_slug": "alex-clemmey"
-  },
-  "marek houston": {
-    "mlbam": null,
-    "fg": "sa3034152",
-    "fg_slug": "marek-houston"
-  },
-  "sean gamble": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "sean-gamble"
-  },
-  "jesus baez": {
-    "mlbam": null,
-    "fg": "sa3018507",
-    "fg_slug": "jesus-baez"
-  },
-  "blake burke": {
-    "mlbam": null,
-    "fg": "sa3025381",
-    "fg_slug": "blake-burke"
-  },
-  "aron estrada": {
-    "mlbam": null,
-    "fg": "sa3018552",
-    "fg_slug": "aron-estrada"
-  },
-  "jd dix": {
-    "mlbam": null,
-    "fg": "sa3066859",
-    "fg_slug": "jd-dix"
-  },
-  "daniel pierce": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "daniel-pierce"
-  },
-  "marconi german": {
-    "mlbam": null,
-    "fg": "sa3067715",
-    "fg_slug": "marconi-german"
-  },
-  "tyson hardin": {
-    "mlbam": null,
-    "fg": "sa3025574",
-    "fg_slug": "tyson-hardin"
-  },
-  "yorger bautista": {
-    "mlbam": null,
-    "fg": "sa3067684",
-    "fg_slug": "yorger-bautista"
-  },
-  "deniel ortiz": {
-    "mlbam": null,
-    "fg": "sa3066597",
-    "fg_slug": "deniel-ortiz"
-  },
-  "nick becker": {
-    "mlbam": null,
-    "fg": "sa3069151",
-    "fg_slug": "nick-becker"
-  },
-  "eric bitonti": {
-    "mlbam": null,
-    "fg": "sa3022866",
-    "fg_slug": "eric-bitonti"
-  },
-  "t.j. nichols": {
-    "mlbam": null,
-    "fg": "sa3023039",
-    "fg_slug": "tj-nichols"
-  },
-  "yoniel curet": {
-    "mlbam": null,
-    "fg": "sa3015446",
-    "fg_slug": "yoniel-curet"
-  },
-  "kayson cunningham": {
-    "mlbam": null,
-    "fg": "sa3069148",
-    "fg_slug": "kayson-cunningham"
-  },
-  "tai peete": {
-    "mlbam": null,
-    "fg": "sa3022966",
-    "fg_slug": "tai-peete"
-  },
-  "zach root": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "zach-root"
-  },
-  "david hagaman": {
-    "mlbam": null,
-    "fg": "sa3032946",
-    "fg_slug": "david-hagaman"
-  },
-  "patrick forbes": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "patrick-forbes"
-  },
-  "mason neville": {
-    "mlbam": null,
-    "fg": "sa3038799",
-    "fg_slug": "mason-neville"
-  },
-  "jeral perez": {
-    "mlbam": null,
-    "fg": "sa3018557",
-    "fg_slug": "jeral-perez"
-  },
-  "hao-yu  lee": {
-    "mlbam": null,
-    "fg": "sa3017863",
-    "fg_slug": "hao-yu--lee"
-  },
-  "gary gill hill": {
-    "mlbam": null,
-    "fg": "sa3020972",
-    "fg_slug": "gary-gill-hill"
-  },
-  "bishop letson": {
-    "mlbam": null,
-    "fg": "sa3023526",
-    "fg_slug": "bishop-letson"
-  },
-  "kevin defrank": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "kevin-defrank"
-  },
-  "ethan dorchies": {
-    "mlbam": null,
-    "fg": "sa3067421",
-    "fg_slug": "ethan-dorchies"
-  },
-  "alfonsin rosario": {
-    "mlbam": null,
-    "fg": "sa3022868",
-    "fg_slug": "alfonsin-rosario"
-  },
-  "bryce meccage": {
-    "mlbam": null,
-    "fg": "sa3067069",
-    "fg_slug": "bryce-meccage"
-  },
-  "victor figueroa": {
-    "mlbam": null,
-    "fg": "sa3031322",
-    "fg_slug": "victor-figueroa"
-  },
-  "anthony eyanson": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "anthony-eyanson"
-  },
-  "kendall george": {
-    "mlbam": null,
-    "fg": "sa3022660",
-    "fg_slug": "kendall-george"
-  },
-  "brandon compton": {
-    "mlbam": null,
-    "fg": "sa3029229",
-    "fg_slug": "brandon-compton"
-  },
-  "korbyn dickerson": {
-    "mlbam": null,
-    "fg": "sa3030281",
-    "fg_slug": "korbyn-dickerson"
-  },
-  "luis lara": {
-    "mlbam": null,
-    "fg": "sa3018514",
-    "fg_slug": "luis-lara"
-  },
-  "dante nori": {
-    "mlbam": null,
-    "fg": "sa3025411",
-    "fg_slug": "dante-nori"
-  },
-  "joey oakie": {
-    "mlbam": null,
-    "fg": "sa3067418",
-    "fg_slug": "joey-oakie"
-  },
-  "josh owens": {
-    "mlbam": null,
-    "fg": "sa3069169",
-    "fg_slug": "josh-owens"
-  },
-  "kellon lindsey": {
-    "mlbam": null,
-    "fg": "sa3067042",
-    "fg_slug": "kellon-lindsey"
-  },
-  "quentin young": {
-    "mlbam": null,
-    "fg": "sa3069187",
-    "fg_slug": "quentin-young"
-  },
-  "yohendrick pinango": {
-    "mlbam": null,
-    "fg": "sa3009539",
-    "fg_slug": "yohendrick-pinango"
-  },
-  "braden nett": {
-    "mlbam": null,
-    "fg": "sa3020336",
-    "fg_slug": "braden-nett"
-  },
-  "chase harlan": {
-    "mlbam": null,
-    "fg": "sa3067256",
-    "fg_slug": "chase-harlan"
-  },
-  "roc riggio": {
-    "mlbam": null,
-    "fg": "sa3022750",
-    "fg_slug": "roc-riggio"
-  },
-  "elorky rodriguez": {
-    "mlbam": null,
-    "fg": "sa3067697",
-    "fg_slug": "elorky-rodriguez"
-  },
-  "jaden hamm": {
-    "mlbam": null,
-    "fg": "sa3023134",
-    "fg_slug": "jaden-hamm"
-  },
-  "karson milbrandt": {
-    "mlbam": null,
-    "fg": "sa3020659",
-    "fg_slug": "karson-milbrandt"
-  },
-  "yairo padilla": {
-    "mlbam": null,
-    "fg": "sa3023925",
-    "fg_slug": "yairo-padilla"
-  },
-  "justin gonzales": {
-    "mlbam": null,
-    "fg": "sa3023757",
-    "fg_slug": "justin-gonzales"
-  },
-  "austin overn": {
-    "mlbam": null,
-    "fg": "sa3025408",
-    "fg_slug": "austin-overn"
-  },
-  "louie varland": {
-    "mlbam": null,
-    "fg": "27691",
-    "fg_slug": "louie-varland"
-  },
-  "brendan jones": {
-    "mlbam": null,
-    "fg": "sa3025253",
-    "fg_slug": "brendan-jones"
-  },
-  "nestor german": {
-    "mlbam": null,
-    "fg": "sa3023517",
-    "fg_slug": "nestor-german"
-  },
-  "brady ebel": {
-    "mlbam": null,
-    "fg": "sa3069149",
-    "fg_slug": "brady-ebel"
-  },
-  "riley quick": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "riley-quick"
-  },
-  "jadher areinamo": {
-    "mlbam": null,
-    "fg": "sa3015802",
-    "fg_slug": "jadher-areinamo"
-  },
-  "brailer guerrero": {
-    "mlbam": null,
-    "fg": "sa3021072",
-    "fg_slug": "brailer-guerrero"
-  },
-  "eduardo beltre": {
-    "mlbam": null,
-    "fg": "sa3024928",
-    "fg_slug": "eduardo-beltre"
-  },
-  "landyn vidourek": {
-    "mlbam": null,
-    "fg": "sa3044483",
-    "fg_slug": "landyn-vidourek"
-  },
-  "cam cannarella": {
-    "mlbam": null,
-    "fg": "sa3028360",
-    "fg_slug": "cam-cannarella"
-  },
-  "miguel bleis": {
-    "mlbam": null,
-    "fg": "sa3016834",
-    "fg_slug": "miguel-bleis"
-  },
-  "aj russell": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "aj-russell"
-  },
-  "yophery rodriguez": {
-    "mlbam": null,
-    "fg": "sa3021083",
-    "fg_slug": "yophery-rodriguez"
-  },
-  "ethan petry": {
-    "mlbam": null,
-    "fg": "sa3039828",
-    "fg_slug": "ethan-petry"
-  },
-  "tony blanco jr.": {
-    "mlbam": null,
-    "fg": "sa3019722",
-    "fg_slug": "tony-blanco-jr"
-  },
-  "yeremy cabrera": {
-    "mlbam": null,
-    "fg": "sa3018549",
-    "fg_slug": "yeremy-cabrera"
-  },
-  "juaron watts-brown": {
-    "mlbam": null,
-    "fg": "sa3023352",
-    "fg_slug": "juaron-watts-brown"
-  },
-  "adam serwinowski": {
-    "mlbam": null,
-    "fg": "sa3020626",
-    "fg_slug": "adam-serwinowski"
-  },
-  "caden bodine": {
-    "mlbam": null,
-    "fg": "sa3027305",
-    "fg_slug": "caden-bodine"
-  },
-  "kyle debarge": {
-    "mlbam": null,
-    "fg": "sa3025260",
-    "fg_slug": "kyle-debarge"
-  },
-  "joendry vargas": {
-    "mlbam": null,
-    "fg": "sa3021067",
-    "fg_slug": "joendry-vargas"
-  },
-  "welbyn francisca": {
-    "mlbam": null,
-    "fg": "sa3021087",
-    "fg_slug": "welbyn-francisca"
-  },
-  "alex lodise": {
-    "mlbam": null,
-    "fg": "sa3036445",
-    "fg_slug": "alex-lodise"
-  },
-  "luke stevenson": {
-    "mlbam": null,
-    "fg": "sa3043081",
-    "fg_slug": "luke-stevenson"
-  },
-  "andrew salas": {
-    "mlbam": null,
-    "fg": "sa3067045",
-    "fg_slug": "andrew-salas"
-  },
-  "wei-en lin": {
-    "mlbam": null,
-    "fg": "sa3067072",
-    "fg_slug": "wei-en-lin"
-  },
-  "hendry mendez": {
-    "mlbam": null,
-    "fg": "sa3015727",
-    "fg_slug": "hendry-mendez"
-  },
-  "owen carey": {
-    "mlbam": null,
-    "fg": "sa3067044",
-    "fg_slug": "owen-carey"
-  },
-  "wyatt sanford": {
-    "mlbam": null,
-    "fg": "sa3066665",
-    "fg_slug": "wyatt-sanford"
-  },
-  "ixan henderson": {
-    "mlbam": null,
-    "fg": "sa3022953",
-    "fg_slug": "ixan-henderson"
-  },
-  "christopher suero": {
-    "mlbam": null,
-    "fg": "sa3018614",
-    "fg_slug": "christopher-suero"
-  },
-  "dorian soto": {
-    "mlbam": null,
-    "fg": "sa3067678",
-    "fg_slug": "dorian-soto"
-  },
-  "luinder avila": {
-    "mlbam": null,
-    "fg": "24452",
-    "fg_slug": "luinder-avila"
-  },
-  "brody brecht": {
-    "mlbam": null,
-    "fg": "sa3027632",
-    "fg_slug": "brody-brecht"
-  },
-  "cam leiter": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "cam-leiter"
-  },
-  "coy james": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "coy-james"
-  },
-  "starlyn caba": {
-    "mlbam": null,
-    "fg": "sa3021070",
-    "fg_slug": "starlyn-caba"
-  },
-  "rj schreck": {
-    "mlbam": null,
-    "fg": "sa3022602",
-    "fg_slug": "rj-schreck"
-  },
-  "cooper kinney": {
-    "mlbam": null,
-    "fg": "sa3017793",
-    "fg_slug": "cooper-kinney"
-  },
-  "jose urbina": {
-    "mlbam": null,
-    "fg": "sa3022218",
-    "fg_slug": "jose-urbina"
-  },
-  "max belyeu": {
-    "mlbam": null,
-    "fg": "sa3026937",
-    "fg_slug": "max-belyeu"
-  },
-  "bryce cunningham": {
-    "mlbam": null,
-    "fg": "sa3029687",
-    "fg_slug": "bryce-cunningham"
-  },
-  "sean linan": {
-    "mlbam": null,
-    "fg": "sa3019270",
-    "fg_slug": "sean-linan"
-  },
-  "yhoiker fajardo": {
-    "mlbam": null,
-    "fg": "sa3024273",
-    "fg_slug": "yhoiker-fajardo"
-  },
-  "dean curley": {
-    "mlbam": null,
-    "fg": "sa3029706",
-    "fg_slug": "dean-curley"
-  },
-  "raudi rodriguez": {
-    "mlbam": null,
-    "fg": "sa3022506",
-    "fg_slug": "raudi-rodriguez"
-  },
-  "eric orze": {
-    "mlbam": null,
-    "fg": "27626",
-    "fg_slug": "eric-orze"
-  },
-  "steven cruz": {
-    "mlbam": null,
-    "fg": "23165",
-    "fg_slug": "steven-cruz"
-  },
-  "will klein": {
-    "mlbam": null,
-    "fg": "27787",
-    "fg_slug": "will-klein"
-  },
-  "walker janek": {
-    "mlbam": null,
-    "fg": "sa3025254",
-    "fg_slug": "walker-janek"
-  },
-  "mikey romero": {
-    "mlbam": null,
-    "fg": "sa3020216",
-    "fg_slug": "mikey-romero"
-  },
-  "antwone kelly": {
-    "mlbam": null,
-    "fg": "sa3015489",
-    "fg_slug": "antwone-kelly"
-  },
-  "sean sullivan": {
-    "mlbam": null,
-    "fg": "sa3023162",
-    "fg_slug": "sean-sullivan"
-  },
-  "braxton bragg": {
-    "mlbam": null,
-    "fg": "sa3023303",
-    "fg_slug": "braxton-bragg"
-  },
-  "miguel mendez": {
-    "mlbam": null,
-    "fg": "sa3015506",
-    "fg_slug": "miguel-mendez"
-  },
-  "pj morlando": {
-    "mlbam": null,
-    "fg": "sa3025199",
-    "fg_slug": "pj-morlando"
-  },
-  "kelvis salcedo": {
-    "mlbam": null,
-    "fg": "sa3021531",
-    "fg_slug": "kelvis-salcedo"
-  },
-  "chase shores": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "chase-shores"
-  },
-  "trey gregory-alford": {
-    "mlbam": null,
-    "fg": "sa3067313",
-    "fg_slug": "trey-gregory-alford"
-  },
-  "brandon winokur": {
-    "mlbam": null,
-    "fg": "sa3022613",
-    "fg_slug": "brandon-winokur"
-  },
-  "yordanny monegro": {
-    "mlbam": null,
-    "fg": "sa3015476",
-    "fg_slug": "yordanny-monegro"
-  },
-  "james quinn-irons": {
-    "mlbam": null,
-    "fg": "sa3040344",
-    "fg_slug": "james-quinn-irons"
-  },
-  "sammy stafura": {
-    "mlbam": null,
-    "fg": "sa3022612",
-    "fg_slug": "sammy-stafura"
-  },
-  "landon harmon": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "landon-harmon"
-  },
-  "keiner delgado": {
-    "mlbam": null,
-    "fg": "sa3018397",
-    "fg_slug": "keiner-delgado"
-  },
-  "joseph dzierwa": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "joseph-dzierwa"
-  },
-  "handelfry encarnacion": {
-    "mlbam": null,
-    "fg": "sa3024124",
-    "fg_slug": "handelfry-encarnacion"
-  },
-  "jose anderson": {
-    "mlbam": null,
-    "fg": "sa3024133",
-    "fg_slug": "jose-anderson"
-  },
-  "zach thornton": {
-    "mlbam": null,
-    "fg": "sa3023505",
-    "fg_slug": "zach-thornton"
-  },
-  "colton ledbetter": {
-    "mlbam": null,
-    "fg": "sa3022897",
-    "fg_slug": "colton-ledbetter"
-  },
-  "aaron watson": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "aaron-watson"
-  },
-  "yoeilin cespedes": {
-    "mlbam": null,
-    "fg": "sa3021085",
-    "fg_slug": "yoeilin-cespedes"
-  },
-  "jansel luis": {
-    "mlbam": null,
-    "fg": "sa3018508",
-    "fg_slug": "jansel-luis"
-  },
-  "nathan flewelling": {
-    "mlbam": null,
-    "fg": "sa3067041",
-    "fg_slug": "nathan-flewelling"
-  },
-  "luis arana": {
-    "mlbam": null,
-    "fg": "sa3067767",
-    "fg_slug": "luis-arana"
-  },
-  "griffin burkholder": {
-    "mlbam": null,
-    "fg": "sa3025418",
-    "fg_slug": "griffin-burkholder"
-  },
-  "parks harber": {
-    "mlbam": null,
-    "fg": "sa3025308",
-    "fg_slug": "parks-harber"
-  },
-  "victor arias": {
-    "mlbam": null,
-    "fg": "sa3015636",
-    "fg_slug": "victor-arias"
-  },
-  "asbel gonzalez": {
-    "mlbam": null,
-    "fg": "sa3021639",
-    "fg_slug": "asbel-gonzalez"
-  },
-  "wuilfredo antunez": {
-    "mlbam": null,
-    "fg": "sa3011578",
-    "fg_slug": "wuilfredo-antunez"
-  },
-  "gavin turley": {
-    "mlbam": null,
-    "fg": "sa3044148",
-    "fg_slug": "gavin-turley"
-  },
-  "charles mcadoo": {
-    "mlbam": null,
-    "fg": "sa3022823",
-    "fg_slug": "charles-mcadoo"
-  },
-  "ty floyd": {
-    "mlbam": null,
-    "fg": "sa3031488",
-    "fg_slug": "ty-floyd"
-  },
-  "kane kepley": {
-    "mlbam": null,
-    "fg": "sa3035293",
-    "fg_slug": "kane-kepley"
-  },
-  "j.d. thompson": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "jd-thompson"
-  },
-  "carlos jorge": {
-    "mlbam": null,
-    "fg": "sa3016722",
-    "fg_slug": "carlos-jorge"
-  },
-  "eli serrano": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "eli-serrano"
-  },
-  "josh knoth": {
-    "mlbam": null,
-    "fg": "sa3023420",
-    "fg_slug": "josh-knoth"
-  },
-  "cade obermueller": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "cade-obermueller"
-  },
-  "john gil": {
-    "mlbam": null,
-    "fg": "sa3021284",
-    "fg_slug": "john-gil"
-  },
-  "luke sinnard": {
-    "mlbam": null,
-    "fg": "sa3042362",
-    "fg_slug": "luke-sinnard"
-  },
-  "william bergolla": {
-    "mlbam": null,
-    "fg": "sa3019777",
-    "fg_slug": "william-bergolla"
-  },
-  "dedniel nunez": {
-    "mlbam": null,
-    "fg": "23055",
-    "fg_slug": "dedniel-nunez"
-  },
-  "carlos rodriguez": {
-    "mlbam": null,
-    "fg": "30161",
-    "fg_slug": "carlos-rodriguez"
-  },
-  "carson demartini": {
-    "mlbam": null,
-    "fg": "sa3025198",
-    "fg_slug": "carson-demartini"
-  },
-  "nate dohm": {
-    "mlbam": null,
-    "fg": "sa3030418",
-    "fg_slug": "nate-dohm"
-  },
-  "brendan girton": {
-    "mlbam": null,
-    "fg": "sa3025584",
-    "fg_slug": "brendan-girton"
-  },
-  "cristofer torin": {
-    "mlbam": null,
-    "fg": "sa3018938",
-    "fg_slug": "cristofer-torin"
-  },
-  "trevor harrison": {
-    "mlbam": null,
-    "fg": "sa3023629",
-    "fg_slug": "trevor-harrison"
-  },
-  "cristian arguelles": {
-    "mlbam": null,
-    "fg": "sa3023968",
-    "fg_slug": "cristian-arguelles"
-  },
-  "kale fountain": {
-    "mlbam": null,
-    "fg": "sa3067321",
-    "fg_slug": "kale-fountain"
-  },
-  "rayner arias": {
-    "mlbam": null,
-    "fg": "sa3021076",
-    "fg_slug": "rayner-arias"
-  },
-  "juan valera": {
-    "mlbam": null,
-    "fg": "sa3021570",
-    "fg_slug": "juan-valera"
-  },
-  "josiah hartshorn": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "josiah-hartshorn"
-  },
-  "tate southisene": {
-    "mlbam": null,
-    "fg": "sa3069150",
-    "fg_slug": "tate-southisene"
-  },
-  "wellington aracena": {
-    "mlbam": null,
-    "fg": "sa3019265",
-    "fg_slug": "wellington-aracena"
-  },
-  "luis merejo": {
-    "mlbam": null,
-    "fg": "sa3021196",
-    "fg_slug": "luis-merejo"
-  },
-  "anderson brito": {
-    "mlbam": null,
-    "fg": "sa3024232",
-    "fg_slug": "anderson-brito"
-  },
-  "nick morabito": {
-    "mlbam": null,
-    "fg": "sa3020418",
-    "fg_slug": "nick-morabito"
-  },
-  "diego tornes": {
-    "mlbam": null,
-    "fg": "sa3066458",
-    "fg_slug": "diego-tornes"
-  },
-  "mac horvath": {
-    "mlbam": null,
-    "fg": "sa3022885",
-    "fg_slug": "mac-horvath"
-  },
-  "yohandy morales": {
-    "mlbam": null,
-    "fg": "sa3022672",
-    "fg_slug": "yohandy-morales"
-  },
-  "edgar montero": {
-    "mlbam": null,
-    "fg": "sa3024109",
-    "fg_slug": "edgar-montero"
-  },
-  "josh kasevich": {
-    "mlbam": null,
-    "fg": "sa3020203",
-    "fg_slug": "josh-kasevich"
-  },
-  "patrick copen": {
-    "mlbam": null,
-    "fg": "sa3023283",
-    "fg_slug": "patrick-copen"
-  },
-  "luis baez": {
-    "mlbam": null,
-    "fg": "sa3018482",
-    "fg_slug": "luis-baez"
-  },
-  "rickey cabrera": {
-    "mlbam": null,
-    "fg": "sa3018405",
-    "fg_slug": "rickey-cabrera"
-  },
-  "lisbel diaz": {
-    "mlbam": null,
-    "fg": "sa3022399",
-    "fg_slug": "lisbel-diaz"
-  },
-  "drue hackenberg": {
-    "mlbam": null,
-    "fg": "sa3023304",
-    "fg_slug": "drue-hackenberg"
-  },
-  "aaron walton": {
-    "mlbam": null,
-    "fg": "sa3044756",
-    "fg_slug": "aaron-walton"
-  },
-  "christian zazueta": {
-    "mlbam": null,
-    "fg": "sa3018867",
-    "fg_slug": "christian-zazueta"
-  },
-  "brendan tunink": {
-    "mlbam": null,
-    "fg": "sa3067275",
-    "fg_slug": "brendan-tunink"
-  },
-  "dillon lewis": {
-    "mlbam": null,
-    "fg": "sa3025515",
-    "fg_slug": "dillon-lewis"
-  },
-  "esmil valencia": {
-    "mlbam": null,
-    "fg": "sa3021082",
-    "fg_slug": "esmil-valencia"
-  },
-  "leandro lopez": {
-    "mlbam": null,
-    "fg": "sa3016748",
-    "fg_slug": "leandro-lopez"
-  },
-  "braylin morel": {
-    "mlbam": null,
-    "fg": "sa3021229",
-    "fg_slug": "braylin-morel"
-  },
-  "enddy azocar": {
-    "mlbam": null,
-    "fg": "sa3023764",
-    "fg_slug": "enddy-azocar"
-  },
-  "ryan johnson": {
-    "mlbam": null,
-    "fg": "35325",
-    "fg_slug": "ryan-johnson"
-  },
-  "griff o'ferrall": {
-    "mlbam": null,
-    "fg": "sa3025409",
-    "fg_slug": "griff-oferrall"
-  },
-  "will watson": {
-    "mlbam": null,
-    "fg": "sa3025592",
-    "fg_slug": "will-watson"
-  },
-  "kala'i rosario": {
-    "mlbam": null,
-    "fg": "sa3015199",
-    "fg_slug": "kalai-rosario"
-  },
-  "julian aguiar": {
-    "mlbam": null,
-    "fg": "30031",
-    "fg_slug": "julian-aguiar"
-  },
-  "luis mey": {
-    "mlbam": null,
-    "fg": "25620",
-    "fg_slug": "luis-mey"
-  },
-  "paxton schultz": {
-    "mlbam": null,
-    "fg": "25501",
-    "fg_slug": "paxton-schultz"
-  },
-  "luis l. ortiz": {
-    "mlbam": null,
-    "fg": "27646",
-    "fg_slug": "luis-l-ortiz"
-  },
-  "cole wilcox": {
-    "mlbam": null,
-    "fg": "27481",
-    "fg_slug": "cole-wilcox"
-  },
-  "jorge barrosa": {
-    "mlbam": null,
-    "fg": "23968",
-    "fg_slug": "jorge-barrosa"
-  },
-  "brewer hicklen": {
-    "mlbam": null,
-    "fg": "20450",
-    "fg_slug": "brewer-hicklen"
-  },
-  "michael kennedy": {
-    "mlbam": null,
-    "fg": "sa3021728",
-    "fg_slug": "michael-kennedy"
-  },
-  "tyler ivey": {
-    "mlbam": null,
-    "fg": "20237",
-    "fg_slug": "tyler-ivey"
-  },
-  "sam aldegheri": {
-    "mlbam": null,
-    "fg": "26443",
-    "fg_slug": "sam-aldegheri"
-  },
-  "tyler callihan": {
-    "mlbam": null,
-    "fg": "27497",
-    "fg_slug": "tyler-callihan"
-  },
-  "tyson miller": {
-    "mlbam": null,
-    "fg": "19976",
-    "fg_slug": "tyson-miller"
-  },
-  "doug nikhazy": {
-    "mlbam": null,
-    "fg": "30142",
-    "fg_slug": "doug-nikhazy"
-  },
-  "argenis cayama": {
-    "mlbam": null,
-    "fg": "sa3025006",
-    "fg_slug": "argenis-cayama"
-  },
-  "yolfran castillo": {
-    "mlbam": null,
-    "fg": "sa3023726",
-    "fg_slug": "yolfran-castillo"
-  },
-  "creed willems": {
-    "mlbam": null,
-    "fg": "sa3017562",
-    "fg_slug": "creed-willems"
-  },
-  "chase davis": {
-    "mlbam": null,
-    "fg": "sa3022426",
-    "fg_slug": "chase-davis"
-  },
-  "henry lalane": {
-    "mlbam": null,
-    "fg": "sa3016066",
-    "fg_slug": "henry-lalane"
-  },
-  "carson roccaforte": {
-    "mlbam": null,
-    "fg": "sa3022825",
-    "fg_slug": "carson-roccaforte"
-  },
-  "dean moss": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "dean-moss"
-  },
-  "ben kudrna": {
-    "mlbam": null,
-    "fg": "sa3018253",
-    "fg_slug": "ben-kudrna"
-  },
-  "jackson baumeister": {
-    "mlbam": null,
-    "fg": "sa3023471",
-    "fg_slug": "jackson-baumeister"
-  },
-  "tyson neighbors": {
-    "mlbam": null,
-    "fg": "sa3025569",
-    "fg_slug": "tyson-neighbors"
-  },
-  "cristian hernandez": {
-    "mlbam": null,
-    "fg": "sa3015696",
-    "fg_slug": "cristian-hernandez"
-  },
-  "luis cova": {
-    "mlbam": null,
-    "fg": "sa3023723",
-    "fg_slug": "luis-cova"
-  },
-  "johanfran garcia": {
-    "mlbam": null,
-    "fg": "sa3018424",
-    "fg_slug": "johanfran-garcia"
-  },
-  "louis andujar": {
-    "mlbam": null,
-    "fg": "sa3068889",
-    "fg_slug": "louis-andujar"
-  },
-  "paulino santana": {
-    "mlbam": null,
-    "fg": "sa3023718",
-    "fg_slug": "paulino-santana"
-  },
-  "angel feliz": {
-    "mlbam": null,
-    "fg": "sa3023892",
-    "fg_slug": "angel-feliz"
-  },
-  "adrian bohorquez": {
-    "mlbam": null,
-    "fg": "sa3021501",
-    "fg_slug": "adrian-bohorquez"
-  },
-  "eriq swan": {
-    "mlbam": null,
-    "fg": "sa3023514",
-    "fg_slug": "eriq-swan"
-  },
-  "cooper hjerpe": {
-    "mlbam": null,
-    "fg": "sa3020736",
-    "fg_slug": "cooper-hjerpe"
-  },
-  "zach ehrhard": {
-    "mlbam": null,
-    "fg": "sa3025247",
-    "fg_slug": "zach-ehrhard"
-  },
-  "henry godbout": {
-    "mlbam": null,
-    "fg": "sa3032331",
-    "fg_slug": "henry-godbout"
-  },
-  "pedro ramirez": {
-    "mlbam": null,
-    "fg": "sa3015834",
-    "fg_slug": "pedro-ramirez"
-  },
-  "samuel zavala": {
-    "mlbam": null,
-    "fg": "sa3015718",
-    "fg_slug": "samuel-zavala"
-  },
-  "chen-wei lin": {
-    "mlbam": null,
-    "fg": "sa3022876",
-    "fg_slug": "chen-wei-lin"
-  },
-  "kahlil watson": {
-    "mlbam": null,
-    "fg": "sa3017513",
-    "fg_slug": "kahlil-watson"
-  },
-  "bruin agbayani": {
-    "mlbam": null,
-    "fg": "sa3069188",
-    "fg_slug": "bruin-agbayani"
-  },
-  "dameury pena": {
-    "mlbam": null,
-    "fg": "sa3021624",
-    "fg_slug": "dameury-pena"
-  },
-  "dylan jordan": {
-    "mlbam": null,
-    "fg": "sa3067384",
-    "fg_slug": "dylan-jordan"
-  },
-  "gabriel davalillo": {
-    "mlbam": null,
-    "fg": "sa3068659",
-    "fg_slug": "gabriel-davalillo"
-  },
-  "lucas spence": {
-    "mlbam": null,
-    "fg": "sa3025371",
-    "fg_slug": "lucas-spence"
-  },
-  "maykel coret": {
-    "mlbam": null,
-    "fg": "sa3067683",
-    "fg_slug": "maykel-coret"
-  },
-  "junior perez": {
-    "mlbam": null,
-    "fg": "sa3005744",
-    "fg_slug": "junior-perez"
-  },
-  "braden davis": {
-    "mlbam": null,
-    "fg": "sa3029886",
-    "fg_slug": "braden-davis"
-  },
-  "mike boeve": {
-    "mlbam": null,
-    "fg": "sa3022658",
-    "fg_slug": "mike-boeve"
-  },
-  "christian franklin": {
-    "mlbam": null,
-    "fg": "sa3017510",
-    "fg_slug": "christian-franklin"
-  },
-  "tyler uberstine": {
-    "mlbam": null,
-    "fg": "sa3017643",
-    "fg_slug": "tyler-uberstine"
-  },
-  "dylan dreiling": {
-    "mlbam": null,
-    "fg": "sa3025251",
-    "fg_slug": "dylan-dreiling"
-  },
-  "levi sterling": {
-    "mlbam": null,
-    "fg": "sa3066664",
-    "fg_slug": "levi-sterling"
-  },
-  "santiago castellanos": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "santiago-castellanos"
-  },
-  "ernesto martinez jr.": {
-    "mlbam": null,
-    "fg": "sa3003173",
-    "fg_slug": "ernesto-martinez-jr"
-  },
-  "joshua kuroda-grauer": {
-    "mlbam": null,
-    "fg": "sa3025386",
-    "fg_slug": "joshua-kuroda-grauer"
-  },
-  "hayden mullins": {
-    "mlbam": null,
-    "fg": "sa3023218",
-    "fg_slug": "hayden-mullins"
-  },
-  "teilon serrano": {
-    "mlbam": null,
-    "fg": "sa3067703",
-    "fg_slug": "teilon-serrano"
-  },
-  "ramon marquez": {
-    "mlbam": null,
-    "fg": "sa3067514",
-    "fg_slug": "ramon-marquez"
-  },
-  "mason barnett": {
-    "mlbam": null,
-    "fg": "31741",
-    "fg_slug": "mason-barnett"
-  },
-  "hyun-seok jang": {
-    "mlbam": null,
-    "fg": "sa3023601",
-    "fg_slug": "hyun-seok-jang"
-  },
-  "javier mogollon": {
-    "mlbam": null,
-    "fg": "sa3021855",
-    "fg_slug": "javier-mogollon"
-  },
-  "murf gray": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "murf-gray"
-  },
-  "a.j. blubaugh": {
-    "mlbam": null,
-    "fg": "sa3020112",
-    "fg_slug": "aj-blubaugh"
-  },
-  "sam petersen": {
-    "mlbam": null,
-    "fg": "sa3025609",
-    "fg_slug": "sam-petersen"
-  },
-  "blake wolters": {
-    "mlbam": null,
-    "fg": "sa3023513",
-    "fg_slug": "blake-wolters"
-  },
-  "tate kuehner": {
-    "mlbam": null,
-    "fg": "sa3023099",
-    "fg_slug": "tate-kuehner"
-  },
-  "cole peschl": {
-    "mlbam": null,
-    "fg": "sa3039760",
-    "fg_slug": "cole-peschl"
-  },
-  "khadim diaw": {
-    "mlbam": null,
-    "fg": "sa3025259",
-    "fg_slug": "khadim-diaw"
-  },
-  "dalton pence": {
-    "mlbam": null,
-    "fg": "sa3039663",
-    "fg_slug": "dalton-pence"
-  },
-  "callan moss": {
-    "mlbam": null,
-    "fg": "sa3025392",
-    "fg_slug": "callan-moss"
-  },
-  "yorman gomez": {
-    "mlbam": null,
-    "fg": "sa3015931",
-    "fg_slug": "yorman-gomez"
-  },
-  "carson palmquist": {
-    "mlbam": null,
-    "fg": "31612",
-    "fg_slug": "carson-palmquist"
-  },
-  "jojo ingrassia": {
-    "mlbam": null,
-    "fg": "sa3023475",
-    "fg_slug": "jojo-ingrassia"
-  },
-  "filippo di turi": {
-    "mlbam": null,
-    "fg": "sa3021093",
-    "fg_slug": "filippo-di-turi"
-  },
-  "jake bennett": {
-    "mlbam": null,
-    "fg": "sa3020737",
-    "fg_slug": "jake-bennett"
-  },
-  "josh trentadue": {
-    "mlbam": null,
-    "fg": "sa3023010",
-    "fg_slug": "josh-trentadue"
-  },
-  "echedry vargas": {
-    "mlbam": null,
-    "fg": "sa3018565",
-    "fg_slug": "echedry-vargas"
-  },
-  "eliazar dishmey": {
-    "mlbam": null,
-    "fg": "sa3019181",
-    "fg_slug": "eliazar-dishmey"
-  },
-  "enrique jimenez": {
-    "mlbam": null,
-    "fg": "sa3021091",
-    "fg_slug": "enrique-jimenez"
-  },
-  "drew beam": {
-    "mlbam": null,
-    "fg": "sa3026785",
-    "fg_slug": "drew-beam"
-  },
-  "nate payne": {
-    "mlbam": null,
-    "fg": "sa3067390",
-    "fg_slug": "nate-payne"
-  },
-  "axiel plaz": {
-    "mlbam": null,
-    "fg": "sa3018480",
-    "fg_slug": "axiel-plaz"
-  },
-  "cameron cauley": {
-    "mlbam": null,
-    "fg": "sa3017167",
-    "fg_slug": "cameron-cauley"
-  },
-  "adrian pinto": {
-    "mlbam": null,
-    "fg": "sa3015542",
-    "fg_slug": "adrian-pinto"
-  },
-  "levi wells": {
-    "mlbam": null,
-    "fg": "sa3023441",
-    "fg_slug": "levi-wells"
-  },
-  "juan cabada": {
-    "mlbam": null,
-    "fg": "sa3067679",
-    "fg_slug": "juan-cabada"
-  },
-  "jose mejia": {
-    "mlbam": null,
-    "fg": "sa3021169",
-    "fg_slug": "jose-mejia"
-  },
-  "tyler renz": {
-    "mlbam": null,
-    "fg": "sa3067437",
-    "fg_slug": "tyler-renz"
-  },
-  "wilber dotel": {
-    "mlbam": null,
-    "fg": "sa3015163",
-    "fg_slug": "wilber-dotel"
-  },
-  "john klein": {
-    "mlbam": null,
-    "fg": "sa3020405",
-    "fg_slug": "john-klein"
-  },
-  "kyle lodise": {
-    "mlbam": null,
-    "fg": "sa3059833",
-    "fg_slug": "kyle-lodise"
-  },
-  "felix reyes": {
-    "mlbam": null,
-    "fg": "sa3015688",
-    "fg_slug": "felix-reyes"
-  },
-  "logan wagner": {
-    "mlbam": null,
-    "fg": "sa3019932",
-    "fg_slug": "logan-wagner"
-  },
-  "a.j. causey": {
-    "mlbam": null,
-    "fg": "sa3028661",
-    "fg_slug": "aj-causey"
-  },
-  "owen ayers": {
-    "mlbam": null,
-    "fg": "sa3025449",
-    "fg_slug": "owen-ayers"
-  },
-  "briggs mckenzie": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "briggs-mckenzie"
-  },
-  "brett wichrowski": {
-    "mlbam": null,
-    "fg": "sa3023366",
-    "fg_slug": "brett-wichrowski"
-  },
-  "jacob bresnahan": {
-    "mlbam": null,
-    "fg": "sa3023066",
-    "fg_slug": "jacob-bresnahan"
-  },
-  "bryce mayer": {
-    "mlbam": null,
-    "fg": "sa3025558",
-    "fg_slug": "bryce-mayer"
-  },
-  "fenwick trimble": {
-    "mlbam": null,
-    "fg": "sa3025202",
-    "fg_slug": "fenwick-trimble"
-  },
-  "welinton herrera": {
-    "mlbam": null,
-    "fg": "sa3016061",
-    "fg_slug": "welinton-herrera"
-  },
-  "avery owusu-asiedu": {
-    "mlbam": null,
-    "fg": "sa3022604",
-    "fg_slug": "avery-owusu-asiedu"
-  },
-  "sheng-en lin": {
-    "mlbam": null,
-    "fg": "sa3022820",
-    "fg_slug": "sheng-en-lin"
-  },
-  "carlson reed": {
-    "mlbam": null,
-    "fg": "sa3022793",
-    "fg_slug": "carlson-reed"
-  },
-  "warren calcano": {
-    "mlbam": null,
-    "fg": "sa3067541",
-    "fg_slug": "warren-calcano"
-  },
-  "pedro ibarguen": {
-    "mlbam": null,
-    "fg": "sa3021254",
-    "fg_slug": "pedro-ibarguen"
-  },
-  "kyler fedko": {
-    "mlbam": null,
-    "fg": "sa3017561",
-    "fg_slug": "kyler-fedko"
-  },
-  "zane taylor": {
-    "mlbam": null,
-    "fg": "sa3043592",
-    "fg_slug": "zane-taylor"
-  },
-  "cobb hightower": {
-    "mlbam": null,
-    "fg": "sa3066025",
-    "fg_slug": "cobb-hightower"
-  },
-  "clark elliott": {
-    "mlbam": null,
-    "fg": "sa3019972",
-    "fg_slug": "clark-elliott"
-  },
-  "keyner benitez": {
-    "mlbam": null,
-    "fg": "sa3021795",
-    "fg_slug": "keyner-benitez"
-  },
-  "elvin garcia": {
-    "mlbam": null,
-    "fg": "sa3024147",
-    "fg_slug": "elvin-garcia"
-  },
-  "hunter cranton": {
-    "mlbam": null,
-    "fg": "sa3025298",
-    "fg_slug": "hunter-cranton"
-  },
-  "nick dumesnil": {
-    "mlbam": null,
-    "fg": "sa3030644",
-    "fg_slug": "nick-dumesnil"
-  },
-  "matthew etzel": {
-    "mlbam": null,
-    "fg": "sa3022815",
-    "fg_slug": "matthew-etzel"
-  },
-  "ryan gallagher": {
-    "mlbam": null,
-    "fg": "sa3031857",
-    "fg_slug": "ryan-gallagher"
-  },
-  "max acosta": {
-    "mlbam": null,
-    "fg": "sa3014711",
-    "fg_slug": "max-acosta"
-  },
-  "richard matic": {
-    "mlbam": null,
-    "fg": "sa3023749",
-    "fg_slug": "richard-matic"
-  },
-  "boston bateman": {
-    "mlbam": null,
-    "fg": "sa3067145",
-    "fg_slug": "boston-bateman"
-  },
-  "dillon head": {
-    "mlbam": null,
-    "fg": "sa3022753",
-    "fg_slug": "dillon-head"
-  },
-  "carlos gutierrez": {
-    "mlbam": null,
-    "fg": "sa3022336",
-    "fg_slug": "carlos-gutierrez"
-  },
-  "tanner franklin": {
-    "mlbam": null,
-    "fg": "sa3031652",
-    "fg_slug": "tanner-franklin"
-  },
-  "enmanuel tejeda": {
-    "mlbam": null,
-    "fg": "sa3018497",
-    "fg_slug": "enmanuel-tejeda"
-  },
-  "freili encarnacion": {
-    "mlbam": null,
-    "fg": "sa3018414",
-    "fg_slug": "freili-encarnacion"
-  },
-  "brycen mautz": {
-    "mlbam": null,
-    "fg": "sa3020710",
-    "fg_slug": "brycen-mautz"
-  },
-  "brailyn antunez": {
-    "mlbam": null,
-    "fg": "sa3067486",
-    "fg_slug": "brailyn-antunez"
-  },
-  "anthony huezo": {
-    "mlbam": null,
-    "fg": "sa3022691",
-    "fg_slug": "anthony-huezo"
-  },
-  "brandan bidois": {
-    "mlbam": null,
-    "fg": "sa3015277",
-    "fg_slug": "brandan-bidois"
-  },
-  "ryan wideman": {
-    "mlbam": null,
-    "fg": "sa3060916",
-    "fg_slug": "ryan-wideman"
-  },
-  "david sandlin": {
-    "mlbam": null,
-    "fg": "sa3020606",
-    "fg_slug": "david-sandlin"
-  },
-  "dylan delucia": {
-    "mlbam": null,
-    "fg": "sa3024964",
-    "fg_slug": "dylan-delucia"
-  },
-  "peyton pallette": {
-    "mlbam": null,
-    "fg": "sa3020742",
-    "fg_slug": "peyton-pallette"
-  },
-  "billy amick": {
-    "mlbam": null,
-    "fg": "sa3025249",
-    "fg_slug": "billy-amick"
-  },
-  "franyerber montilla": {
-    "mlbam": null,
-    "fg": "sa3018580",
-    "fg_slug": "franyerber-montilla"
-  },
-  "elis cuevas": {
-    "mlbam": null,
-    "fg": "sa3019509",
-    "fg_slug": "elis-cuevas"
-  },
-  "andres valor": {
-    "mlbam": null,
-    "fg": "sa3021278",
-    "fg_slug": "andres-valor"
-  },
-  "nolan schubart": {
-    "mlbam": null,
-    "fg": "sa3041794",
-    "fg_slug": "nolan-schubart"
-  },
-  "andre granillo": {
-    "mlbam": null,
-    "fg": "29542",
-    "fg_slug": "andre-granillo"
-  },
-  "bryant betancourt": {
-    "mlbam": null,
-    "fg": "sa3015846",
-    "fg_slug": "bryant-betancourt"
-  },
-  "tommy hawke": {
-    "mlbam": null,
-    "fg": "sa3023055",
-    "fg_slug": "tommy-hawke"
-  },
-  "joswa lugo": {
-    "mlbam": null,
-    "fg": "sa3023894",
-    "fg_slug": "joswa-lugo"
-  },
-  "sam shaw": {
-    "mlbam": null,
-    "fg": "sa3022889",
-    "fg_slug": "sam-shaw"
-  },
-  "randy guzman": {
-    "mlbam": null,
-    "fg": "sa3021106",
-    "fg_slug": "randy-guzman"
-  },
-  "shane drohan": {
-    "mlbam": null,
-    "fg": "sa3014447",
-    "fg_slug": "shane-drohan"
-  },
-  "nolan sailors": {
-    "mlbam": null,
-    "fg": "sa3041417",
-    "fg_slug": "nolan-sailors"
-  },
-  "andrew walters": {
-    "mlbam": null,
-    "fg": "33834",
-    "fg_slug": "andrew-walters"
-  },
-  "sebastian dos santos": {
-    "mlbam": null,
-    "fg": "sa3067732",
-    "fg_slug": "sebastian-dos-santos"
-  },
-  "marco raya": {
-    "mlbam": null,
-    "fg": "sa3014550",
-    "fg_slug": "marco-raya"
-  },
-  "seong-jun kim": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "seong-jun-kim"
-  },
-  "victor lizarraga": {
-    "mlbam": null,
-    "fg": "sa3015220",
-    "fg_slug": "victor-lizarraga"
-  },
-  "chris cortez": {
-    "mlbam": null,
-    "fg": "sa3029417",
-    "fg_slug": "chris-cortez"
-  },
-  "robert arias": {
-    "mlbam": null,
-    "fg": "sa3024304",
-    "fg_slug": "robert-arias"
-  },
-  "engelth urena": {
-    "mlbam": null,
-    "fg": "sa3018484",
-    "fg_slug": "engelth-urena"
-  },
-  "xavier rivas": {
-    "mlbam": null,
-    "fg": "sa3040812",
-    "fg_slug": "xavier-rivas"
-  },
-  "maxton martin": {
-    "mlbam": null,
-    "fg": "sa3023014",
-    "fg_slug": "maxton-martin"
-  },
-  "jorge burgos": {
-    "mlbam": null,
-    "fg": "sa3008929",
-    "fg_slug": "jorge-burgos"
-  },
-  "blake burkhalter": {
-    "mlbam": null,
-    "fg": "sa3020382",
-    "fg_slug": "blake-burkhalter"
-  },
-  "mason marriott": {
-    "mlbam": null,
-    "fg": "sa3025505",
-    "fg_slug": "mason-marriott"
-  },
-  "james ellwanger": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "james-ellwanger"
-  },
-  "rayven antonio": {
-    "mlbam": null,
-    "fg": "sa3021808",
-    "fg_slug": "rayven-antonio"
-  },
-  "ryan cermak": {
-    "mlbam": null,
-    "fg": "sa3020204",
-    "fg_slug": "ryan-cermak"
-  },
-  "angel de los santos": {
-    "mlbam": null,
-    "fg": "sa3067737",
-    "fg_slug": "angel-de-los-santos"
-  },
-  "silvano hechavarria": {
-    "mlbam": null,
-    "fg": "sa3024856",
-    "fg_slug": "silvano-hechavarria"
-  },
-  "max williams": {
-    "mlbam": null,
-    "fg": "sa3045333",
-    "fg_slug": "max-williams"
-  },
-  "jason savacool": {
-    "mlbam": null,
-    "fg": "sa3022856",
-    "fg_slug": "jason-savacool"
-  },
-  "griffin herring": {
-    "mlbam": null,
-    "fg": "sa3033707",
-    "fg_slug": "griffin-herring"
-  },
-  "carlos renzullo": {
-    "mlbam": null,
-    "fg": "sa3024879",
-    "fg_slug": "carlos-renzullo"
-  },
-  "leandro arias": {
-    "mlbam": null,
-    "fg": "sa3018433",
-    "fg_slug": "leandro-arias"
-  },
-  "jorge quintana": {
-    "mlbam": null,
-    "fg": "sa3024107",
-    "fg_slug": "jorge-quintana"
-  },
-  "brandon butterworth": {
-    "mlbam": null,
-    "fg": "sa3025264",
-    "fg_slug": "brandon-butterworth"
-  },
-  "kenya huggins": {
-    "mlbam": null,
-    "fg": "sa3020609",
-    "fg_slug": "kenya-huggins"
-  },
-  "ethan anderson": {
-    "mlbam": null,
-    "fg": "sa3025410",
-    "fg_slug": "ethan-anderson"
-  },
-  "paul bonzagni": {
-    "mlbam": null,
-    "fg": "sa3022587",
-    "fg_slug": "paul-bonzagni"
-  },
-  "liomar martinez": {
-    "mlbam": null,
-    "fg": "sa3019612",
-    "fg_slug": "liomar-martinez"
-  },
-  "tavian josenberger": {
-    "mlbam": null,
-    "fg": "sa3022808",
-    "fg_slug": "tavian-josenberger"
-  },
-  "seth johnson": {
-    "mlbam": null,
-    "fg": "26020",
-    "fg_slug": "seth-johnson"
-  },
-  "adolfo sanchez": {
-    "mlbam": null,
-    "fg": "sa3023709",
-    "fg_slug": "adolfo-sanchez"
-  },
-  "owen hall": {
-    "mlbam": null,
-    "fg": "sa3066594",
-    "fg_slug": "owen-hall"
-  },
-  "eduardo garcia": {
-    "mlbam": null,
-    "fg": "sa3008751",
-    "fg_slug": "eduardo-garcia"
-  },
-  "marlon nieves": {
-    "mlbam": null,
-    "fg": "sa3021567",
-    "fg_slug": "marlon-nieves"
-  },
-  "jared karros": {
-    "mlbam": null,
-    "fg": "sa3020859",
-    "fg_slug": "jared-karros"
-  },
-  "jaron deberry": {
-    "mlbam": null,
-    "fg": "sa3029984",
-    "fg_slug": "jaron-deberry"
-  },
-  "chase mobley": {
-    "mlbam": null,
-    "fg": "sa3067542",
-    "fg_slug": "chase-mobley"
-  },
-  "brian curley": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "brian-curley"
-  },
-  "luis de la torre": {
-    "mlbam": null,
-    "fg": "sa3022880",
-    "fg_slug": "luis-de-la-torre"
-  },
-  "fernando perez": {
-    "mlbam": null,
-    "fg": "sa3018826",
-    "fg_slug": "fernando-perez"
-  },
-  "rodney boone": {
-    "mlbam": null,
-    "fg": "sa3018107",
-    "fg_slug": "rodney-boone"
-  },
-  "chris newell": {
-    "mlbam": null,
-    "fg": "sa3019971",
-    "fg_slug": "chris-newell"
-  },
-  "stharlin torres": {
-    "mlbam": null,
-    "fg": "sa3024080",
-    "fg_slug": "stharlin-torres"
-  },
-  "sean keys": {
-    "mlbam": null,
-    "fg": "sa3025317",
-    "fg_slug": "sean-keys"
-  },
-  "colin yeaman": {
-    "mlbam": null,
-    "fg": "sa3060984",
-    "fg_slug": "colin-yeaman"
-  },
-  "jogly garcia": {
-    "mlbam": null,
-    "fg": "sa3019633",
-    "fg_slug": "jogly-garcia"
-  },
-  "jhonny severino": {
-    "mlbam": null,
-    "fg": "sa3018415",
-    "fg_slug": "jhonny-severino"
-  },
-  "angel cepeda": {
-    "mlbam": null,
-    "fg": "sa3021080",
-    "fg_slug": "angel-cepeda"
-  },
-  "jose fleury": {
-    "mlbam": null,
-    "fg": "sa3019255",
-    "fg_slug": "jose-fleury"
-  },
-  "omar alfonzo": {
-    "mlbam": null,
-    "fg": "sa3015665",
-    "fg_slug": "omar-alfonzo"
-  },
-  "eduardo rivera": {
-    "mlbam": null,
-    "fg": "sa3017951",
-    "fg_slug": "eduardo-rivera"
-  },
-  "jeremy rodriguez": {
-    "mlbam": null,
-    "fg": "sa3021101",
-    "fg_slug": "jeremy-rodriguez"
-  },
-  "cole mathis": {
-    "mlbam": null,
-    "fg": "sa3037300",
-    "fg_slug": "cole-mathis"
-  },
-  "roderick arias": {
-    "mlbam": null,
-    "fg": "sa3019674",
-    "fg_slug": "roderick-arias"
-  },
-  "alirio ferrebus": {
-    "mlbam": null,
-    "fg": "sa3022306",
-    "fg_slug": "alirio-ferrebus"
-  },
-  "vance honeycutt": {
-    "mlbam": null,
-    "fg": "sa3025526",
-    "fg_slug": "vance-honeycutt"
-  },
-  "homer bush jr.": {
-    "mlbam": null,
-    "fg": "sa3022480",
-    "fg_slug": "homer-bush-jr"
-  },
-  "jud fabian": {
-    "mlbam": null,
-    "fg": "sa3019942",
-    "fg_slug": "jud-fabian"
-  },
-  "owen wild": {
-    "mlbam": null,
-    "fg": "sa3023278",
-    "fg_slug": "owen-wild"
-  },
-  "brandon barriera": {
-    "mlbam": null,
-    "fg": "sa3020683",
-    "fg_slug": "brandon-barriera"
-  },
-  "chia-shi shen": {
-    "mlbam": null,
-    "fg": "sa3067456",
-    "fg_slug": "chia-shi-shen"
-  },
-  "jared serna": {
-    "mlbam": null,
-    "fg": "sa3015579",
-    "fg_slug": "jared-serna"
-  },
-  "walker martin": {
-    "mlbam": null,
-    "fg": "sa3023545",
-    "fg_slug": "walker-martin"
-  },
-  "andrew dutkanych": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "andrew-dutkanych"
-  },
-  "carter johnson": {
-    "mlbam": null,
-    "fg": "sa3025203",
-    "fg_slug": "carter-johnson"
-  },
-  "marco vargas": {
-    "mlbam": null,
-    "fg": "sa3018632",
-    "fg_slug": "marco-vargas"
-  },
-  "bryce warrecker": {
-    "mlbam": null,
-    "fg": "sa3023364",
-    "fg_slug": "bryce-warrecker"
-  },
-  "daniel dickinson": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "daniel-dickinson"
-  },
-  "yu-min lin": {
-    "mlbam": null,
-    "fg": "sa3019278",
-    "fg_slug": "yu-min-lin"
-  },
-  "romeo sanabria": {
-    "mlbam": null,
-    "fg": "sa3019865",
-    "fg_slug": "romeo-sanabria"
-  },
-  "yeuni munoz": {
-    "mlbam": null,
-    "fg": "sa3015795",
-    "fg_slug": "yeuni-munoz"
-  },
-  "gavin cross": {
-    "mlbam": null,
-    "fg": "sa3019985",
-    "fg_slug": "gavin-cross"
-  },
-  "luis beltran": {
-    "mlbam": null,
-    "fg": "sa3021509",
-    "fg_slug": "luis-beltran"
-  },
-  "lyle miller-green": {
-    "mlbam": null,
-    "fg": "sa3025307",
-    "fg_slug": "lyle-miller-green"
-  },
-  "will simpson": {
-    "mlbam": null,
-    "fg": "sa3022530",
-    "fg_slug": "will-simpson"
-  },
-  "pablo guerrero": {
-    "mlbam": null,
-    "fg": "sa3021249",
-    "fg_slug": "pablo-guerrero"
-  },
-  "josh kross": {
-    "mlbam": null,
-    "fg": "sa3025158",
-    "fg_slug": "josh-kross"
-  },
-  "yunior amparo": {
-    "mlbam": null,
-    "fg": "sa3068395",
-    "fg_slug": "yunior-amparo"
-  },
-  "carter trice": {
-    "mlbam": null,
-    "fg": "sa3022661",
-    "fg_slug": "carter-trice"
-  },
-  "tommy hopfe": {
-    "mlbam": null,
-    "fg": "sa3025593",
-    "fg_slug": "tommy-hopfe"
-  },
-  "devin saltiban": {
-    "mlbam": null,
-    "fg": "sa3022827",
-    "fg_slug": "devin-saltiban"
-  },
-  "will wilson": {
-    "mlbam": null,
-    "fg": "25434",
-    "fg_slug": "will-wilson"
-  },
-  "dylan o'rae": {
-    "mlbam": null,
-    "fg": "sa3020220",
-    "fg_slug": "dylan-orae"
-  },
-  "frederick bencosme": {
-    "mlbam": null,
-    "fg": "sa3016779",
-    "fg_slug": "frederick-bencosme"
-  },
-  "euribiel angeles": {
-    "mlbam": null,
-    "fg": "sa3008877",
-    "fg_slug": "euribiel-angeles"
-  },
-  "cayden wallace": {
-    "mlbam": null,
-    "fg": "sa3019996",
-    "fg_slug": "cayden-wallace"
-  },
-  "dylan jasso": {
-    "mlbam": null,
-    "fg": "sa3022830",
-    "fg_slug": "dylan-jasso"
-  },
-  "jose devers": {
-    "mlbam": null,
-    "fg": "sa3015292",
-    "fg_slug": "jose-devers"
-  },
-  "austin charles": {
-    "mlbam": null,
-    "fg": "sa3020497",
-    "fg_slug": "austin-charles"
-  },
-  "javier rivas": {
-    "mlbam": null,
-    "fg": "sa3015589",
-    "fg_slug": "javier-rivas"
-  },
-  "jack brannigan": {
-    "mlbam": null,
-    "fg": "sa3019922",
-    "fg_slug": "jack-brannigan"
-  },
-  "rayne doncon": {
-    "mlbam": null,
-    "fg": "sa3016720",
-    "fg_slug": "rayne-doncon"
-  },
-  "braylen wimmer": {
-    "mlbam": null,
-    "fg": "sa3022671",
-    "fg_slug": "braylen-wimmer"
-  },
-  "jancel villarroel": {
-    "mlbam": null,
-    "fg": "sa3020102",
-    "fg_slug": "jancel-villarroel"
-  },
-  "javier sanchez": {
-    "mlbam": null,
-    "fg": "sa3023975",
-    "fg_slug": "javier-sanchez"
-  },
-  "malcolm moore": {
-    "mlbam": null,
-    "fg": "sa3025250",
-    "fg_slug": "malcolm-moore"
-  },
-  "enderso lira": {
-    "mlbam": null,
-    "fg": "sa3016145",
-    "fg_slug": "enderso-lira"
-  },
-  "yasmil bucce": {
-    "mlbam": null,
-    "fg": "sa3015739",
-    "fg_slug": "yasmil-bucce"
-  },
-  "anthony seigler": {
-    "mlbam": null,
-    "fg": "23802",
-    "fg_slug": "anthony-seigler"
-  },
-  "isaiah drake": {
-    "mlbam": null,
-    "fg": "sa3022507",
-    "fg_slug": "isaiah-drake"
-  },
-  "rodney green": {
-    "mlbam": null,
-    "fg": "sa3025384",
-    "fg_slug": "rodney-green"
-  },
-  "ethan workinger": {
-    "mlbam": null,
-    "fg": "sa3015166",
-    "fg_slug": "ethan-workinger"
-  },
-  "cameron maldonado": {
-    "mlbam": null,
-    "fg": "sa3036900",
-    "fg_slug": "cameron-maldonado"
-  },
-  "juan ortuno": {
-    "mlbam": null,
-    "fg": "sa3024330",
-    "fg_slug": "juan-ortuno"
-  },
-  "nelly taylor": {
-    "mlbam": null,
-    "fg": "sa3023426",
-    "fg_slug": "nelly-taylor"
-  },
-  "shalin polanco": {
-    "mlbam": null,
-    "fg": "sa3015699",
-    "fg_slug": "shalin-polanco"
-  },
-  "jakob christian": {
-    "mlbam": null,
-    "fg": "sa3025603",
-    "fg_slug": "jakob-christian"
-  },
-  "seth stephenson": {
-    "mlbam": null,
-    "fg": "sa3020495",
-    "fg_slug": "seth-stephenson"
-  },
-  "franco aleman": {
-    "mlbam": null,
-    "fg": "sa3018178",
-    "fg_slug": "franco-aleman"
-  },
-  "daviel hurtado": {
-    "mlbam": null,
-    "fg": "sa3023674",
-    "fg_slug": "daviel-hurtado"
-  },
-  "luis pimentel": {
-    "mlbam": null,
-    "fg": "sa3024231",
-    "fg_slug": "luis-pimentel"
-  },
-  "ryan lambert": {
-    "mlbam": null,
-    "fg": "sa3025613",
-    "fg_slug": "ryan-lambert"
-  },
-  "jb middleton": {
-    "mlbam": null,
-    "fg": "MISSING",
-    "fg_slug": "jb-middleton"
-  },
-  "jonathan pintaro": {
-    "mlbam": null,
-    "fg": "33980",
-    "fg_slug": "jonathan-pintaro"
-  },
-  "cedric de grandpre": {
-    "mlbam": null,
-    "fg": "sa3020315",
-    "fg_slug": "cedric-de-grandpre"
-  },
-  "gabriel hughes": {
-    "mlbam": null,
-    "fg": "sa3020661",
-    "fg_slug": "gabriel-hughes"
-  },
-  "raimon gomez": {
-    "mlbam": null,
-    "fg": "sa3017645",
-    "fg_slug": "raimon-gomez"
-  },
-  "payton martin": {
-    "mlbam": null,
-    "fg": "sa3020869",
-    "fg_slug": "payton-martin"
-  },
-  "jacob miller": {
-    "mlbam": null,
-    "fg": "sa3020111",
-    "fg_slug": "jacob-miller"
-  },
-  "landen maroudis": {
-    "mlbam": null,
-    "fg": "sa3023351",
-    "fg_slug": "landen-maroudis"
-  },
-  "walter ford": {
-    "mlbam": null,
-    "fg": "sa3022190",
-    "fg_slug": "walter-ford"
-  },
-  "adam macko": {
-    "mlbam": null,
-    "fg": "sa3011555",
-    "fg_slug": "adam-macko"
-  },
-  "sabier marte": {
-    "mlbam": null,
-    "fg": "sa3019431",
-    "fg_slug": "sabier-marte"
-  },
-  "ryan mcdonagh": {
-    "mlbam": null,
-    "fg": "sa3067438",
-    "fg_slug": "ryan-mcdonagh"
-  },
-  "luke holman": {
-    "mlbam": null,
-    "fg": "sa3034003",
-    "fg_slug": "luke-holman"
-  },
-  "jhancarlos lara": {
-    "mlbam": null,
-    "fg": "sa3019367",
-    "fg_slug": "jhancarlos-lara"
-  },
-  "tzu-chen sha": {
-    "mlbam": null,
-    "fg": "sa3021551",
-    "fg_slug": "tzu-chen-sha"
-  },
-  "austin peterson": {
-    "mlbam": null,
-    "fg": "sa3020868",
-    "fg_slug": "austin-peterson"
-  },
-  "jose feliz": {
-    "mlbam": null,
-    "fg": "sa3024069",
-    "fg_slug": "jose-feliz"
-  },
-  "hayden durke": {
-    "mlbam": null,
-    "fg": "sa3022733",
-    "fg_slug": "hayden-durke"
-  },
-  "will sanders": {
-    "mlbam": null,
-    "fg": "sa3023508",
-    "fg_slug": "will-sanders"
-  },
-  "henry baez": {
-    "mlbam": null,
-    "fg": "sa3016584",
-    "fg_slug": "henry-baez"
-  },
-  "joe whitman": {
-    "mlbam": null,
-    "fg": "sa3023131",
-    "fg_slug": "joe-whitman"
-  },
-  "eddy felix": {
-    "mlbam": null,
-    "fg": "sa3019646",
-    "fg_slug": "eddy-felix"
-  },
-  "anthony solometo": {
-    "mlbam": null,
-    "fg": "sa3018259",
-    "fg_slug": "anthony-solometo"
-  },
-  "brandyn garcia": {
-    "mlbam": null,
-    "fg": "33568",
-    "fg_slug": "brandyn-garcia"
-  },
-  "peyton graham": {
-    "mlbam": null,
-    "fg": "sa3019990",
-    "fg_slug": "peyton-graham"
-  },
-  "diego velasquez": {
-    "mlbam": null,
-    "fg": "sa3016144",
-    "fg_slug": "diego-velasquez"
-  },
-  "juan tomas": {
-    "mlbam": null,
-    "fg": "sa3067758",
-    "fg_slug": "juan-tomas"
-  },
-  "alberth palma": {
-    "mlbam": null,
-    "fg": "sa3022924",
-    "fg_slug": "alberth-palma"
-  },
-  "conrad cason": {
-    "mlbam": null,
-    "fg": "sa3067316",
-    "fg_slug": "conrad-cason"
-  },
-  "travis honeyman": {
-    "mlbam": null,
-    "fg": "sa3023679",
-    "fg_slug": "travis-honeyman"
-  },
-  "ryan nicholson": {
-    "mlbam": null,
-    "fg": "sa3025167",
-    "fg_slug": "ryan-nicholson"
   }
 }

@@ -1,0 +1,18 @@
+.fangraphs-link {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.fangraphs-link:hover {
+    opacity: 1;
+}
+
+.fangraphs-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}

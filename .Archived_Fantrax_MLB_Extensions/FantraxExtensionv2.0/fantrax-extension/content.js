@@ -1,40 +1,18 @@
 let playerMap = {};
 let isLoaded = false;
 
-// ------------------------------------------------------------
-// 1. DATA LOADING
-// ------------------------------------------------------------
-// Fetch the latest player map from chrome.storage.local memory.
-console.log('Fantrax Linker: Requesting player map from storage...');
-chrome.storage.local.get(['playerMap'], (result) => {
-    if (result.playerMap) {
-        playerMap = result.playerMap;
+// Load the map from the extension
+console.log('Fantrax Linker: Loading player map...');
+fetch(chrome.runtime.getURL('player_map.json'))
+    .then(response => response.json())
+    .then(data => {
+        playerMap = data;
         isLoaded = true;
-        console.log('Fantrax Linker: Player map loaded with ' + Object.keys(playerMap).length + ' entries.');
+        console.log('Fantrax Linker: Player map loaded with ' + Object.keys(data).length + ' entries.');
         init();
-    } else {
-        console.warn('Fantrax Linker: No player map found in storage. Ensure the background script has fetched the data.');
-    }
-});
+    })
+    .catch(err => console.error('Fantrax Linker: Error loading player map:', err));
 
-// Watch for data updates in the background without needing to refresh
-chrome.storage.onChanged.addListener((changes, namespace) => {
-    if (namespace === 'local' && changes.playerMap) {
-        console.log('Fantrax Linker: Player map updated in background. Refreshing local memory...');
-        playerMap = changes.playerMap.newValue;
-        isLoaded = true;
-        processPage();
-    }
-});
-
-// ------------------------------------------------------------
-// 2. PAGE OBSERVER (Monitoring for changes)
-// ------------------------------------------------------------
-// Because Fantrax frequently updates the screen without fully
-// refreshing the page (like when you switch tabs or change views),
-// we use a "MutationObserver". This tool constantly watches the 
-// webpage for any new elements appearing, and runs our link 
-// injection logic again whenever the screen shifts.
 function init() {
     const observer = new MutationObserver((mutations) => {
         processPage();
@@ -48,15 +26,9 @@ function init() {
     processPage();
 }
 
-// ------------------------------------------------------------
-// 3. FINDING PLAYERS
-// ------------------------------------------------------------
-// This function searches the page for specific HTML tags and 
-// class names that Fantrax uses to display player names.
 function processPage() {
     if (!isLoaded) return;
 
-    // These selectors target different areas of Fantrax where player names appear
     const selectors = [
         '.scorer__info__name a',
         'a[href*="playerProfile.go"]',
@@ -67,25 +39,19 @@ function processPage() {
     const playerLinks = document.querySelectorAll(selectors.join(', '));
 
     playerLinks.forEach(link => {
-        // If we already added links next to this player, skip them
         if (link.classList.contains('fantrax-linker-processed')) return;
 
         let name = link.textContent.trim();
         if (!name) return;
 
-        // Clean up the name string by removing injury brackets like "(IL)"
-        // or position codes that sometimes get pasted into the name block
         let cleanName = name
             .replace(/\s*\([\w\d]+\)\s*$/, '')
             .replace(/\s+[A-Z,1-9\/]{1,6}$/, '')
             .trim()
             .toLowerCase();
 
-        // Check if our JSON map has this exact name
         let playerData = playerMap[cleanName];
 
-        // Fantrax sometimes lists names backwards like "Ohtani, Shohei"
-        // This checks if there is a comma, and flips it to "Shohei Ohtani"
         if (!playerData && cleanName.includes(',')) {
             const parts = cleanName.split(',').map(p => p.trim());
             if (parts.length === 2) {
@@ -95,21 +61,14 @@ function processPage() {
             }
         }
 
-        // If we found a match in our database, inject the UI links
         if (playerData) {
             injectLinks(link, playerData);
         }
 
-        // Mark this specific name as "processed" so we don't duplicate links
         link.classList.add('fantrax-linker-processed');
     });
 }
 
-// ------------------------------------------------------------
-// 4. INJECTING UI LINKS
-// ------------------------------------------------------------
-// This builds the actual clickable diamond/circle icons and physical
-// HTML tags, and pushes them directly into the Fantrax webpage UI.
 function injectLinks(element, data) {
     // Find the container for the second line (positions, team, icons)
     const scorerInfo = element.closest('.scorer__info');
@@ -127,11 +86,9 @@ function injectLinks(element, data) {
     // Check if already injected
     if (targetContainer.querySelector('.fantrax-linker-links')) return;
 
-    // Create our wrapper span that holds both links
     const container = document.createElement('span');
     container.className = 'fantrax-linker-links';
 
-    // Build the Fangraphs Link (Green Diamond)
     if (data.fg) {
         const fgLink = document.createElement('a');
         const slug = data.fg_slug || 'player';
@@ -142,7 +99,6 @@ function injectLinks(element, data) {
         container.appendChild(fgLink);
     }
 
-    // Build the Baseball Savant Link (Red/Blue Circle)
     if (data.mlbam) {
         const savantLink = document.createElement('a');
         savantLink.href = `https://baseballsavant.mlb.com/savant-player/${data.mlbam}`;
@@ -152,6 +108,6 @@ function injectLinks(element, data) {
         container.appendChild(savantLink);
     }
 
-    // Append our new icons to the end of the container (after positions/team/icons)
+    // Append to the end of the container (after positions/team/icons)
     targetContainer.appendChild(container);
 }
