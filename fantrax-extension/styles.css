@@ -85,24 +85,26 @@
 .scorer__info__name {
   display: flex !important;
   align-items: center !important;
-  flex-wrap: wrap !important; /* ALLOW wrapping instead of chopping */
-  width: 100% !important;
+  flex-wrap: nowrap !important; /* NO wrapping */
+  width: auto !important; /* Grow with name */
   min-width: 0;
+  overflow: visible !important; /* Show icons if they extend past column */
 }
 
-/* Let the name be as long as it needs to be */
+/* Let the name be as long as it needs to be on one line */
 .scorer__info__name a {
   text-overflow: unset !important;
   overflow: visible !important;
-  white-space: normal !important;
+  white-space: nowrap !important; /* Keep on one line */
   flex-shrink: 0 !important;
-  padding-right: 4px;
+  display: inline-block !important;
 }
 
-/* Icons should never shrink and can wrap to a new line if the name is massive */
+/* Icons stay on the same line at the very end */
 .fantrax-linker-links {
   flex-shrink: 0 !important;
   display: inline-flex !important;
+  margin-left: 6px !important;
 }
 
 .scorer__info__positions {
