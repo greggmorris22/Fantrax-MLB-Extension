@@ -28,7 +28,7 @@ if %ERRORLEVEL% neq 0 (
     echo This usually means you haven't set up your GitHub repository yet,
     echo or you need to login.
     echo.
-    echo To fix this, run: git remote add origin [YOUR_GITHUB_REPO_URL]
+    echo To fix this, run: git remote add origin https://github.com/greggmorris22/Fantrax-MLB-Extension.git
 ) else (
     echo.
     echo SUCCESS! Your extension is now using the latest player data.
