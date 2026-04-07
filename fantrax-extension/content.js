@@ -56,7 +56,6 @@ function init() {
 function processPage() {
     if (!isLoaded) return;
 
-    // These selectors target different areas of Fantrax where player names appear
     const selectors = [
         '.scorer__info__name a',
         'a[href*="playerProfile.go"]',
@@ -67,40 +66,32 @@ function processPage() {
     const playerLinks = document.querySelectorAll(selectors.join(', '));
 
     playerLinks.forEach(link => {
-        // If we already added links next to this player, skip them
         if (link.classList.contains('fantrax-linker-processed')) return;
 
-        let name = link.textContent.trim();
-        if (!name) return;
+        // Try to extract Fantrax ID from href
+        let fantraxId = null;
+        const href = link.href;
 
-        // Clean up the name string by removing injury brackets like "(IL)"
-        // or position codes that sometimes get pasted into the name block
-        let cleanName = name
-            .replace(/\s*\([\w\d]+\)\s*$/, '')
-            .replace(/\s+[A-Z,1-9\/]{1,6}$/, '')
-            .trim()
-            .toLowerCase();
-
-        // Check if our JSON map has this exact name
-        let playerData = playerMap[cleanName];
-
-        // Fantrax sometimes lists names backwards like "Ohtani, Shohei"
-        // This checks if there is a comma, and flips it to "Shohei Ohtani"
-        if (!playerData && cleanName.includes(',')) {
-            const parts = cleanName.split(',').map(p => p.trim());
-            if (parts.length === 2) {
-                const reverseName = `${parts[1]} ${parts[0]}`;
-                playerData = playerMap[reverseName];
-                if (playerData) cleanName = reverseName;
+        if (href.includes('fpId=')) {
+            // Style: ...playerProfile.go?fpId=050w9&...
+            const match = href.match(/fpId=([a-z0-9]+)/);
+            if (match) fantraxId = match[1];
+        } else if (href.includes('/player/')) {
+            // Style: .../player/050w9/
+            const parts = href.split('/');
+            const idx = parts.indexOf('player');
+            if (idx !== -1 && parts[idx + 1]) {
+                fantraxId = parts[idx + 1];
             }
         }
 
-        // If we found a match in our database, inject the UI links
-        if (playerData) {
-            injectLinks(link, playerData);
+        if (fantraxId) {
+            let playerData = playerMap[fantraxId];
+            if (playerData) {
+                injectLinks(link, playerData);
+            }
         }
 
-        // Mark this specific name as "processed" so we don't duplicate links
         link.classList.add('fantrax-linker-processed');
     });
 }
@@ -134,7 +125,8 @@ function injectLinks(element, data) {
     // Build the Fangraphs Link (Green Diamond)
     if (data.fg) {
         const fgLink = document.createElement('a');
-        const slug = data.fg_slug || 'player';
+        // Generate a simple slug from the name if possible
+        const slug = data.name ? data.name.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'player';
         fgLink.href = `https://www.fangraphs.com/players/${slug}/${data.fg}/stats`;
         fgLink.target = '_blank';
         fgLink.title = 'View on Fangraphs';

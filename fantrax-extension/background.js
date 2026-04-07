@@ -45,19 +45,19 @@ function parseCSV(csvText) {
         }
         cols.push(curr);
 
-        if (cols.length >= 4) {
+        if (cols.length >= 3) {
             // Strip any leading/trailing quotes from the values
             const cleanCol = (c) => c.replace(/^"|"$/g, '').trim();
-            const name = cleanCol(cols[0]);
+            const fid = cleanCol(cols[0]);
             const mlbId = cleanCol(cols[1]);
             const fgId = cleanCol(cols[2]);
-            const fgSlug = cleanCol(cols[3]);
+            const name = cols[3] ? cleanCol(cols[3]) : '';
 
-            if (name) {
-                result[name] = {
+            if (fid) {
+                result[fid] = {
                     mlbam: mlbId || null,
                     fg: fgId || null,
-                    fg_slug: fgSlug || null
+                    name: name || null
                 };
             }
         }

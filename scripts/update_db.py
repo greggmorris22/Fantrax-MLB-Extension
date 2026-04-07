@@ -12,33 +12,28 @@ def update_database():
     print(f"Reading from {master_path}...")
     
     records = []
-    with open(master_path, 'r', encoding='utf-8') as f:
-        # The master CSV might have BOM or different encodings, 
-        # using DictReader to handle columns by name
+    with open(master_path, 'r', encoding='utf-8-sig') as f: # Use utf-8-sig to handle BOM
         reader = csv.DictReader(f)
         for row in reader:
-            name = row.get('playerName', '').lower().strip()
+            fid = row.get('fantraxId', '').strip()
             mlb_id = row.get('mlbId', '').strip()
             fg_id = row.get('fangraphsId', '').strip()
+            name = row.get('playerName', '').strip()
             
-            # Filter out empty names or records with no IDs
-            if name and (mlb_id or fg_id):
-                # The extension uses 'player' as a default slug
-                # Use name for a cleaner slug if possible
-                slug = name.replace(' ', '-').replace('.', '')
-                records.append([name, mlb_id, fg_id, slug])
+            # Use fantraxId as the anchor
+            if fid and (mlb_id or fg_id):
+                # We'll save: fantraxId, mlbId, fgId, name (for debugging/display)
+                records.append([fid, mlb_id, fg_id, name])
                 
-    # Sort by name for consistency
-    records.sort(key=lambda x: x[0])
-    
     # Write to the extension's data folder
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['Name', 'MLBID', 'FGID', 'FGSlug'])
+        # UPDATED HEADER: fantraxId, mlbId, fangraphsId, playerName
+        writer.writerow(['fantraxId', 'mlbId', 'fgId', 'playerName'])
         writer.writerows(records)
         
-    print(f"Successfully updated {output_path} with {len(records)} players.")
+    print(f"Successfully updated {output_path} with {len(records)} players indexed by Fantrax ID.")
 
 if __name__ == '__main__':
     update_database()
