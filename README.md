@@ -29,9 +29,9 @@ The extension is configured to pull data from **GitHub Cloud**. When you push da
 
 ### GitHub Repo Connection
 If you haven't linked this folder to GitHub yet:
-1. Create a repository on GitHub named `Fantrax_MLB_Extension`.
+1. Create a repository on GitHub named `Fantrax-MLB-Extension`.
 2. Run this command once in your terminal:
-   `git remote add origin https://github.com/[YOUR_USERNAME]/Fantrax_MLB_Extension.git`
+   `git remote add origin https://github.com/greggmorris22/Fantrax-MLB-Extension.git`
 
 ## Files
 - `manifest.json`: Extension configuration.
