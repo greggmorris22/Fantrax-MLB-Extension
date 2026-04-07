@@ -1,4 +1,5 @@
 let playerMap = {};
+let nameMap = {};
 let isLoaded = false;
 
 // ------------------------------------------------------------
@@ -6,11 +7,12 @@ let isLoaded = false;
 // ------------------------------------------------------------
 // Fetch the latest player map from chrome.storage.local memory.
 console.log('Fantrax Linker: Requesting player map from storage...');
-chrome.storage.local.get(['playerMap'], (result) => {
+chrome.storage.local.get(['playerMap', 'nameMap'], (result) => {
     if (result.playerMap) {
         playerMap = result.playerMap;
+        nameMap = result.nameMap || {};
         isLoaded = true;
-        console.log('Fantrax Linker: Player map loaded with ' + Object.keys(playerMap).length + ' entries.');
+        console.log('Fantrax Linker: Data loaded (IDs: ' + Object.keys(playerMap).length + ', Names: ' + Object.keys(nameMap).length + ')');
         init();
     } else {
         console.warn('Fantrax Linker: No player map found in storage. Ensure the background script has fetched the data.');
@@ -19,9 +21,9 @@ chrome.storage.local.get(['playerMap'], (result) => {
 
 // Watch for data updates in the background without needing to refresh
 chrome.storage.onChanged.addListener((changes, namespace) => {
-    if (namespace === 'local' && changes.playerMap) {
-        console.log('Fantrax Linker: Player map updated in background. Refreshing local memory...');
-        playerMap = changes.playerMap.newValue;
+    if (namespace === 'local') {
+        if (changes.playerMap) playerMap = changes.playerMap.newValue;
+        if (changes.nameMap) nameMap = changes.nameMap.newValue;
         isLoaded = true;
         processPage();
     }
@@ -57,26 +59,33 @@ function processPage() {
     if (!isLoaded) return;
 
     // 1. Process Scorer blocks (Main Roster Table)
-    // These contain the headshot image which has the ID we need.
     const scorers = document.querySelectorAll('scorer');
     scorers.forEach(scorer => {
         if (scorer.classList.contains('fantrax-linker-processed')) return;
 
+        let playerData = null;
+        const nameLink = scorer.querySelector('.scorer__info__name a');
+
+        // Strategy A: ID from headshot
         const figure = scorer.querySelector('figure.scorer__image');
         if (figure) {
             const style = figure.getAttribute('style') || '';
             const idMatch = style.match(/hs([a-z0-9]+)_/i);
             if (idMatch) {
-                const fantraxId = idMatch[1];
-                const playerData = playerMap[fantraxId];
-                if (playerData) {
-                    const nameLink = scorer.querySelector('.scorer__info__name a');
-                    if (nameLink) {
-                        injectLinks(nameLink, playerData);
-                    }
-                }
+                playerData = playerMap[idMatch[1].toLowerCase()];
             }
         }
+
+        // Strategy B: Fallback to Name Match if no ID found or ID match failed
+        if (!playerData && nameLink) {
+            const cleanName = nameLink.textContent.trim().toLowerCase();
+            playerData = nameMap[cleanName];
+        }
+
+        if (playerData && nameLink) {
+            injectLinks(nameLink, playerData);
+        }
+        
         scorer.classList.add('fantrax-linker-processed');
     });
 
@@ -85,6 +94,7 @@ function processPage() {
     playerLinks.forEach(link => {
         if (link.classList.contains('fantrax-linker-processed')) return;
 
+        let playerData = null;
         let fantraxId = null;
         const href = link.href.toLowerCase();
 
@@ -100,10 +110,17 @@ function processPage() {
         }
 
         if (fantraxId) {
-            let playerData = playerMap[fantraxId];
-            if (playerData) {
-                injectLinks(link, playerData);
-            }
+            playerData = playerMap[fantraxId];
+        }
+
+        // Fallback to Name Match
+        if (!playerData) {
+            const cleanName = link.textContent.trim().toLowerCase();
+            playerData = nameMap[cleanName];
+        }
+
+        if (playerData) {
+            injectLinks(link, playerData);
         }
 
         link.classList.add('fantrax-linker-processed');

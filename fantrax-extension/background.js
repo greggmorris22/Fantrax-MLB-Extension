@@ -20,8 +20,9 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 
 function parseCSV(csvText) {
     const lines = csvText.split(/\r?\n/);
-    const result = {};
-    if (lines.length === 0) return result;
+    const playerMap = {};
+    const nameMap = {};
+    if (lines.length === 0) return { playerMap, nameMap };
 
     // Skip header line
     for (let i = 1; i < lines.length; i++) {
@@ -46,31 +47,26 @@ function parseCSV(csvText) {
         cols.push(curr);
 
         if (cols.length >= 3) {
-            // Strip any leading/trailing quotes from the values
             const cleanCol = (c) => c.replace(/^"|"$/g, '').trim();
             const fid = cleanCol(cols[0]);
             const mlbId = cleanCol(cols[1]);
             const fgId = cleanCol(cols[2]);
             const name = cols[3] ? cleanCol(cols[3]) : '';
 
-            if (fid) {
-                result[fid] = {
-                    mlbam: mlbId || null,
-                    fg: fgId || null,
-                    name: name || null
-                };
-            }
+            const playerData = {
+                mlbam: mlbId || null,
+                fg: fgId || null,
+                name: name || null
+            };
+
+            if (fid) playerMap[fid] = playerData;
+            if (name) nameMap[name.toLowerCase()] = playerData;
         }
     }
-    return result;
+    return { playerMap, nameMap };
 }
 
 async function fetchAndStorePlayerData() {
-    if (CSV_URL.includes('PLACEHOLDER_ID')) {
-        console.warn('Fantrax Linker: CSV URL is a placeholder. Please update background.js with your Google Sheets URL.');
-        return;
-    }
-
     console.log('Fantrax Linker: Fetching latest player data from cloud...');
     try {
         const response = await fetch(CSV_URL);
@@ -78,12 +74,12 @@ async function fetchAndStorePlayerData() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const csvText = await response.text();
-        const playerMap = parseCSV(csvText);
+        const { playerMap, nameMap } = parseCSV(csvText);
 
         const keysCount = Object.keys(playerMap).length;
         if (keysCount > 0) {
-            await chrome.storage.local.set({ playerMap: playerMap });
-            console.log(`Fantrax Linker: Successfully fetched and stored ${keysCount} players in chrome.storage.local`);
+            await chrome.storage.local.set({ playerMap, nameMap });
+            console.log(`Fantrax Linker: Stored ${keysCount} IDs and ${Object.keys(nameMap).length} names.`);
         } else {
             console.error('Fantrax Linker: Parsed CSV resulted in 0 players.');
         }
