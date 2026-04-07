@@ -88,22 +88,24 @@
 .scorer__info__name {
   display: flex !important;
   align-items: center !important;
-  flex-wrap: nowrap !important;
+  flex-wrap: wrap !important; /* ALLOW wrapping instead of chopping */
   width: 100% !important;
-  min-width: 0; /* Allows name and links to share space */
+  min-width: 0;
 }
 
-/* Ensure the name itself can truncate, while our icons stay fixed */
+/* Let the name be as long as it needs to be */
 .scorer__info__name a {
-  text-overflow: ellipsis !important;
-  overflow: hidden !important;
-  white-space: nowrap !important;
-  flex-shrink: 1 !important;
+  text-overflow: unset !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  flex-shrink: 0 !important;
+  padding-right: 4px;
 }
 
-/* Icons should never shrink */
+/* Icons should never shrink and can wrap to a new line if the name is massive */
 .fantrax-linker-links {
   flex-shrink: 0 !important;
+  display: inline-flex !important;
 }
 
 .scorer__info__positions {
