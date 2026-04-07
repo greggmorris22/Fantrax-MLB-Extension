@@ -80,9 +80,32 @@
 /* ------------------------------------------------------------
  * 6. FANTRAX UI FIXES
  * ------------------------------------------------------------
- * Ensure the secondary info line allows our icons to sit at the end
- * without stacking vertically if the screen is thin.
+ * Ensure the player names and info lines allow our icons to sit 
+ * at the end without being cut off by long names.
  */
+
+/* Target the name container on the roster page and popups */
+.scorer__info__name {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  min-width: 0; /* Allows name and links to share space */
+}
+
+/* Ensure the name itself can truncate, while our icons stay fixed */
+.scorer__info__name a {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  flex-shrink: 1 !important;
+}
+
+/* Icons should never shrink */
+.fantrax-linker-links {
+  flex-shrink: 0 !important;
+}
+
 .scorer__info__positions {
   display: flex !important;
   align-items: center !important;
