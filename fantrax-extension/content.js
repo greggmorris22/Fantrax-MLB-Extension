@@ -56,32 +56,46 @@ function init() {
 function processPage() {
     if (!isLoaded) return;
 
-    const selectors = [
-        '.scorer__info__name a',
-        'a[href*="playerProfile.go"]',
-        'a[href*="/player/"]',
-        '.player-linker a'
-    ];
+    // 1. Process Scorer blocks (Main Roster Table)
+    // These contain the headshot image which has the ID we need.
+    const scorers = document.querySelectorAll('scorer');
+    scorers.forEach(scorer => {
+        if (scorer.classList.contains('fantrax-linker-processed')) return;
 
-    const playerLinks = document.querySelectorAll(selectors.join(', '));
+        const figure = scorer.querySelector('figure.scorer__image');
+        if (figure) {
+            const style = figure.getAttribute('style') || '';
+            const idMatch = style.match(/hs([a-z0-9]+)_/i);
+            if (idMatch) {
+                const fantraxId = idMatch[1];
+                const playerData = playerMap[fantraxId];
+                if (playerData) {
+                    const nameLink = scorer.querySelector('.scorer__info__name a');
+                    if (nameLink) {
+                        injectLinks(nameLink, playerData);
+                    }
+                }
+            }
+        }
+        scorer.classList.add('fantrax-linker-processed');
+    });
 
+    // 2. Process standalone player links (Popups and other areas)
+    const playerLinks = document.querySelectorAll('a[href*="playerProfile.go"], a[href*="/player/"]');
     playerLinks.forEach(link => {
         if (link.classList.contains('fantrax-linker-processed')) return;
 
-        // Try to extract Fantrax ID from href
         let fantraxId = null;
-        const href = link.href;
+        const href = link.href.toLowerCase();
 
-        if (href.includes('fpId=')) {
-            // Style: ...playerProfile.go?fpId=050w9&...
-            const match = href.match(/fpId=([a-z0-9]+)/);
-            if (match) fantraxId = match[1];
+        const idMatch = href.match(/[f]?pid=([a-z0-9]+)/i);
+        if (idMatch) {
+            fantraxId = idMatch[1];
         } else if (href.includes('/player/')) {
-            // Style: .../player/050w9/
             const parts = href.split('/');
-            const idx = parts.indexOf('player');
+            const idx = parts.findIndex(p => p === 'player');
             if (idx !== -1 && parts[idx + 1]) {
-                fantraxId = parts[idx + 1];
+                fantraxId = parts[idx + 1].split(';')[0].split('?')[0];
             }
         }
 
@@ -102,22 +116,9 @@ function processPage() {
 // This builds the actual clickable diamond/circle icons and physical
 // HTML tags, and pushes them directly into the Fantrax webpage UI.
 function injectLinks(element, data) {
-    // Find the container for the second line (positions, team, icons)
-    const scorerInfo = element.closest('.scorer__info');
-    let targetContainer = null;
-
-    if (scorerInfo) {
-        targetContainer = scorerInfo.querySelector('.scorer__info__positions');
-    }
-
-    // If no specific container found (old UI), fallback to after the element itself
-    if (!targetContainer) {
-        targetContainer = element.parentNode;
-    }
-
-    // Check if already injected
-    if (targetContainer.querySelector('.fantrax-linker-links')) return;
-
+    // If the element is within another link or already has our icons, skip it
+    if (element.querySelector('.fantrax-linker-links')) return;
+    
     // Create our wrapper span that holds both links
     const container = document.createElement('span');
     container.className = 'fantrax-linker-links';
@@ -125,7 +126,6 @@ function injectLinks(element, data) {
     // Build the Fangraphs Link (Green Diamond)
     if (data.fg) {
         const fgLink = document.createElement('a');
-        // Generate a simple slug from the name if possible
         const slug = data.name ? data.name.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'player';
         fgLink.href = `https://www.fangraphs.com/players/${slug}/${data.fg}/stats`;
         fgLink.target = '_blank';
@@ -144,6 +144,6 @@ function injectLinks(element, data) {
         container.appendChild(savantLink);
     }
 
-    // Append our new icons to the end of the container (after positions/team/icons)
-    targetContainer.appendChild(container);
+    // Insert the container directly AFTER the name link
+    element.insertAdjacentElement('afterend', container);
 }
