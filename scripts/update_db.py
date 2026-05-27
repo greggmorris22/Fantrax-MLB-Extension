@@ -20,6 +20,11 @@ def update_database():
             fg_id = row.get('fangraphsId', '').strip()
             name = row.get('playerName', '').strip()
             
+            # Convert name format from "Last, First" back to "First Last" for the Chrome extension
+            if name and ", " in name:
+                last, first = name.split(", ", maxsplit=1)
+                name = f"{first} {last}"
+            
             # Use fantraxId as the anchor
             if fid and (mlb_id or fg_id):
                 # We'll save: fantraxId, mlbId, fgId, name (for debugging/display)

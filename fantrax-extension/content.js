@@ -39,12 +39,17 @@ chrome.storage.onChanged.addListener((changes, namespace) => {
 // injection logic again whenever the screen shifts.
 function init() {
     const observer = new MutationObserver((mutations) => {
+        // We run our logic if anything in the content changes.
+        // Fantrax uses a lot of dynamic updates, so we watch for 
+        // new elements (childList) and important attribute changes.
         processPage();
     });
 
     observer.observe(document.body, {
         childList: true,
-        subtree: true
+        subtree: true,
+        attributes: true, 
+        attributeFilter: ['style', 'href'] // Watch for ID shifts in headshots or links
     });
 
     processPage();
@@ -59,42 +64,50 @@ function processPage() {
     if (!isLoaded) return;
 
     // 1. Process Scorer blocks (Main Roster Table)
+    // Fantrax reuses these elements when you change filters, so we 
+    // must check the player ID inside them every time.
     const scorers = document.querySelectorAll('scorer');
     scorers.forEach(scorer => {
-        if (scorer.classList.contains('fantrax-linker-processed')) return;
-
-        let playerData = null;
         const nameLink = scorer.querySelector('.scorer__info__name a');
+        if (!nameLink) return;
 
-        // Strategy A: ID from headshot
+        // Find the current player ID from the headshot image style
+        let fantraxId = null;
         const figure = scorer.querySelector('figure.scorer__image');
         if (figure) {
             const style = figure.getAttribute('style') || '';
             const idMatch = style.match(/hs([a-z0-9]+)_/i);
-            if (idMatch) {
-                playerData = playerMap[idMatch[1].toLowerCase()];
-            }
+            if (idMatch) fantraxId = idMatch[1].toLowerCase();
         }
 
-        // Strategy B: Fallback to Name Match if no ID found or ID match failed
-        if (!playerData && nameLink) {
-            const cleanName = nameLink.textContent.trim().toLowerCase();
-            playerData = nameMap[cleanName];
-        }
+        const playerName = nameLink.textContent.trim().toLowerCase();
+        const trackingKey = fantraxId || playerName;
 
-        if (playerData && nameLink) {
+        // If this block is already showing the correct player's links, skip it
+        if (scorer.dataset.fantraxId === trackingKey) return;
+
+        // Otherwise (it's new or the player changed), remove any old links tray
+        const oldLinks = scorer.querySelector('.fantrax-linker-links');
+        if (oldLinks) oldLinks.remove();
+
+        // Find data for the player currently in this row
+        const playerData = fantraxId ? playerMap[fantraxId] : nameMap[playerName];
+        
+        if (playerData) {
             injectLinks(nameLink, playerData);
         }
         
-        scorer.classList.add('fantrax-linker-processed');
+        // Mark as processed for THIS player. If the player changes, 
+        // this ID will no longer match and we will refresh the links.
+        scorer.dataset.fantraxId = trackingKey;
     });
 
     // 2. Process standalone player links (Popups and other areas)
     const playerLinks = document.querySelectorAll('a[href*="playerProfile.go"], a[href*="/player/"]');
     playerLinks.forEach(link => {
-        if (link.classList.contains('fantrax-linker-processed')) return;
+        // Skip links that are actually our own injected icons
+        if (link.classList.contains('fantrax-linker-circle')) return;
 
-        let playerData = null;
         let fantraxId = null;
         const href = link.href.toLowerCase();
 
@@ -109,21 +122,24 @@ function processPage() {
             }
         }
 
-        if (fantraxId) {
-            playerData = playerMap[fantraxId];
+        const playerName = link.textContent.trim().toLowerCase();
+        const trackingKey = (fantraxId || playerName) + href;
+
+        // Skip if already processed for this specific link state
+        if (link.dataset.fantraxId === trackingKey) return;
+
+        // Cleanup sibling if it was our links tray
+        const next = link.nextElementSibling;
+        if (next && next.classList.contains('fantrax-linker-links')) {
+            next.remove();
         }
 
-        // Fallback to Name Match
-        if (!playerData) {
-            const cleanName = link.textContent.trim().toLowerCase();
-            playerData = nameMap[cleanName];
-        }
-
+        const playerData = fantraxId ? playerMap[fantraxId] : nameMap[playerName];
         if (playerData) {
             injectLinks(link, playerData);
         }
 
-        link.classList.add('fantrax-linker-processed');
+        link.dataset.fantraxId = trackingKey;
     });
 }
 
@@ -133,8 +149,9 @@ function processPage() {
 // This builds the actual clickable diamond/circle icons and physical
 // HTML tags, and pushes them directly into the Fantrax webpage UI.
 function injectLinks(element, data) {
-    // If the element is within another link or already has our icons, skip it
-    if (element.querySelector('.fantrax-linker-links')) return;
+    // Determine the tray if it already exists (though caller handles removal now)
+    const parent = element.parentElement;
+    if (parent.querySelector('.fantrax-linker-links')) return;
     
     // Create our wrapper span that holds both links
     const container = document.createElement('span');
