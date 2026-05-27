@@ -58,6 +58,70 @@ function init() {
 // ------------------------------------------------------------
 // 3. FINDING PLAYERS
 // ------------------------------------------------------------
+// Disambiguate players with the same name by scanning surrounding text for team or position
+function findBestCandidate(candidates, textContent) {
+    if (!candidates) return null;
+    if (!Array.isArray(candidates)) return candidates; // Fallback for old single-object storage
+    if (candidates.length === 0) return null;
+    if (candidates.length === 1) return candidates[0];
+
+    const text = (textContent || '').toUpperCase();
+    
+    const teamAliases = {
+        'CWS': ['CWS', 'CHW'],
+        'CHW': ['CWS', 'CHW'],
+        'ARI': ['ARI', 'AZ'],
+        'AZ': ['ARI', 'AZ'],
+        'TB': ['TB', 'TBR'],
+        'TBR': ['TB', 'TBR'],
+        'WSH': ['WSH', 'WSN', 'WAS'],
+        'WSN': ['WSH', 'WSN', 'WAS'],
+        'WAS': ['WSH', 'WSN', 'WAS']
+    };
+
+    // Filter by team match in text
+    let matchedCandidates = [];
+    for (const c of candidates) {
+        if (!c.team) continue;
+        const cTeam = c.team.toUpperCase();
+        const aliases = teamAliases[cTeam] || [cTeam];
+        const hasTeam = aliases.some(alias => {
+            const regex = new RegExp(`\\b${alias}\\b`, 'i');
+            return regex.test(text);
+        });
+        if (hasTeam) {
+            matchedCandidates.push(c);
+        }
+    }
+
+    if (matchedCandidates.length === 1) {
+        return matchedCandidates[0];
+    } else if (matchedCandidates.length > 1) {
+        candidates = matchedCandidates;
+    }
+
+    // Filter by position match in text
+    matchedCandidates = [];
+    for (const c of candidates) {
+        if (!c.position) continue;
+        const cPos = c.position.toUpperCase();
+        const positions = cPos.split('/').map(p => p.trim());
+        const hasPos = positions.some(pos => {
+            const regex = new RegExp(`\\b${pos}\\b`, 'i');
+            return regex.test(text);
+        });
+        if (hasPos) {
+            matchedCandidates.push(c);
+        }
+    }
+
+    if (matchedCandidates.length === 1) {
+        return matchedCandidates[0];
+    }
+
+    return candidates[0];
+}
+
 // This function searches the page for specific HTML tags and 
 // class names that Fantrax uses to display player names.
 function processPage() {
@@ -91,7 +155,12 @@ function processPage() {
         if (oldLinks) oldLinks.remove();
 
         // Find data for the player currently in this row
-        const playerData = fantraxId ? playerMap[fantraxId] : nameMap[playerName];
+        let playerData = null;
+        if (fantraxId) {
+            playerData = playerMap[fantraxId];
+        } else if (nameMap[playerName]) {
+            playerData = findBestCandidate(nameMap[playerName], scorer.textContent);
+        }
         
         if (playerData) {
             injectLinks(nameLink, playerData);
@@ -134,7 +203,12 @@ function processPage() {
             next.remove();
         }
 
-        const playerData = fantraxId ? playerMap[fantraxId] : nameMap[playerName];
+        let playerData = null;
+        if (fantraxId) {
+            playerData = playerMap[fantraxId];
+        } else if (nameMap[playerName]) {
+            playerData = findBestCandidate(nameMap[playerName], link.parentElement ? link.parentElement.textContent : '');
+        }
         if (playerData) {
             injectLinks(link, playerData);
         }

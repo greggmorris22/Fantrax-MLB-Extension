@@ -52,15 +52,25 @@ function parseCSV(csvText) {
             const mlbId = cleanCol(cols[1]);
             const fgId = cleanCol(cols[2]);
             const name = cols[3] ? cleanCol(cols[3]) : '';
+            const team = cols[4] ? cleanCol(cols[4]) : '';
+            const position = cols[5] ? cleanCol(cols[5]) : '';
 
             const playerData = {
                 mlbam: mlbId || null,
                 fg: fgId || null,
-                name: name || null
+                name: name || null,
+                team: team || null,
+                position: position || null
             };
 
             if (fid) playerMap[fid] = playerData;
-            if (name) nameMap[name.toLowerCase()] = playerData;
+            if (name) {
+                const lowerName = name.toLowerCase();
+                if (!nameMap[lowerName]) {
+                    nameMap[lowerName] = [];
+                }
+                nameMap[lowerName].push(playerData);
+            }
         }
     }
     return { playerMap, nameMap };

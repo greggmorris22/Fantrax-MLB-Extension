@@ -11,3 +11,9 @@
 - **Problem:** Matching league-owned rosters to the database using `fantraxId` directly resulted in mismatches and duplicate entries.
 - **Solution:** Match players by normalized name (lowercase, accent-stripped, suffix-ignored) and apply a position check (pitcher vs hitter) to handle identical name duplicates (like starting pitcher Jared Jones vs hitter Jared Jones). Resolve missing IDs manually and update the database.
 
+## Name Map Collisions in Extensions
+- **Issue:** When browser extensions map data to DOM elements by name (when headshots/unique IDs are missing), players with duplicate names (e.g., Esteban Mejia BAL vs Esteban Mejia TEX) can overwrite each other in the name lookup map.
+- **Problem:** A lower-profile player with fewer/missing IDs can overwrite a high-profile player in the name map, causing links (like FanGraphs) to disappear on the page for the active player.
+- **Solution:** Score the quality of the data (e.g., number of active IDs populated) during CSV parsing, and only overwrite an existing name map key if the new player has more populated IDs.
+
+
