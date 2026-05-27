@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------
+ * 1. THE WRAPPER TRAY
+ * ------------------------------------------------------------
+ * This wrapper holds our injected icons and carefully places
+ * them perfectly in line with Fantrax's native text and icons.
+ */
+.fantrax-linker-links {
+  display: inline-flex !important;
+  gap: 4px !important;
+  margin-left: 4px !important;
+  vertical-align: middle !important;
+  line-height: normal !important;
+  position: relative !important;
+}
+
+/* ------------------------------------------------------------
+ * 2. THE BASE ICON SPACES
+ * ------------------------------------------------------------
+ * Base settings every icon will inherit
+ */
+.fantrax-linker-circle {
+  width: 8px !important;
+  height: 8px !important;
+  flex-shrink: 0 !important;
+  /* Prevent squashing */
+  aspect-ratio: 1 / 1 !important;
+  /* Force square shape */
+  border-radius: 0% !important;
+  transform: rotate(45deg) !important;
+  display: block !important;
+  cursor: pointer !important;
+  transition: transform 0.1s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-sizing: border-box !important;
+  margin: 2px !important;
+  /* Add space for the corners when rotated */
+}
+
+/* ------------------------------------------------------------
+ * 3. HOVER ANIMATIONS
+ * ------------------------------------------------------------
+ * Adds a small "pop" when you mouse over the icons to
+ * indicate they are clickable
+ */
+.fantrax-linker-circle:hover {
+  transform: rotate(45deg) scale(1.25) !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* ------------------------------------------------------------
+ * 4. THE FANGRAPHS GREEN DIAMOND
+ * ------------------------------------------------------------
+ * The color for Fangraphs is deep green. It inherits the 45deg
+ * rotation from `.fantrax-linker-circle` to look like a diamond.
+ */
+.fantrax-linker-fangraphs {
+  background-color: #28a745 !important;
+  /* Green */
+}
+
+/* ------------------------------------------------------------
+ * 5. THE BASEBALL SAVANT CIRCLE
+ * ------------------------------------------------------------
+ * The color for Savant is MLB Blue and Red.
+ * We undo the 45deg rotation and add a large border-radius
+ * so it looks like a circle instead of a diamond.
+ */
+.fantrax-linker-savant {
+  background: linear-gradient(90deg, #0000ff 50%, #ff0000 50%) !important;
+  border: none !important;
+  border-radius: 50% !important;
+  /* Make it a circle */
+  transform: none !important;
+  /* Remove rotation */
+}
+
+/* ------------------------------------------------------------
+ * 6. FANTRAX UI FIXES
+ * ------------------------------------------------------------
+ * Ensure the player names and info lines allow our icons to sit 
+ * at the end without being cut off by long names.
+ */
+
+/* Target the name container on the roster page and popups */
+.scorer__info__name {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important; /* NO wrapping */
+  width: auto !important; /* Grow with name */
+  min-width: 0;
+  overflow: visible !important; /* Show icons if they extend past column */
+}
+
+/* Let the name be as long as it needs to be on one line */
+.scorer__info__name a {
+  text-overflow: unset !important;
+  overflow: visible !important;
+  white-space: nowrap !important; /* Keep on one line */
+  flex-shrink: 0 !important;
+  display: inline-block !important;
+}
+
+/* Icons stay on the same line at the very end */
+.fantrax-linker-links {
+  flex-shrink: 0 !important;
+  display: inline-flex !important;
+  margin-left: 6px !important;
+}
+
+.scorer__info__positions {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+}
