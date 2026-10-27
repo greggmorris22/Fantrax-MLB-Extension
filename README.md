@@ -19,8 +19,8 @@ This extension adds links to Fangraphs, Baseball Savant and Baseball-Reference d
 
 To update the player database used by this extension:
 1. Ensure your master database is located at: `C:\Users\gregg\Documents\Vibecoding\Baseball_Player_ID_Database\Baseball_Player_ID_Database.csv`
-2. Simply double-click **`sync_and_push.bat`** in the project root.
-   - This script will sync with the master file, commit changes, and push updates to GitHub.
+2. Run `py scripts\update_db.py` from the project root to rebuild `data/player_map.csv` from the master file.
+3. Commit and push `data/player_map.csv` to the `main` branch on GitHub. It must stay at the repo root, since that is the address the extension downloads from.
    
 Note: Other users will automatically receive the latest data within 6 hours (or after refreshing the extension) without needing to update the extension's files manually.
 
@@ -39,6 +39,5 @@ If you haven't linked this folder to GitHub yet:
 - `content.js`: Main logic for detecting players and injecting links.
 - `styles.css`: Styling for the link circles.
 - `data/player_map.csv`: The current local copy of player data.
-- `sync_and_push.bat`: The automated script to update and publish data.
 - `scripts/update_db.py`: The underlying sync logic.
 - `popup.html`: Extension popup for status and legend.
