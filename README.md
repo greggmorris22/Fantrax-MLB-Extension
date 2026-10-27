@@ -7,6 +7,7 @@ This extension adds links to Fangraphs, Baseball Savant and Baseball-Reference d
 - **Teal MLB Logo**: Links to the player's Baseball Savant page.
 - **Red Pennant**: Links to the player's Baseball-Reference page (minor league register page for prospects).
 - Automatically handles name variations and dynamic page updates.
+- Hides Fantrax's ad boxes (banners, side ads and the video ad).
 
 ## Installation
 1. Open Google Chrome.

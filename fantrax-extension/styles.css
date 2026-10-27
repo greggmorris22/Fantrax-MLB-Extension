@@ -148,3 +148,19 @@
   align-items: center !important;
   flex-wrap: nowrap !important;
 }
+
+/* ------------------------------------------------------------
+ * 7. HIDE FANTRAX ADS
+ * ------------------------------------------------------------
+ * Fantrax tags its own ad slots with "hide--premium" (the class
+ * it uses to hide ads for premium members). The other selectors
+ * are backups for the banner and side ad boxes from Freestar,
+ * Fantrax's ad provider, in case that tag ever goes away.
+ */
+.hide--premium,
+.placeholder--leaderboard,
+[id^="fantrax_desktop_"],
+[id^="fantrax_mobile_"],
+[id^="_fs-ad"] {
+  display: none !important;
+}
