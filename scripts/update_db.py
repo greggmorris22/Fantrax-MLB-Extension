@@ -3,7 +3,8 @@ import os
 
 def update_database():
     master_path = r'C:\Users\gregg\Documents\Vibecoding\Baseball_Player_ID_Database\Baseball_Player_ID_Database.csv'
-    output_path = r'c:\Users\gregg\Documents\Vibecoding\Fantrax_MLB_Extension\data\player_map.csv'
+    # Write next to this script's project folder (../data), so it works wherever the project lives
+    output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'player_map.csv')
     
     if not os.path.exists(master_path):
         print(f"Error: Master database not found at {master_path}")

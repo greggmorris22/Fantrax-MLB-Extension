@@ -231,7 +231,7 @@ function injectLinks(element, data) {
     const container = document.createElement('span');
     container.className = 'fantrax-linker-links';
 
-    // Build the Fangraphs Link (Green Diamond)
+    // Build the Fangraphs Link (Green Square Logo)
     if (data.fg) {
         const fgLink = document.createElement('a');
         const slug = data.name ? data.name.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'player';
@@ -242,7 +242,7 @@ function injectLinks(element, data) {
         container.appendChild(fgLink);
     }
 
-    // Build the Baseball Savant Link (Red/Blue Circle)
+    // Build the Baseball Savant Link (Teal MLB Logo)
     if (data.mlbam) {
         const savantLink = document.createElement('a');
         savantLink.href = `https://baseballsavant.mlb.com/savant-player/${data.mlbam}`;
@@ -250,6 +250,18 @@ function injectLinks(element, data) {
         savantLink.title = 'View on Baseball Savant';
         savantLink.className = 'fantrax-linker-circle fantrax-linker-savant';
         container.appendChild(savantLink);
+    }
+
+    // Build the Baseball-Reference Link (Red Pennant)
+    // BBRef's own redirect takes the MLB ID. It opens the MLB page for
+    // major leaguers and the minor league "register" page for prospects.
+    if (data.mlbam) {
+        const bbrefLink = document.createElement('a');
+        bbrefLink.href = `https://www.baseball-reference.com/redirect.fcgi?player=1&mlb_ID=${data.mlbam}`;
+        bbrefLink.target = '_blank';
+        bbrefLink.title = 'View on Baseball-Reference';
+        bbrefLink.className = 'fantrax-linker-circle fantrax-linker-bbref';
+        container.appendChild(bbrefLink);
     }
 
     // Insert the container directly AFTER the name link

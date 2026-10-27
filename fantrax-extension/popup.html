@@ -41,22 +41,12 @@
             margin-bottom: 8px;
         }
 
-        .diamond {
-            width: 8px;
-            height: 8px;
-            transform: rotate(45deg);
-            margin-right: 12px;
-            margin-left: 4px;
-        }
-
-        .green {
-            background-color: #28a745;
-        }
-
-        .blue {
-            background: linear-gradient(90deg, #0000ff 50%, #ff0000 50%);
-            border-radius: 50%;
-            transform: none;
+        /* Every logo gets the same box so the labels line up */
+        .logo {
+            width: 18px;
+            height: 10px;
+            object-fit: contain;
+            margin-right: 8px;
         }
 
     </style>
@@ -72,18 +62,22 @@
     <!-- Legend explaining what the icons mean -->
     <div class="legend">
         <div class="item">
-            <div class="diamond green"></div>
+            <img class="logo" src="icons/fangraphs.png" alt="">
             <span>Fangraphs</span>
         </div>
         <div class="item">
-            <div class="diamond blue"></div>
+            <img class="logo" src="icons/savant.png" alt="">
             <span>Baseball Savant</span>
         </div>
+        <div class="item">
+            <img class="logo" src="icons/bbref.png" alt="">
+            <span>Baseball-Reference</span>
+        </div>
     </div>
-    
+
     <!-- Version Display -->
     <div style="font-size: 10px; color: #999; text-align: right; margin-top: 12px; border-top: 1px solid #eee; padding-top: 6px;">
-        v4.0
+        v5.0
     </div>
 </body>
 

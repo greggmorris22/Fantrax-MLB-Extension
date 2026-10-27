@@ -563,7 +563,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 04al9,660906,21018,Francisco Perez,(N/A),RP
 06z4f,829943,sa3068889,Louis Andujar,BOS,3B
 051ia,687462,26477,Spencer Horwitz,PIT,1B
-04al0,660613,,Ronaldo Hernandez,(N/A),C
+04al0,660613,sa881850,Ronaldo Hernandez,(N/A),C
 05uob,700720,,Luis Pino,STL,LF
 06z4a,822824,,Cooper McGrath,SF,RP
 04aji,694184,,Cristian Santana,(N/A),3B
@@ -1278,7 +1278,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 066dj,806288,,Stefan Raeth,SEA,RP
 066de,702311,,Angel Zarate,(N/A),LF
 04cd5,669022,22201,MacKenzie Gore,TEX,SP
-066dd,696519,,Samy Natera Jr.,LAA,RP
+066dd,696519,31936,Samy Natera Jr.,LAA,RP
 066dg,675783,,Easton Sikorski,CIN,RP
 066df,679702,,Daniel Harper,PHI,RP
 066da,671284,31522,Tim Elko,CHW,1B
@@ -3875,7 +3875,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 04yb5,681744,,Junior Santos,(N/A),RP
 02c5l,596133,16918,Luke Weaver,NYM,RP
 031s7,593993,13151,Jose Briceno,(N/A),C
-0599w,690992,,Ed Howard,CHC,SS
+0599w,690992,sa3014540,Ed Howard,CHC,SS
 02c65,547176,14467,Daniel Camarena,(N/A),RP
 03duu,657044,16647,Ryan Thompson,ARI,RP
 03duw,656462,,Isiah Gilliam,(N/A),RF
@@ -4423,11 +4423,11 @@ fantraxId,mlbId,fgId,playerName,team,position
 06quf,695069,,Keith Jones II,TEX,RF
 02vl6,628711,14765,Julio Urias,(N/A),SP
 06qug,805661,,Greg Farone,SF,SP
-0724c,836353,,Francisco Renteria,PHI,CF
+0724c,836353,sa3069440,Francisco Renteria,PHI,CF
 06que,808768,,Ben McLaughlin,ARI,1B
 0724a,836585,,Angel Nunez Jr.,CIN,CF
 06qub,822503,,Jason Doktorczyk,MIN,SP
-0724b,825412,,Angeibel Gomez,KC,CF
+0724b,825412,sa3075040,Angeibel Gomez,KC,CF
 01sgi,493603,1247,Adam Ottavino,(N/A),RP
 06qua,827437,,Griffin Tobias,MIL,RP
 06b72,806146,sa3023233,George Lombard Jr.,NYY,SS
@@ -5133,7 +5133,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06rot,808090,,Jose Mejia,KC,SP
 07302,821072,,Jose Rodriguez,MIL,SS
 06roq,809844,,Kien Vu,CIN,LF
-06rq4,825484,,Alexander Frias,MIL,RF
+06rq4,825484,sa3068835,Alexander Frias,MIL,RF
 06ror,686952,,Kyle Dernedde,CLE,2B
 07300,836605,,Dawvris Brito,BOS,SS
 06rom,,sa3045333,Max Williams,MIA,LF
@@ -5171,6 +5171,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06rt6,829821,,Eliezer Alfonzo,BOS,2B
 06rt7,830456,,Brian Tiburcio,COL,RP
 06rt4,829789,,Josh Perez,CLE,SP
+04lls,677945,sa3008589,Ethan Hankins,(N/A),SP
 06rrs,830808,,Sebastian Pena,SD,CF
 06rt2,830007,,Yordan Rodriguez,NYM,RP
 06rt3,829935,,Christopher Cordero,BOS,SP
@@ -5373,7 +5374,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 03zcy,668901,22184,Mark Vientos,NYM,3B
 06rkn,829078,,Alejandro Cruz,CHW,3B
 03zcx,666181,21853,Will Benson,CIN,RF
-06rkk,680664,,Eduardo Valencia,DET,1B
+06rkk,680664,24574,Eduardo Valencia,DET,1B
 06rkl,691452,,Ricardo Hurtado,DET,C
 06rki,808344,,Martin Tamara,DET,C
 071hf,829718,,Edelson Canelon,MIA,RP
@@ -6171,7 +6172,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06ubv,808285,sa3022924,Alberth Palma,TB,SS
 02hqd,594953,14897,Daniel Palka,(N/A),1B
 02hqe,592288,15849,Kent Emanuel,(N/A),RP
-0629b,700712,,Walbert Urena,LAA,SP
+0629b,700712,29357,Walbert Urena,LAA,SP
 0629a,702789,,Austin Gauthier,LAD,2B
 060vy,699205,,Edgar Basabe,(N/A),CF
 060vz,678843,,Luis Devers,(N/A),SP
@@ -7552,7 +7553,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 04pmi,663618,,Josh Stowers,(N/A),CF
 05u2k,701678,sa3017863,Hao-Yu Lee,DET,3B
 04pmk,675627,23221,Michael Grove,TB,RP
-04pmf,680693,,Grant Lavigne,(N/A),1B
+04pmf,680693,sa3007743,Grant Lavigne,(N/A),1B
 04pme,678013,,Lenny Torres,(N/A),RP
 04pmh,680683,,Jameson Hannah,(N/A),LF
 04pmg,680742,24607,Jonathan Bowlan,PHI,RP
@@ -7814,3 +7815,4 @@ fantraxId,mlbId,fgId,playerName,team,position
 075la,807791,,Erick Reynoso,ARI,RP
 075nz,823981,,Carter Holjes,MIN,RP
 075ny,840335,,Choyce Diffey,CHW,RP
+076rp,829769,sa3076545,Yostin Pena,NYY,RF

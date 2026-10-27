@@ -1,10 +1,11 @@
 # Fantrax Player Linker Chrome Extension
 
-This extension adds links to Fangraphs and Baseball Savant directly next to player names on Fantrax roster pages.
+This extension adds links to Fangraphs, Baseball Savant and Baseball-Reference directly next to player names on Fantrax roster pages.
 
 ## Features
-- **Green Diamond**: Links to the player's Fangraphs page.
-- **Blue/Red Circle**: Links to the player's Baseball Savant page.
+- **Green FanGraphs Logo**: Links to the player's Fangraphs page.
+- **Teal MLB Logo**: Links to the player's Baseball Savant page.
+- **Red Pennant**: Links to the player's Baseball-Reference page (minor league register page for prospects).
 - Automatically handles name variations and dynamic page updates.
 
 ## Installation

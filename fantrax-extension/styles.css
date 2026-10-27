@@ -48,30 +48,66 @@
 }
 
 /* ------------------------------------------------------------
- * 4. THE FANGRAPHS GREEN DIAMOND
+ * 4. THE FANGRAPHS GREEN SQUARE
  * ------------------------------------------------------------
- * The color for Fangraphs is deep green. It inherits the 45deg
- * rotation from `.fantrax-linker-circle` to look like a diamond.
+ * Uses FanGraphs' own favicon (icons/fangraphs.png): the batter
+ * and bar chart on a green square. We undo the base icon's
+ * rotation so it sits upright.
  */
 .fantrax-linker-fangraphs {
-  background-color: #28a745 !important;
-  /* Green */
+  width: 10px !important;
+  height: 10px !important;
+  background: url('chrome-extension://__MSG_@@extension_id__/icons/fangraphs.png') center / contain no-repeat !important;
+  border: none !important;
+  transform: none !important;
+  /* Remove rotation */
+}
+
+.fantrax-linker-fangraphs:hover {
+  transform: scale(1.25) !important;
 }
 
 /* ------------------------------------------------------------
- * 5. THE BASEBALL SAVANT CIRCLE
+ * 5. THE BASEBALL SAVANT LOGO
  * ------------------------------------------------------------
- * The color for Savant is MLB Blue and Red.
- * We undo the 45deg rotation and add a large border-radius
- * so it looks like a circle instead of a diamond.
+ * Uses Savant's own favicon (icons/savant.png): the teal and
+ * gray MLB batter logo, trimmed to the logo itself. It is about
+ * twice as wide as it is tall, so we undo the square shape and
+ * rotation from the base icon.
  */
 .fantrax-linker-savant {
-  background: linear-gradient(90deg, #0000ff 50%, #ff0000 50%) !important;
+  width: 17px !important;
+  height: 9px !important;
+  aspect-ratio: auto !important;
+  background: url('chrome-extension://__MSG_@@extension_id__/icons/savant.png') center / contain no-repeat !important;
   border: none !important;
-  border-radius: 50% !important;
-  /* Make it a circle */
   transform: none !important;
   /* Remove rotation */
+}
+
+.fantrax-linker-savant:hover {
+  transform: scale(1.25) !important;
+}
+
+/* ------------------------------------------------------------
+ * 5b. THE BASEBALL-REFERENCE RED PENNANT
+ * ------------------------------------------------------------
+ * Uses BBRef's own pennant favicon (icons/bbref.png, trimmed to
+ * the flag itself). The pennant is wider than it is tall, so we
+ * undo the square shape and rotation from the base icon.
+ */
+.fantrax-linker-bbref {
+  width: 12px !important;
+  height: 9px !important;
+  aspect-ratio: auto !important;
+  background: url('chrome-extension://__MSG_@@extension_id__/icons/bbref.png') center / contain no-repeat !important;
+  border: none !important;
+  transform: none !important;
+  /* Remove rotation */
+}
+
+.fantrax-linker-bbref:hover {
+  transform: scale(1.25) !important;
 }
 
 /* ------------------------------------------------------------
