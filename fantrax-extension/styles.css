@@ -6,11 +6,68 @@
  */
 .fantrax-linker-links {
   display: inline-flex !important;
-  gap: 4px !important;
+  align-items: center !important;
   margin-left: 4px !important;
   vertical-align: middle !important;
   line-height: normal !important;
   position: relative !important;
+}
+
+/* ------------------------------------------------------------
+ * 1b. THE LINK BUTTON AND POP-OUT MENU
+ * ------------------------------------------------------------
+ * Only a small link button sits next to the name, so long names
+ * no longer push the logos into the Age column. Hovering the
+ * button (or tabbing to it) pops the logos out in a small box
+ * that floats over the row without moving anything.
+ */
+.fantrax-linker-trigger {
+  width: 12px !important;
+  height: 12px !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+  cursor: pointer !important;
+  opacity: 0.75;
+  outline: none !important;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237fb4dc' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/svg%3E") center / contain no-repeat !important;
+}
+
+.fantrax-linker-links:hover .fantrax-linker-trigger,
+.fantrax-linker-links:focus-within .fantrax-linker-trigger {
+  opacity: 1;
+}
+
+.fantrax-linker-menu {
+  display: none !important;
+  position: absolute !important;
+  left: 100% !important; /* Starts right at the button's edge, so the mouse never leaves the hover area */
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10000 !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 5px 8px !important;
+  margin-left: 2px !important;
+  background: #1b2733 !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45) !important;
+  white-space: nowrap !important;
+}
+
+/* An invisible strip over the 2px gap keeps the menu open while the mouse crosses it */
+.fantrax-linker-menu::before {
+  content: '' !important;
+  position: absolute !important;
+  left: -4px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 4px !important;
+}
+
+.fantrax-linker-links:hover .fantrax-linker-menu,
+.fantrax-linker-links:focus-within .fantrax-linker-menu {
+  display: inline-flex !important;
 }
 
 /* ------------------------------------------------------------

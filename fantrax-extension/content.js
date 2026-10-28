@@ -227,9 +227,21 @@ function injectLinks(element, data) {
     const parent = element.parentElement;
     if (parent.querySelector('.fantrax-linker-links')) return;
     
-    // Create our wrapper span that holds both links
+    // Create our wrapper span. It shows one small link button, and
+    // hovering it pops out a menu with the site logos. Keeping just
+    // the button next to the name stops long names from pushing the
+    // logos over the Age column.
     const container = document.createElement('span');
     container.className = 'fantrax-linker-links';
+
+    const trigger = document.createElement('span');
+    trigger.className = 'fantrax-linker-trigger';
+    trigger.tabIndex = 0; // lets keyboard users open the menu too
+    trigger.title = 'Player links';
+    container.appendChild(trigger);
+
+    const menu = document.createElement('span');
+    menu.className = 'fantrax-linker-menu';
 
     // Build the Fangraphs Link (Green Square Logo)
     if (data.fg) {
@@ -239,7 +251,7 @@ function injectLinks(element, data) {
         fgLink.target = '_blank';
         fgLink.title = 'View on Fangraphs';
         fgLink.className = 'fantrax-linker-circle fantrax-linker-fangraphs';
-        container.appendChild(fgLink);
+        menu.appendChild(fgLink);
     }
 
     // Build the Baseball Savant Link (Teal MLB Logo)
@@ -249,7 +261,7 @@ function injectLinks(element, data) {
         savantLink.target = '_blank';
         savantLink.title = 'View on Baseball Savant';
         savantLink.className = 'fantrax-linker-circle fantrax-linker-savant';
-        container.appendChild(savantLink);
+        menu.appendChild(savantLink);
     }
 
     // Build the Baseball-Reference Link (Red Pennant)
@@ -261,8 +273,12 @@ function injectLinks(element, data) {
         bbrefLink.target = '_blank';
         bbrefLink.title = 'View on Baseball-Reference';
         bbrefLink.className = 'fantrax-linker-circle fantrax-linker-bbref';
-        container.appendChild(bbrefLink);
+        menu.appendChild(bbrefLink);
     }
+
+    // No IDs means no links, so don't show an empty button
+    if (!menu.hasChildNodes()) return;
+    container.appendChild(menu);
 
     // Insert the container directly AFTER the name link
     element.insertAdjacentElement('afterend', container);
