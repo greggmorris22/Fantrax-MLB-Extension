@@ -3,6 +3,7 @@
 This extension adds links to Fangraphs, Baseball Savant and Baseball-Reference directly next to player names on Fantrax roster pages.
 
 ## Features
+- **Link button**: A small link icon sits next to each player name. Hover over it (or tab to it) and the three site logos pop out over the row, so long names never push them into the Age column.
 - **Green FanGraphs Logo**: Links to the player's Fangraphs page.
 - **Teal MLB Logo**: Links to the player's Baseball Savant page.
 - **Red Pennant**: Links to the player's Baseball-Reference page (minor league register page for prospects).
