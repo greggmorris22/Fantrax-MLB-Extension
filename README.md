@@ -1,4 +1,4 @@
-# Fantrax Player Linker Chrome Extension
+# Player Linker for Fantrax (Chrome Extension)
 
 This extension adds links to Fangraphs, Baseball Savant and Baseball-Reference directly next to player names on Fantrax roster pages.
 
@@ -43,3 +43,5 @@ If you haven't linked this folder to GitHub yet:
 - `data/player_map.csv`: The current local copy of player data.
 - `scripts/update_db.py`: The underlying sync logic.
 - `popup.html` and `popup.js`: Extension popup for status, legend and version number.
+- `PRIVACY.md`: Privacy policy linked from the Chrome Web Store listing.
+- `docs/chrome_web_store_listing.md`: Copy-paste answers for the Chrome Web Store dashboard.
