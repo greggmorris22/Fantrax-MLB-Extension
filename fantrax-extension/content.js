@@ -273,12 +273,21 @@ function injectLinks(element, data) {
     menu.className = 'fantrax-linker-menu';
 
     // Build the Fangraphs Link (Green Square Logo)
-    if (data.fg) {
+    // A real Fangraphs ID is digits (MLB players) or "sa" + digits
+    // (prospects). If we don't have one, open a Fangraphs search for the
+    // player's name instead of a broken player page.
+    const hasFgId = data.fg && /^(sa)?\d+$/.test(data.fg);
+    if (hasFgId || data.name) {
         const fgLink = document.createElement('a');
-        const slug = data.name ? data.name.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'player';
-        fgLink.href = `https://www.fangraphs.com/players/${slug}/${data.fg}/stats`;
+        if (hasFgId) {
+            const slug = data.name ? data.name.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'player';
+            fgLink.href = `https://www.fangraphs.com/players/${slug}/${data.fg}/stats`;
+            fgLink.title = 'View on Fangraphs';
+        } else {
+            fgLink.href = `https://www.fangraphs.com/search?q=${encodeURIComponent(data.name)}`;
+            fgLink.title = 'Search Fangraphs';
+        }
         fgLink.target = '_blank';
-        fgLink.title = 'View on Fangraphs';
         fgLink.className = 'fantrax-linker-circle fantrax-linker-fangraphs';
         menu.appendChild(fgLink);
     }
