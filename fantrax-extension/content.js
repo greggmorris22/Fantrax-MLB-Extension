@@ -52,13 +52,7 @@ chrome.storage.onChanged.addListener((changes, namespace) => {
 function init() {
     // Only start one watcher, even if data loads more than once
     if (!observer) {
-        observer = new MutationObserver(() => {
-            // We run our logic if anything in the content changes.
-            // Fantrax uses a lot of dynamic updates, so we watch for 
-            // new elements (childList) and important attribute changes.
-            processPage();
-        });
-
+        observer = new MutationObserver(scheduleProcessPage);
         observer.observe(document.body, {
             childList: true,
             subtree: true,
@@ -68,6 +62,22 @@ function init() {
     }
 
     processPage();
+}
+
+// Fantrax changes the page constantly (hover effects, spinners,
+// animations). Instead of rescanning every player on each tiny
+// change, we wait a moment so a burst of changes is handled by a
+// single scan. The wait is short enough that links still appear
+// right away to the eye.
+const SCAN_DELAY_MS = 150;
+let scanTimer = null;
+
+function scheduleProcessPage() {
+    if (scanTimer) return; // a scan is already on the way
+    scanTimer = setTimeout(() => {
+        scanTimer = null;
+        processPage();
+    }, SCAN_DELAY_MS);
 }
 
 // ------------------------------------------------------------
