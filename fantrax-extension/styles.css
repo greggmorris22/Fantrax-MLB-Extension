@@ -1,20 +1,27 @@
 /* ------------------------------------------------------------
- * 1. THE WRAPPER TRAY
+ * A note on "!important": Fantrax has its own styles for links
+ * and spans, so the rules for our injected elements use
+ * !important to make sure the site's styles never win.
+ * ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+ * 1. THE WRAPPER
  * ------------------------------------------------------------
- * This wrapper holds our injected icons and carefully places
- * them perfectly in line with Fantrax's native text and icons.
+ * Holds the link button and its pop-out menu, and sits in line
+ * right after the player's name without shrinking.
  */
 .fantrax-linker-links {
   display: inline-flex !important;
   align-items: center !important;
-  margin-left: 4px !important;
+  flex-shrink: 0 !important;
+  margin-left: 6px !important;
   vertical-align: middle !important;
   line-height: normal !important;
   position: relative !important;
 }
 
 /* ------------------------------------------------------------
- * 1b. THE LINK BUTTON AND POP-OUT MENU
+ * 2. THE LINK BUTTON AND POP-OUT MENU
  * ------------------------------------------------------------
  * Only a small link button sits next to the name, so long names
  * no longer push the logos into the Age column. Hovering the
@@ -71,133 +78,70 @@
 }
 
 /* ------------------------------------------------------------
- * 2. THE BASE ICON SPACES
+ * 3. THE SITE LOGOS
  * ------------------------------------------------------------
- * Base settings every icon will inherit
+ * Each logo is a link showing that site's own favicon (in the
+ * icons folder). They share these settings and grow a little
+ * when you hover them, to show they are clickable.
  */
 .fantrax-linker-circle {
-  width: 8px !important;
-  height: 8px !important;
-  flex-shrink: 0 !important;
-  /* Prevent squashing */
-  aspect-ratio: 1 / 1 !important;
-  /* Force square shape */
-  border-radius: 0% !important;
-  transform: rotate(45deg) !important;
   display: block !important;
-  cursor: pointer !important;
-  transition: transform 0.1s ease-in-out;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  flex-shrink: 0 !important;
   box-sizing: border-box !important;
   margin: 2px !important;
-  /* Add space for the corners when rotated */
+  border: none !important;
+  cursor: pointer !important;
+  transition: transform 0.1s ease-in-out;
 }
 
-/* ------------------------------------------------------------
- * 3. HOVER ANIMATIONS
- * ------------------------------------------------------------
- * Adds a small "pop" when you mouse over the icons to
- * indicate they are clickable
- */
 .fantrax-linker-circle:hover {
-  transform: rotate(45deg) scale(1.25) !important;
+  transform: scale(1.25) !important;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* ------------------------------------------------------------
- * 4. THE FANGRAPHS GREEN SQUARE
- * ------------------------------------------------------------
- * Uses FanGraphs' own favicon (icons/fangraphs.png): the batter
- * and bar chart on a green square. We undo the base icon's
- * rotation so it sits upright.
- */
+/* FanGraphs: the batter and bar chart on a green square */
 .fantrax-linker-fangraphs {
   width: 10px !important;
   height: 10px !important;
   background: url('chrome-extension://__MSG_@@extension_id__/icons/fangraphs.png') center / contain no-repeat !important;
-  border: none !important;
-  transform: none !important;
-  /* Remove rotation */
 }
 
-.fantrax-linker-fangraphs:hover {
-  transform: scale(1.25) !important;
-}
-
-/* ------------------------------------------------------------
- * 5. THE BASEBALL SAVANT LOGO
- * ------------------------------------------------------------
- * Uses Savant's own favicon (icons/savant.png): the teal and
- * gray MLB batter logo, trimmed to the logo itself. It is about
- * twice as wide as it is tall, so we undo the square shape and
- * rotation from the base icon.
- */
+/* Baseball Savant: the teal and gray MLB batter, about twice as wide as tall */
 .fantrax-linker-savant {
   width: 17px !important;
   height: 9px !important;
-  aspect-ratio: auto !important;
   background: url('chrome-extension://__MSG_@@extension_id__/icons/savant.png') center / contain no-repeat !important;
-  border: none !important;
-  transform: none !important;
-  /* Remove rotation */
 }
 
-.fantrax-linker-savant:hover {
-  transform: scale(1.25) !important;
-}
-
-/* ------------------------------------------------------------
- * 5b. THE BASEBALL-REFERENCE RED PENNANT
- * ------------------------------------------------------------
- * Uses BBRef's own pennant favicon (icons/bbref.png, trimmed to
- * the flag itself). The pennant is wider than it is tall, so we
- * undo the square shape and rotation from the base icon.
- */
+/* Baseball-Reference: the red pennant, a bit wider than tall */
 .fantrax-linker-bbref {
   width: 12px !important;
   height: 9px !important;
-  aspect-ratio: auto !important;
   background: url('chrome-extension://__MSG_@@extension_id__/icons/bbref.png') center / contain no-repeat !important;
-  border: none !important;
-  transform: none !important;
-  /* Remove rotation */
-}
-
-.fantrax-linker-bbref:hover {
-  transform: scale(1.25) !important;
 }
 
 /* ------------------------------------------------------------
- * 6. FANTRAX UI FIXES
+ * 4. FANTRAX UI FIXES
  * ------------------------------------------------------------
- * Ensure the player names and info lines allow our icons to sit 
- * at the end without being cut off by long names.
+ * Keep each player's name on one line with our link button at
+ * the end, instead of Fantrax cutting the name off.
  */
-
-/* Target the name container on the roster page and popups */
 .scorer__info__name {
   display: flex !important;
   align-items: center !important;
   flex-wrap: nowrap !important; /* NO wrapping */
   width: auto !important; /* Grow with name */
   min-width: 0;
-  overflow: visible !important; /* Show icons if they extend past column */
+  overflow: visible !important; /* Show the button if it extends past the column */
 }
 
 /* Let the name be as long as it needs to be on one line */
 .scorer__info__name a {
   text-overflow: unset !important;
   overflow: visible !important;
-  white-space: nowrap !important; /* Keep on one line */
+  white-space: nowrap !important;
   flex-shrink: 0 !important;
   display: inline-block !important;
-}
-
-/* Icons stay on the same line at the very end */
-.fantrax-linker-links {
-  flex-shrink: 0 !important;
-  display: inline-flex !important;
-  margin-left: 6px !important;
 }
 
 .scorer__info__positions {
@@ -207,7 +151,7 @@
 }
 
 /* ------------------------------------------------------------
- * 7. HIDE FANTRAX ADS
+ * 5. HIDE FANTRAX ADS
  * ------------------------------------------------------------
  * Fantrax tags its own ad slots with "hide--premium" (the class
  * it uses to hide ads for premium members). The other selectors

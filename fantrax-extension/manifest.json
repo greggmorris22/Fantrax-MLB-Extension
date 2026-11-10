@@ -1,14 +1,13 @@
 {
     "manifest_version": 3,
     "name": "Fantrax Player Linker",
-    "version": "5.1",
+    "version": "5.2",
     "description": "Adds links to Fangraphs, Baseball Savant and Baseball-Reference for players on Fantrax roster pages.",
     "permissions": [
         "storage",
         "alarms"
     ],
     "host_permissions": [
-        "*://docs.google.com/spreadsheets/*",
         "*://raw.githubusercontent.com/*"
     ],
     "content_scripts": [
