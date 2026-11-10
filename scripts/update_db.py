@@ -1,5 +1,22 @@
 import csv
 import os
+import re
+
+# A real Fangraphs ID is all digits (MLB players) or "sa" + digits (prospects).
+# Anything else, like the "MISSING" placeholder, would make a broken link.
+FG_ID_PATTERN = re.compile(r'^(sa)?\d+$')
+
+def load_fangraphs_fixes(path):
+    """Hand-checked Fangraphs IDs for players the master database gets wrong."""
+    fixes = {}
+    if os.path.exists(path):
+        with open(path, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                fid = row.get('fantraxId', '').strip()
+                fg = row.get('fgId', '').strip()
+                if fid and FG_ID_PATTERN.match(fg):
+                    fixes[fid] = fg
+    return fixes
 
 def update_database():
     master_path = r'C:\Users\gregg\Documents\Vibecoding\Baseball_Player_ID_Database\Baseball_Player_ID_Database.csv'
@@ -11,6 +28,9 @@ def update_database():
         return
         
     print(f"Reading from {master_path}...")
+    fixes_path = os.path.join(os.path.dirname(output_path), 'fangraphs_id_fixes.csv')
+    fg_fixes = load_fangraphs_fixes(fixes_path)
+    dropped_fg = 0
     
     records = []
     with open(master_path, 'r', encoding='utf-8-sig') as f: # Use utf-8-sig to handle BOM
@@ -22,6 +42,13 @@ def update_database():
             name = row.get('playerName', '').strip()
             team = row.get('teamName', '').strip()
             pos = row.get('position', '').strip()
+
+            # Fixed IDs win; otherwise throw out placeholders like "MISSING"
+            if fid in fg_fixes:
+                fg_id = fg_fixes[fid]
+            elif fg_id and not FG_ID_PATTERN.match(fg_id):
+                dropped_fg += 1
+                fg_id = ''
             
             # Convert name format from "Last, First" back to "First Last" for the Chrome extension
             if name and ", " in name:
@@ -42,6 +69,9 @@ def update_database():
         writer.writerows(records)
         
     print(f"Successfully updated {output_path} with {len(records)} players indexed by Fantrax ID.")
+    if dropped_fg:
+        print(f"Warning: {dropped_fg} players had a bad Fangraphs ID (like 'MISSING') and got no Fangraphs ID. "
+              f"Add the right IDs to {fixes_path} and run this again.")
 
 if __name__ == '__main__':
     update_database()
