@@ -1,31 +1,43 @@
 let playerMap = {};
 let nameMap = {};
 let isLoaded = false;
+let observer = null;
 
 // ------------------------------------------------------------
 // 1. DATA LOADING
 // ------------------------------------------------------------
 // Fetch the latest player map from chrome.storage.local memory.
+// Only the Fantrax ID list is stored. We build the name lookup
+// (used when a link has no Fantrax ID) here from that same list.
+function setPlayerData(map) {
+    playerMap = map || {};
+    nameMap = {};
+    for (const player of Object.values(playerMap)) {
+        if (!player.name) continue;
+        const lowerName = player.name.toLowerCase();
+        (nameMap[lowerName] = nameMap[lowerName] || []).push(player);
+    }
+    isLoaded = true;
+}
+
 console.log('Fantrax Linker: Requesting player map from storage...');
-chrome.storage.local.get(['playerMap', 'nameMap'], (result) => {
+chrome.storage.local.get('playerMap', (result) => {
     if (result.playerMap) {
-        playerMap = result.playerMap;
-        nameMap = result.nameMap || {};
-        isLoaded = true;
-        console.log('Fantrax Linker: Data loaded (IDs: ' + Object.keys(playerMap).length + ', Names: ' + Object.keys(nameMap).length + ')');
+        setPlayerData(result.playerMap);
+        console.log('Fantrax Linker: Data loaded (' + Object.keys(playerMap).length + ' players)');
         init();
     } else {
         console.warn('Fantrax Linker: No player map found in storage. Ensure the background script has fetched the data.');
     }
 });
 
-// Watch for data updates in the background without needing to refresh
+// Watch for data updates in the background without needing to refresh.
+// This also covers the first install, when the page can load before the
+// data has finished downloading.
 chrome.storage.onChanged.addListener((changes, namespace) => {
-    if (namespace === 'local') {
-        if (changes.playerMap) playerMap = changes.playerMap.newValue;
-        if (changes.nameMap) nameMap = changes.nameMap.newValue;
-        isLoaded = true;
-        processPage();
+    if (namespace === 'local' && changes.playerMap && changes.playerMap.newValue) {
+        setPlayerData(changes.playerMap.newValue);
+        init();
     }
 });
 
@@ -38,21 +50,34 @@ chrome.storage.onChanged.addListener((changes, namespace) => {
 // webpage for any new elements appearing, and runs our link 
 // injection logic again whenever the screen shifts.
 function init() {
-    const observer = new MutationObserver((mutations) => {
-        // We run our logic if anything in the content changes.
-        // Fantrax uses a lot of dynamic updates, so we watch for 
-        // new elements (childList) and important attribute changes.
-        processPage();
-    });
-
-    observer.observe(document.body, {
-        childList: true,
-        subtree: true,
-        attributes: true, 
-        attributeFilter: ['style', 'href'] // Watch for ID shifts in headshots or links
-    });
+    // Only start one watcher, even if data loads more than once
+    if (!observer) {
+        observer = new MutationObserver(scheduleProcessPage);
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true,
+            attributes: true, 
+            attributeFilter: ['style', 'href'] // Watch for ID shifts in headshots or links
+        });
+    }
 
     processPage();
+}
+
+// Fantrax changes the page constantly (hover effects, spinners,
+// animations). Instead of rescanning every player on each tiny
+// change, we wait a moment so a burst of changes is handled by a
+// single scan. The wait is short enough that links still appear
+// right away to the eye.
+const SCAN_DELAY_MS = 150;
+let scanTimer = null;
+
+function scheduleProcessPage() {
+    if (scanTimer) return; // a scan is already on the way
+    scanTimer = setTimeout(() => {
+        scanTimer = null;
+        processPage();
+    }, SCAN_DELAY_MS);
 }
 
 // ------------------------------------------------------------
@@ -177,6 +202,10 @@ function processPage() {
         // Skip links that are actually our own injected icons
         if (link.classList.contains('fantrax-linker-circle')) return;
 
+        // Skip the name link in roster rows. Part 1 above already
+        // handles it, and doing it again would rebuild its button.
+        if (link.closest('scorer .scorer__info__name')) return;
+
         let fantraxId = null;
         const href = link.href.toLowerCase();
 
@@ -244,12 +273,21 @@ function injectLinks(element, data) {
     menu.className = 'fantrax-linker-menu';
 
     // Build the Fangraphs Link (Green Square Logo)
-    if (data.fg) {
+    // A real Fangraphs ID is digits (MLB players) or "sa" + digits
+    // (prospects). If we don't have one, open a Fangraphs search for the
+    // player's name instead of a broken player page.
+    const hasFgId = data.fg && /^(sa)?\d+$/.test(data.fg);
+    if (hasFgId || data.name) {
         const fgLink = document.createElement('a');
-        const slug = data.name ? data.name.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'player';
-        fgLink.href = `https://www.fangraphs.com/players/${slug}/${data.fg}/stats`;
+        if (hasFgId) {
+            const slug = data.name ? data.name.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'player';
+            fgLink.href = `https://www.fangraphs.com/players/${slug}/${data.fg}/stats`;
+            fgLink.title = 'View on Fangraphs';
+        } else {
+            fgLink.href = `https://www.fangraphs.com/search?q=${encodeURIComponent(data.name)}`;
+            fgLink.title = 'Search Fangraphs';
+        }
         fgLink.target = '_blank';
-        fgLink.title = 'View on Fangraphs';
         fgLink.className = 'fantrax-linker-circle fantrax-linker-fangraphs';
         menu.appendChild(fgLink);
     }

@@ -3,8 +3,17 @@
 // We point to the "main" branch version of player_map.csv
 const CSV_URL = 'https://raw.githubusercontent.com/greggmorris22/Fantrax-MLB-Extension/main/data/player_map.csv';
 
+// If a download fails (computer just woke up, Wi-Fi reconnecting, etc.),
+// try again a minute later instead of waiting 6 hours. After this many
+// quick retries in a row we give up until the next 6-hour check.
+const MAX_QUICK_RETRIES = 5;
+
 chrome.runtime.onInstalled.addListener(() => {
     console.log('Fantrax Player Linker extension installed.');
+    // Older versions also saved a separate name list. The page now builds
+    // that itself, so clear out the old copy.
+    chrome.storage.local.remove('nameMap');
+
     // Run fetch on install
     fetchAndStorePlayerData();
 
@@ -13,7 +22,7 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.alarms.onAlarm.addListener((alarm) => {
-    if (alarm.name === 'fetchDataAlarm') {
+    if (alarm.name === 'fetchDataAlarm' || alarm.name === 'retryFetchAlarm') {
         fetchAndStorePlayerData();
     }
 });
@@ -21,8 +30,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 function parseCSV(csvText) {
     const lines = csvText.split(/\r?\n/);
     const playerMap = {};
-    const nameMap = {};
-    if (lines.length === 0) return { playerMap, nameMap };
+    if (lines.length === 0) return playerMap;
 
     // Skip header line
     for (let i = 1; i < lines.length; i++) {
@@ -63,17 +71,12 @@ function parseCSV(csvText) {
                 position: position || null
             };
 
+            // Every row has a Fantrax ID, so this one list is all we store.
+            // The page builds its own name lookup from it.
             if (fid) playerMap[fid] = playerData;
-            if (name) {
-                const lowerName = name.toLowerCase();
-                if (!nameMap[lowerName]) {
-                    nameMap[lowerName] = [];
-                }
-                nameMap[lowerName].push(playerData);
-            }
         }
     }
-    return { playerMap, nameMap };
+    return playerMap;
 }
 
 async function fetchAndStorePlayerData() {
@@ -84,16 +87,29 @@ async function fetchAndStorePlayerData() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const csvText = await response.text();
-        const { playerMap, nameMap } = parseCSV(csvText);
+        const playerMap = parseCSV(csvText);
 
         const keysCount = Object.keys(playerMap).length;
-        if (keysCount > 0) {
-            await chrome.storage.local.set({ playerMap, nameMap });
-            console.log(`Fantrax Linker: Stored ${keysCount} IDs and ${Object.keys(nameMap).length} names.`);
-        } else {
-            console.error('Fantrax Linker: Parsed CSV resulted in 0 players.');
+        if (keysCount === 0) {
+            throw new Error('Parsed CSV resulted in 0 players.');
         }
+        await chrome.storage.local.set({ playerMap, fetchRetries: 0 });
+        console.log(`Fantrax Linker: Stored ${keysCount} players.`);
     } catch (err) {
-        console.error('Fantrax Linker: Error fetching player data:', err);
+        await scheduleRetry(err);
+    }
+}
+
+// A failed download is usually a passing network blip, and the last good
+// player list is still saved, so log a warning (not an error) and retry soon.
+async function scheduleRetry(err) {
+    const { fetchRetries = 0 } = await chrome.storage.local.get('fetchRetries');
+    if (fetchRetries < MAX_QUICK_RETRIES) {
+        await chrome.storage.local.set({ fetchRetries: fetchRetries + 1 });
+        chrome.alarms.create('retryFetchAlarm', { delayInMinutes: 1 });
+        console.warn(`Fantrax Linker: Couldn't download player data (${err.message}). Trying again in 1 minute.`);
+    } else {
+        await chrome.storage.local.set({ fetchRetries: 0 });
+        console.warn(`Fantrax Linker: Couldn't download player data (${err.message}). Will try again at the next 6-hour check. Saved data is still in use.`);
     }
 }

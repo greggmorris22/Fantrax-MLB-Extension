@@ -285,7 +285,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06fpk,695023,,Eddie Park,CHW,CF
 06fpi,687260,,Brian Kalmer,(N/A),1B
 05tp7,695720,sa3025383,Tommy White,ATH,3B
-05tp8,,MISSING,Andrew Dutkanych,STL,SP
+05tp8,,sa3030700,Andrew Dutkanych,STL,SP
 05tp6,806258,sa3023268,Thomas White,MIA,SP
 06h1y,694811,,Bryson Hammer,COL,RP
 06h1z,,sa3022587,Paul Bonzagni,TEX,SP
@@ -418,7 +418,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 0669m,805957,,Caleb Farmer,WSH,C
 02n3l,573124,13449,Taylor Rogers,MIN,RP
 0403l,665561,21646,Rafael Marchan,PHI,C
-064wj,828244,MISSING,Kruz Schoolcraft,SD,SP
+064wj,828244,sa3069203,Kruz Schoolcraft,SD,SP
 064wi,686810,,Brennan Milone,ATH,1B
 06yju,813668,,Jack Gurevitch,STL,1B
 06yjv,701360,,Chris Arroyo,MIA,1B
@@ -963,7 +963,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06ibr,815903,,Ashly Andujar,COL,SS
 06ibo,815896,sa3023887,Emil Morales,LAD,SS
 06ibm,815894,sa3024107,Jorge Quintana,SD,SS
-06id0,805261,MISSING,Cade Obermueller,PHI,SP
+06id0,805261,sa3038991,Cade Obermueller,PHI,SP
 06ibn,815897,sa3024304,Robert Arias,CLE,CF
 06ibl,815933,sa3023727,Leandro Romero,SEA,SS
 06ibi,701616,,Caleb Lomavita,WSH,C
@@ -1195,7 +1195,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 066fv,687248,,Keshawn Ogans,ATL,3B
 066d0,677049,,Josh Hatcher,(N/A),RF
 066d2,806188,31815,Cade Gibson,MIA,RP
-06ifw,815824,MISSING,Josiah Hartshorn,CHC,RF
+06ifw,815824,sa3069285,Josiah Hartshorn,CHC,RF
 06ifu,470731,,Rafael Alvarez,(N/A),1B
 06zhf,803811,,Josh Hogue,MIA,RF
 06ifv,808062,,Jostin Florentino,CHC,SP
@@ -1245,7 +1245,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06iey,808244,,Luis Arestigueta,ATL,SP
 02mzd,608648,13758,Tyler Duffey,(N/A),RP
 02mzf,608701,13770,Rob Refsnyder,SEA,DH
-06iet,806067,MISSING,James Ellwanger,MIN,SP
+06iet,806067,sa3030911,James Ellwanger,MIN,SP
 06zge,830141,,Luke Hoskins,DET,RP
 06zgf,836169,,J.D. Hennen,BAL,SP
 066aa,701617,,Ian Koenig,SD,SP
@@ -1828,7 +1828,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 05y3m,805800,,Zander Mueth,PIT,SP
 05y50,683031,,Jean Ramirez,(N/A),RF
 066nf,806124,,Colin Houck,NYM,SS
-06k4w,804942,MISSING,Cam Leiter,LAD,SP
+06k4w,804942,sa3036203,Cam Leiter,LAD,SP
 05y3g,691602,,Stiven Cruz,MIL,RP
 03qkh,657557,18015,Paul DeJong,(N/A),3B
 06k4x,805880,,Tanner Thach,COL,1B
@@ -2244,7 +2244,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 066td,700283,,Derlin Figueroa,KC,1B
 03qqf,664747,21132,Alexis Diaz,TEX,RP
 03qqe,664731,18433,P.J. Higgins,CIN,1B
-05y9c,815830,MISSING,Dean Moss,TB,RF
+05y9c,815830,sa3069262,Dean Moss,TB,RF
 06zzb,112088,1002034,Tommy Case,LAD,SP
 03qqb,664702,17620,Myles Straw,TOR,CF
 06zzc,694725,,Michael Fowler,MIL,RP
@@ -2276,7 +2276,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 05ydv,702409,,Jorge Ruiz,LAA,LF
 05yf9,692230,30161,Carlos Rodriguez,MIL,SP
 05ydw,113846,1003774,Luis Encarnacion,(N/A),1B
-05ydu,702274,MISSING,Chase Shores,LAA,RP
+05ydu,702274,sa3042212,Chase Shores,LAA,RP
 05yf5,695596,,Nick Raposo,SEA,C
 05ydp,807739,sa3026056,Kade Anderson,SEA,SP
 05ydo,666661,21924,Juan Morillo,ARI,RP
@@ -2323,7 +2323,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 05yg3,687924,30031,Julian Aguiar,CIN,SP
 05yg4,701477,,Erian Rodriguez,CHC,SP
 05yer,687287,29564,Patrick Monteverde,MIA,SP
-05yak,815832,MISSING,Xavier Neyens,HOU,3B
+05yak,815832,sa3069252,Xavier Neyens,HOU,3B
 05yal,691947,,Ronan Kopp,LAD,RP
 05yai,800614,sa3066592,Bryce Rainer,DET,SS
 041wi,666302,,Jake Polancic,(N/A),RP
@@ -2874,7 +2874,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 067zl,800382,,Josias Ramirez,CHC,1B
 03c97,593334,17149,Domingo German,(N/A),SP
 067zg,800394,,Adrian Delgado,BAL,RP
-067zb,702593,MISSING,Jace LaViolette,CLE,CF
+067zb,702593,sa3036058,Jace LaViolette,CLE,CF
 03c7r,594694,14320,Wilmer Difo,(N/A),2B
 067zd,702668,sa3030281,Korbyn Dickerson,SEA,CF
 067zc,701326,,Luke Heyman,BOS,C
@@ -3100,7 +3100,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 04erg,676762,,Frankie Tostado,(N/A),RF
 06kxe,813916,sa3067042,Kellon Lindsey,LAD,SS
 04era,676759,,Korry Howell,(N/A),CF
-06kxc,702539,MISSING,Zach Root,LAD,SP
+06kxc,702539,sa3041130,Zach Root,LAD,SP
 04erc,676760,23488,Ron Marinaccio,SD,RP
 04eqx,657116,,Zach Willeman,(N/A),SP
 05j6y,573597,,Gabe Morales,(N/A),SP
@@ -3234,7 +3234,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 03108,641531,15117,Hunter Dozier,(N/A),3B
 03109,641360,18519,Phil Bickford,(N/A),RP
 06kzd,800233,,Ernesto Mercedes,NYM,RP
-06kza,703610,MISSING,Justin Lamkin,KC,SP
+06kza,703610,sa3035887,Justin Lamkin,KC,SP
 06kzb,817792,,Javier Perez,HOU,RP
 04esz,676801,19599,Chas McCormick,CHC,LF
 05j8z,691621,,Jheremy Vargas,MIL,2B
@@ -3556,7 +3556,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 03dgh,656448,19273,Stone Garrett,(N/A),LF
 031d9,642152,15043,Lou Trivino,PHI,RP
 031d2,641569,,Xavier Fernandez,(N/A),C
-06mph,809254,MISSING,Anthony Eyanson,BOS,SP
+06mph,809254,sa3031104,Anthony Eyanson,BOS,SP
 031d3,641394,17783,Jake Brentz,(N/A),RP
 031d4,641793,15823,Zack Littell,WSH,SP
 031bl,640448,15009,Kyle Finnegan,DET,RP
@@ -3576,7 +3576,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 05zy9,802092,,Luis Ramirez,TEX,RP
 04y6o,670871,19588,Guillo Zuniga,NYM,RP
 05k7s,694182,,Armando Cruz,(N/A),2B
-06lz2,823658,MISSING,Daniel Dickinson,MIL,2B
+06lz2,823658,sa3030286,Daniel Dickinson,MIL,2B
 0582y,672373,,Jeferson Morales,(N/A),LF
 04y76,657097,19274,Jacob Webb,CHC,RP
 04y79,683748,25999,Victor Mesa Jr.,TB,CF
@@ -3758,7 +3758,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 045ks,665908,,Eduardo Torrealba,(N/A),SS
 04j1w,665665,19754,Reiver Sanmartin,SF,RP
 045kb,664299,17606,Cristian Javier,HOU,SP
-06num,,MISSING,Oliver Gonzalez,LAD,SP
+06num,,sa3024789,Oliver Gonzalez,LAD,SP
 04ylr,684169,,Joel Ibarra,(N/A),RP
 04ylq,667442,,Connor Hollis,(N/A),CF
 04ylm,682858,,Gabriel Barbosa,PHI,RP
@@ -3829,7 +3829,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 057p6,683481,,Nerwilian Cedeno,(N/A),CF
 04z3u,682106,,Austin Briggs,(N/A),RP
 05jsf,691739,sa3023508,Will Sanders,CHC,SP
-06mvg,809092,MISSING,Murf Gray,PIT,3B
+06mvg,809092,sa3032619,Murf Gray,PIT,3B
 05jsg,683357,27496,Owen Caissie,MIA,RF
 06mvf,825094,sa3030644,Nick Dumesnil,DET,CF
 05jse,694371,sa3022561,Tommy Troy,ARI,2B
@@ -4152,7 +4152,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 05mod,694188,,Jesus Galiz,LAD,C
 06r4e,821155,,Paul Hoff,MIL,SP
 06r4b,821774,,Cristian Aray,SEA,SP
-06r4c,702505,MISSING,J.D. Thompson,MIL,SP
+06r4c,702505,sa3043764,J.D. Thompson,MIL,SP
 06r3z,698959,,Jan Caraballo,DET,RP
 06r3x,805737,,Bjay Cooke,ATH,RP
 0710t,701839,,Jay Dill,ATH,RP
@@ -4188,7 +4188,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06r1d,821093,,Delni Uribe,CLE,SP
 06r1a,821007,,Angel Soriano,PIT,SP
 06r1b,821259,,Angel Gonzalez,MIL,LF
-06pp5,816102,MISSING,Landon Harmon,WSH,SP
+06pp5,816102,sa3069265,Landon Harmon,WSH,SP
 06pp3,827281,sa3024879,Carlos Renzullo,COL,LF
 06r0q,821761,,Dariel Garcia,COL,2B
 06r23,699613,,Houston Harding,LAA,RP
@@ -4704,12 +4704,12 @@ fantraxId,mlbId,fgId,playerName,team,position
 06qyi,801221,,Pedro Garcia,(N/A),SP
 06qyf,492841,7358,Michael Martinez,(N/A),RP
 06qyg,829422,,Andres Ortiz,DET,SP
-06qyb,823865,MISSING,Dony Aguilera,CIN,SP
+06qyb,823865,sa3024470,Dony Aguilera,CIN,SP
 02x0f,640455,15873,Sean Manaea,NYM,SP
 06qxy,821693,,Anthwan Brea,BAL,LF
 06qxz,821654,,Alexander Rincon,BAL,CF
 01skh,519293,8048,Will Smith,(N/A),RP
-06qz9,826209,MISSING,Aaron Watson,CIN,SP
+06qz9,826209,sa3069259,Aaron Watson,CIN,SP
 06qxw,821689,,Francisco Espinoza,LAD,C
 06qxx,821682,,Christian Astudillo,BAL,C
 06qxu,622576,,Juan Martinez,MIL,2B
@@ -4986,7 +4986,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06c5r,805207,sa3027305,Caden Bodine,TB,C
 06rud,827517,sa3059833,Kyle Lodise,CHW,SS
 06c5s,804986,,Andrew Healy,MIL,SP
-06rua,805255,MISSING,Dominick Reid,CHC,SP
+06rua,805255,sa3040572,Dominick Reid,CHC,SP
 0734a,681979,,Daniel Martinez,(N/A),SP
 06c5q,805971,,Evan Chrest,CLE,SP
 06c5n,823808,,Jacob Mayers,BOS,RP
@@ -5093,7 +5093,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06rw5,830000,,Gustavo Baptista,CLE,C
 04n1p,677943,23790,Will Banfield,CIN,C
 06rw6,829480,,Ranciel Abreu,NYY,SP
-06rw3,828987,MISSING,Briggs McKenzie,ATL,SP
+06rw3,828987,sa3069273,Briggs McKenzie,ATL,SP
 06rw4,830809,,Adriano Marrero,LAD,SP
 04n1l,672552,22690,Jack OLoughlin,(N/A),SP
 06ruo,830004,,Juan Fraide,HOU,SP
@@ -5128,7 +5128,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 071ma,829848,,Wilner Berroteran,LAA,SP
 06rpc,829827,,Yorvit Diaz,ATH,3B
 06rpa,688230,,Peyton Alford,SEA,RP
-06roy,826536,MISSING,Brian Curley,ARI,SP
+06roy,826536,sa3029705,Brian Curley,ARI,SP
 06roz,703641,,Adrian Rodriguez,(N/A),3B
 06rot,808090,,Jose Mejia,KC,SP
 07302,821072,,Jose Rodriguez,MIL,SS
@@ -5140,7 +5140,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06ron,695704,,Karson Ligon,TOR,SP
 06rol,821348,,Brent Iredale,PIT,3B
 049dt,657624,16794,Josh James,(N/A),RP
-06roe,,MISSING,Patrick Forbes,ARI,SP
+06roe,,sa3031537,Patrick Forbes,ARI,SP
 06roc,824604,sa3030545,Liam Doyle,STL,SP
 06ams,808092,,Byron Castillo,LAA,CF
 06rse,829759,,Jose Ramirez,DET,RF
@@ -5181,13 +5181,13 @@ fantraxId,mlbId,fgId,playerName,team,position
 06rt0,827414,,Deivis Velasquez,PHI,C
 06rt1,829890,,Isaac Garcia,CIN,LF
 06rro,825685,,Johanse Gomez,BAL,RF
-06rrl,804981,MISSING,Riley Quick,MIN,SP
+06rrl,804981,sa3040326,Riley Quick,MIN,SP
 06c2z,808690,,Yohanfer Santana,MIA,SP
 06rrh,808352,,Brayan Narvaez,SF,SP
 06c2x,696083,,Leonel Espinoza,CHC,CF
 06apx,702056,35456,Trey Yesavage,TOR,SP
 06c2s,703430,,Anthony Scull,LAA,CF
-06rre,804530,MISSING,Joseph Dzierwa,BAL,SP
+06rre,804530,sa3030726,Joseph Dzierwa,BAL,SP
 06c2t,800194,,Capri Ortiz,LAA,SS
 06rqy,808515,,Cristobal Abreu,ATL,RP
 06c2i,808504,,Andru Arthur,STL,CF
@@ -5359,13 +5359,13 @@ fantraxId,mlbId,fgId,playerName,team,position
 06ajt,668987,,Brandon White,MIA,SP
 06ajo,686533,,Jackson Finley,ATH,SP
 06ajp,808312,,Juan Obispo,WSH,RF
-06ajk,702501,MISSING,Eli Serrano,NYM,CF
+06ajk,702501,sa3025407,Eli Serrano,NYM,CF
 06rky,806706,,Ismael Cabral,TB,SP
 06rkw,829056,,Carlos Taveras,MIN,CF
 06rku,829971,,Orlando Patino,CHW,CF
 06rkv,829961,,Wandi Feliz,COL,CF
 06rks,829050,,Larry Suero,COL,3B
-06rm5,829764,MISSING,Santiago Castellanos,MIN,SP
+06rm5,829764,sa3068480,Santiago Castellanos,MIN,SP
 06rm6,830402,sa3067545,Kendry Chourio,KC,SP
 06rm4,829795,,Yilver De Paula,LAA,SS
 06rm1,823864,30161,Carlos Rodriguez,DET,SP
@@ -5413,13 +5413,13 @@ fantraxId,mlbId,fgId,playerName,team,position
 06aly,701807,35177,Carson Benge,NYM,CF
 06alz,703939,,Gregori Cano,(N/A),1B
 06rnh,821784,,Isaac Ponce,SD,C
-06alw,815983,MISSING,Coy James,WSH,SS
+06alw,815983,sa3069277,Coy James,WSH,SS
 06rni,821755,,Jhojan Downer,SD,C
 06alu,701552,29542,Andre Granillo,WSH,RP
 06rnd,544269,,Juan Duran,BAL,RP
 06als,660271,19755,Shohei Ohtani-P,LAD,SP
 06rne,691625,,Gregory Duran,(N/A),1B
-06alq,815814,MISSING,Billy Carlson,CHW,SS
+06alq,815814,sa3069250,Billy Carlson,CHW,SS
 06alr,815816,sa3069149,Brady Ebel,MIL,SS
 06alp,701100,,Ben McCabe,COL,C
 06alk,809707,sa3025257,Charlie Condon,COL,1B
@@ -5486,7 +5486,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06rhb,808694,,Nixon Chirinos,MIA,C
 06rhc,701980,,Nestor Rios,MIA,C
 06rha,800176,,Carlos Sanchez,MIA,C
-06rgw,825646,MISSING,Juan Sanchez,TOR,3B
+06rgw,825646,sa3067129,Juan Sanchez,TOR,3B
 06rgu,837863,2481,Luis Martinez,(N/A),1B
 06ri7,807644,,Qyshawn Legito,CIN,C
 06ri5,691422,,Kevin Rivas,CLE,1B
@@ -5502,7 +5502,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06rgn,800727,,Jackson Dannelley,WSH,RP
 06rgl,830483,,Michel Cervantes,(N/A),SS
 06rgj,815966,,Irvin Nunez,MIN,C
-06rgh,,MISSING,Kevin Defrank,MIA,SP
+06rgh,,sa3067574,Kevin Defrank,MIA,SP
 06ag6,701587,sa3025384,Rodney Green,ATH,CF
 06ag7,808111,,Kendal Meza,SEA,RP
 06ag3,808041,,Abraham Nunez,CHW,CF
@@ -5906,7 +5906,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 072aq,832213,,Derek Cerda,CHW,CF
 06bbx,703641,,Adrian Rodriguez,TEX,RP
 02h9b,571527,11176,David Buchanan,(N/A),SP
-06se8,828084,MISSING,Daniel Pierce,TB,SS
+06se8,828084,sa3069251,Daniel Pierce,TB,SS
 06se6,828098,sa3069248,JoJo Parker,TOR,SS
 06se7,822676,sa3036445,Alex Lodise,ATL,SS
 072b0,811167,,Landen Payne,CHW,RP
@@ -6080,7 +6080,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 060mz,621016,17701,Jose Cuas,KC,RP
 06v5z,834240,sa3060916,Ryan Wideman,SD,CF
 060my,801406,,Jared Dickey,ATH,RF
-06tu9,834605,MISSING,Seong-Jun Kim,TEX,SS
+06tu9,834605,sa3069132,Seong-Jun Kim,TEX,SS
 06tsw,821238,,Marlon Quintero,LAA,C
 060o6,678840,,Benony Robles,(N/A),RP
 02hi4,592644,15846,Adam Plutko,(N/A),SP
@@ -6247,7 +6247,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 04nb2,682985,25976,Riley Greene,DET,LF
 06cf5,808396,,Jhocsuanth Vargas,TEX,C
 06cf4,800492,,Roni Cabrera,KC,RF
-06tf9,822477,MISSING,JB Middleton,COL,SP
+06tf9,822477,sa3037985,JB Middleton,COL,SP
 06cq3,808104,,Andruw Musett,BOS,C
 06col,702556,sa3025408,Austin Overn,TB,CF
 06v2z,110279,1000267,Luis Andujar,BAL,RP
@@ -6293,7 +6293,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06cql,806077,sa3022660,Kendall George,LAD,CF
 06cqm,802504,,Myles Naylor,ATH,3B
 06v4y,800728,,Cameron Nickens,STL,LF
-06cqi,815843,MISSING,Josh Hammond,KC,SS
+06cqi,815843,sa3069255,Josh Hammond,KC,SS
 06v68,801230,,Luis Torres,TOR,RP
 06v69,822472,,Domenic Picone,STL,RP
 06v4w,825159,sa3068395,Yunior Amparo,NYM,1B
@@ -6370,7 +6370,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 06cmn,806672,,Alix Hernandez,SF,RP
 06cmo,808659,,Jorge Luna,NYY,SP
 06cmh,810890,,James Tallon,PHI,RP
-06cmi,805706,MISSING,AJ Russell,TEX,SP
+06cmi,805706,sa3041324,AJ Russell,TEX,SP
 06v28,829861,,Yelinson Betances,LAA,CF
 06cmf,702491,sa3044552,Mitch Voit,NYM,2B
 06v29,805128,,Edinzo Marquez,NYY,SP
@@ -7493,7 +7493,7 @@ fantraxId,mlbId,fgId,playerName,team,position
 04pf7,110712,47,Danny Bautista,(N/A),RF
 062cx,815787,sa3069100,Ethan Holliday,COL,SS
 062e9,802357,sa3023304,Drue Hackenberg,ATL,SP
-062cy,815819,MISSING,Sean Gamble,KC,SS
+062cy,815819,sa3069253,Sean Gamble,KC,SS
 062e6,695634,,Jaime Ferrer,MIN,1B
 062e5,701689,sa3025526,Vance Honeycutt,BAL,CF
 062e8,701546,,Duce Gourson,PIT,3B

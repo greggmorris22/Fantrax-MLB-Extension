@@ -1,20 +1,27 @@
 /* ------------------------------------------------------------
- * 1. THE WRAPPER TRAY
+ * A note on "!important": Fantrax has its own styles for links
+ * and spans, so the rules for our injected elements use
+ * !important to make sure the site's styles never win.
+ * ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+ * 1. THE WRAPPER
  * ------------------------------------------------------------
- * This wrapper holds our injected icons and carefully places
- * them perfectly in line with Fantrax's native text and icons.
+ * Holds the link button and its pop-out menu, and sits in line
+ * right after the player's name without shrinking.
  */
 .fantrax-linker-links {
   display: inline-flex !important;
   align-items: center !important;
-  margin-left: 4px !important;
+  flex-shrink: 0 !important;
+  margin-left: 6px !important;
   vertical-align: middle !important;
   line-height: normal !important;
   position: relative !important;
 }
 
 /* ------------------------------------------------------------
- * 1b. THE LINK BUTTON AND POP-OUT MENU
+ * 2. THE LINK BUTTON AND POP-OUT MENU
  * ------------------------------------------------------------
  * Only a small link button sits next to the name, so long names
  * no longer push the logos into the Age column. Hovering the
@@ -71,133 +78,73 @@
 }
 
 /* ------------------------------------------------------------
- * 2. THE BASE ICON SPACES
+ * 3. THE SITE LOGOS
  * ------------------------------------------------------------
- * Base settings every icon will inherit
+ * Each logo is a link showing that site's own favicon. The
+ * images are built right into this file (the long "data:" text)
+ * rather than loaded from the icons folder, so they always show,
+ * even if Chrome blocks or loses the extension's own file address.
+ * The icons folder is still used by the toolbar popup. Logos grow
+ * a little when you hover them, to show they are clickable.
  */
 .fantrax-linker-circle {
-  width: 8px !important;
-  height: 8px !important;
-  flex-shrink: 0 !important;
-  /* Prevent squashing */
-  aspect-ratio: 1 / 1 !important;
-  /* Force square shape */
-  border-radius: 0% !important;
-  transform: rotate(45deg) !important;
   display: block !important;
-  cursor: pointer !important;
-  transition: transform 0.1s ease-in-out;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  flex-shrink: 0 !important;
   box-sizing: border-box !important;
   margin: 2px !important;
-  /* Add space for the corners when rotated */
+  border: none !important;
+  cursor: pointer !important;
+  transition: transform 0.1s ease-in-out;
 }
 
-/* ------------------------------------------------------------
- * 3. HOVER ANIMATIONS
- * ------------------------------------------------------------
- * Adds a small "pop" when you mouse over the icons to
- * indicate they are clickable
- */
 .fantrax-linker-circle:hover {
-  transform: rotate(45deg) scale(1.25) !important;
+  transform: scale(1.25) !important;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* ------------------------------------------------------------
- * 4. THE FANGRAPHS GREEN SQUARE
- * ------------------------------------------------------------
- * Uses FanGraphs' own favicon (icons/fangraphs.png): the batter
- * and bar chart on a green square. We undo the base icon's
- * rotation so it sits upright.
- */
+/* FanGraphs: the batter and bar chart on a green square */
 .fantrax-linker-fangraphs {
   width: 10px !important;
   height: 10px !important;
-  background: url('chrome-extension://__MSG_@@extension_id__/icons/fangraphs.png') center / contain no-repeat !important;
-  border: none !important;
-  transform: none !important;
-  /* Remove rotation */
+  background: url('data:image/png;base64,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') center / contain no-repeat !important;
 }
 
-.fantrax-linker-fangraphs:hover {
-  transform: scale(1.25) !important;
-}
-
-/* ------------------------------------------------------------
- * 5. THE BASEBALL SAVANT LOGO
- * ------------------------------------------------------------
- * Uses Savant's own favicon (icons/savant.png): the teal and
- * gray MLB batter logo, trimmed to the logo itself. It is about
- * twice as wide as it is tall, so we undo the square shape and
- * rotation from the base icon.
- */
+/* Baseball Savant: the teal and gray MLB batter, about twice as wide as tall */
 .fantrax-linker-savant {
   width: 17px !important;
   height: 9px !important;
-  aspect-ratio: auto !important;
-  background: url('chrome-extension://__MSG_@@extension_id__/icons/savant.png') center / contain no-repeat !important;
-  border: none !important;
-  transform: none !important;
-  /* Remove rotation */
+  background: url('data:image/png;base64,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') center / contain no-repeat !important;
 }
 
-.fantrax-linker-savant:hover {
-  transform: scale(1.25) !important;
-}
-
-/* ------------------------------------------------------------
- * 5b. THE BASEBALL-REFERENCE RED PENNANT
- * ------------------------------------------------------------
- * Uses BBRef's own pennant favicon (icons/bbref.png, trimmed to
- * the flag itself). The pennant is wider than it is tall, so we
- * undo the square shape and rotation from the base icon.
- */
+/* Baseball-Reference: the red pennant, a bit wider than tall */
 .fantrax-linker-bbref {
   width: 12px !important;
   height: 9px !important;
-  aspect-ratio: auto !important;
-  background: url('chrome-extension://__MSG_@@extension_id__/icons/bbref.png') center / contain no-repeat !important;
-  border: none !important;
-  transform: none !important;
-  /* Remove rotation */
-}
-
-.fantrax-linker-bbref:hover {
-  transform: scale(1.25) !important;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAkCAYAAADPRbkKAAAFIklEQVR4nNVYa2wUVRQ+987Ozm63j23X7QMoUEoDFiiwCFJBiKUQrIBQLQFFI/SHBgnR4A9fMWmMj0R+qD9EE35AIhAxiqAEROQZSppCA61sAZsCbdPHdh/dndnZ3Zm595rZdrGWklqg7e6XzSR379673/numXPuOQgSAEzVADiMSEASxHMXkffQcWZxzEris+wCgjgAowwAAQROXTBKNXUZSltHDhWlXM0vjqdyKBswGkd6AhacZM5m4QgmogRIMFqx2ZSMxpKw79Axc+B09USt2zNH8/ocJCgX0VBkClMUO1O1FKZpBmAMGKV9C1nfDjptFv2MmgGMMZiCEFw68EuS/+S5QqXDtYwExFLiF2ewiJLJVJWLGqazugs0JMMRN0CqqQPLgrmo9d1PJkSaW1apXd0vaB6fg4bD6Uwj/Zg8GJURM8D32x9gnl7Ade3aO0Oub1yvebwVRJSmMkXDvSoPre6YGOA/eQ7MM6fjzp3fFsnXblSqHa4XSUDMZoQ8lNL3wyPbLXi5HpIcs1DLjqp8uaFxs+b2biZ+MaeX+KNRezCg1g8+L8goL2vS/CJLK1kEw4XvyAk4tWYFPPFO1cRIc0tl5HbrK6QnkBcl/ojVHgyG4KWrB+SGxh8t82bvY4y1iedrIHXJQhgqorj3HITk4nnYtXt//sznX9sYOHl+PZHkQqaqvXKPAnkdyLm0vFpp7yzmUlIaDTbrUT7L/qeQO96ZsniBO62sJAwA9G4MRgj5j58WpNorOSHnzSLN41utuTylJBicFM2W0R1HN7Wgm+WVn8pXne8xTQPEYUBGYwSbhHZsNrdik9DBADq4lGTKFAWoHLIyVZtEI5ECGpRzmKLyvUlm5Hx8KBi4tNTfsWB8g2haup5IWCgs0FA4D3z+PF1NpCsaS3z6KdzNhn1qj7LiA4FTn36ygUtLvXEPqT5iOumoYTHiA+bHGrh6ywYvZ009ijjuv1k8QYBnVe4AU0HeMZxscSeiBdi6ejmMe397A2+3nYoXtxgOkJ5wGksqQJg4frl0qf4nKsspiWQI1n3ftmEt2Cs3nuez7ccRxpBIQPpDjzA3ntsEwqTcReKF2p+JP5CZKKeA9Yce67NefxUmf/NZtTB5wi7E83rchEQA6j+4s6MKeLstw3fkxF61o2tVrPSLZ6D+A92V/l63BficrMJg7ZX9qts7G+IcuP9Ad6X0tSshWHvFmbxw3tu83XYrOhHH3oQG+1K+6oTDswuhePuHJdLFy1+r3Z4ZfbdRiDeg+02Em27BtafWQEbFqpmhhus7lfau5UxVcbwZge83YZqaB46ueiA9gb+sz5a8bJ6WX2WwpnZFb6dxFKHQ//mR79cTYJk/B7d99IVDud32ltLpKqNSMH2kCvXhYFj/3L33IJjyJwueHw7PiTTfqVA7u0tJMDSNKYqJEb2wGXAyo2AYepBF+ktuLnoctX/8pS3cdMuhutzFVA7Np3JoKtXbgopqAUKNjNJYUfFQbsdi6wcR5KElihU6cl2DMXD2ot6YzdLc3kwiBTMYIZmY59M0bw/TG7LRuhkjQDwPyMD92+O8h0pf4wsYIMxhRkmp6nIvZsq9QSS+QsoARO9oZZsgbcVSu3imelu4uWUrEaXH+p9GXF89EUIw/dg+EHLHdU/Z81VV8oK56405mWcRb6Axl4zrE+gPGlHAuWQdWFc+Y5dq6rYpre1vkqBsg0SDa/d+CF1vwk0vbV3mXFp+Zqz5PBCookbfD9d339v+Af9/cuQcyjYQAAAAAElFTkSuQmCC') center / contain no-repeat !important;
 }
 
 /* ------------------------------------------------------------
- * 6. FANTRAX UI FIXES
+ * 4. FANTRAX UI FIXES
  * ------------------------------------------------------------
- * Ensure the player names and info lines allow our icons to sit 
- * at the end without being cut off by long names.
+ * Keep each player's name on one line with our link button at
+ * the end, instead of Fantrax cutting the name off.
  */
-
-/* Target the name container on the roster page and popups */
 .scorer__info__name {
   display: flex !important;
   align-items: center !important;
   flex-wrap: nowrap !important; /* NO wrapping */
   width: auto !important; /* Grow with name */
   min-width: 0;
-  overflow: visible !important; /* Show icons if they extend past column */
+  overflow: visible !important; /* Show the button if it extends past the column */
 }
 
 /* Let the name be as long as it needs to be on one line */
 .scorer__info__name a {
   text-overflow: unset !important;
   overflow: visible !important;
-  white-space: nowrap !important; /* Keep on one line */
+  white-space: nowrap !important;
   flex-shrink: 0 !important;
   display: inline-block !important;
-}
-
-/* Icons stay on the same line at the very end */
-.fantrax-linker-links {
-  flex-shrink: 0 !important;
-  display: inline-flex !important;
-  margin-left: 6px !important;
 }
 
 .scorer__info__positions {
@@ -207,7 +154,7 @@
 }
 
 /* ------------------------------------------------------------
- * 7. HIDE FANTRAX ADS
+ * 5. HIDE FANTRAX ADS
  * ------------------------------------------------------------
  * Fantrax tags its own ad slots with "hide--premium" (the class
  * it uses to hide ads for premium members). The other selectors

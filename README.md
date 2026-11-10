@@ -42,4 +42,4 @@ If you haven't linked this folder to GitHub yet:
 - `styles.css`: Styling for the link circles.
 - `data/player_map.csv`: The current local copy of player data.
 - `scripts/update_db.py`: The underlying sync logic.
-- `popup.html`: Extension popup for status and legend.
+- `popup.html` and `popup.js`: Extension popup for status, legend and version number.
