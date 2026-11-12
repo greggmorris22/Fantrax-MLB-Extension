@@ -1,12 +1,13 @@
-# Fantrax Player Linker Chrome Extension
+# Player Linker for Fantrax (Chrome Extension)
 
-This extension adds links to Fangraphs, Baseball Savant and Baseball-Reference directly next to player names on Fantrax roster pages.
+This extension adds links to Fangraphs, Baseball Savant, Baseball-Reference and (for prospects) Prospect Savant directly next to player names on Fantrax roster pages.
 
 ## Features
-- **Link button**: A small link icon sits next to each player name. Hover over it (or tab to it) and the three site logos pop out over the row, so long names never push them into the Age column.
+- **Link button**: A small link icon sits next to each player name. Hover over it (or tab to it) and the site logos pop out over the row, so long names never push them into the Age column.
 - **Green FanGraphs Logo**: Links to the player's Fangraphs page.
 - **Teal MLB Logo**: Links to the player's Baseball Savant page.
 - **Red Pennant**: Links to the player's Baseball-Reference page (minor league register page for prospects).
+- **"PS" Baseball**: Links to the player's Prospect Savant page (minor league Statcast data). Only shown for players who still have rookie eligibility.
 - Automatically handles name variations and dynamic page updates.
 - Hides Fantrax's ad boxes (banners, side ads and the video ad).
 
@@ -21,7 +22,7 @@ This extension adds links to Fangraphs, Baseball Savant and Baseball-Reference d
 
 To update the player database used by this extension:
 1. Ensure your master database is located at: `C:\Users\gregg\Documents\Vibecoding\Baseball_Player_ID_Database\Baseball_Player_ID_Database.csv`
-2. Run `py scripts\update_db.py` from the project root to rebuild `data/player_map.csv` from the master file.
+2. Run `py scripts\update_db.py` from the project root to rebuild `data/player_map.csv` from the master file. It also asks MLB's stats site (statsapi.mlb.com) which players still have rookie eligibility (no more than 130 MLB at-bats and 50 MLB innings), which decides who gets the Prospect Savant link. To refresh just that rookie column during the season, run `py scripts\update_db.py --rookies-only`.
 3. Commit and push `data/player_map.csv` to the `main` branch on GitHub. It must stay at the repo root, since that is the address the extension downloads from.
    
 Note: Other users will automatically receive the latest data within 6 hours (or after refreshing the extension) without needing to update the extension's files manually.
@@ -43,3 +44,5 @@ If you haven't linked this folder to GitHub yet:
 - `data/player_map.csv`: The current local copy of player data.
 - `scripts/update_db.py`: The underlying sync logic.
 - `popup.html` and `popup.js`: Extension popup for status, legend and version number.
+- `PRIVACY.md`: Privacy policy linked from the Chrome Web Store listing.
+- `docs/chrome_web_store_listing.md`: Copy-paste answers for the Chrome Web Store dashboard.

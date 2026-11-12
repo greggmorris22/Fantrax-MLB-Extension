@@ -314,6 +314,19 @@ function injectLinks(element, data) {
         menu.appendChild(bbrefLink);
     }
 
+    // Build the Prospect Savant Link (the "PS" baseball)
+    // Prospect Savant only has minor league stats, so we only show it
+    // for players who still have rookie eligibility. The player list
+    // marks those players, and the site uses the same MLB ID.
+    if (data.mlbam && data.rookie) {
+        const psLink = document.createElement('a');
+        psLink.href = `https://prospectsavant.com/player/${data.mlbam}`;
+        psLink.target = '_blank';
+        psLink.title = 'View on Prospect Savant';
+        psLink.className = 'fantrax-linker-circle fantrax-linker-prospectsavant';
+        menu.appendChild(psLink);
+    }
+
     // No IDs means no links, so don't show an empty button
     if (!menu.hasChildNodes()) return;
     container.appendChild(menu);
