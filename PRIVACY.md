@@ -2,7 +2,7 @@
 
 _Last updated: November 10, 2026_
 
-Player Linker for Fantrax is a Chrome extension that adds links to Fangraphs, Baseball Savant and Baseball-Reference next to player names on fantrax.com pages.
+Player Linker for Fantrax is a Chrome extension that adds links to Fangraphs, Baseball Savant, Baseball-Reference and Prospect Savant next to player names on fantrax.com pages.
 
 ## What the extension collects
 
@@ -16,7 +16,7 @@ Nothing. The extension does not collect, store, sell or share any personal infor
 
 ## Third parties
 
-When you click one of the links, you go to Fangraphs, Baseball Savant or Baseball-Reference, and their own privacy policies apply there.
+When you click one of the links, you go to Fangraphs, Baseball Savant, Baseball-Reference or Prospect Savant, and their own privacy policies apply there.
 
 ## Contact
 

@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Player Linker for Fantrax",
-    "version": "5.5",
-    "description": "Adds Fangraphs, Baseball Savant and Baseball-Reference links next to player names on Fantrax.",
+    "version": "5.6",
+    "description": "Adds Fangraphs, Baseball Savant, Baseball-Reference and Prospect Savant links next to player names on Fantrax.",
     "icons": {
         "16": "icons/icon16.png",
         "32": "icons/icon32.png",

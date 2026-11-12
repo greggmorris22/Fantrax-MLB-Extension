@@ -1,17 +1,17 @@
 # Chrome Web Store: copy-paste answers
 
-Everything the developer dashboard asks for, in the order it asks. Upload file: `Player_Linker_for_Fantrax_v5.5.zip`.
+Everything the developer dashboard asks for, in the order it asks. Upload file: `Player_Linker_for_Fantrax_v5.6.zip`.
 
 ## Store listing tab
 
 **Description** (the long one):
 
 ```
-Adds quick links to Fangraphs, Baseball Savant and Baseball-Reference next to every player name on Fantrax.
+Adds quick links to Fangraphs, Baseball Savant, Baseball-Reference and Prospect Savant next to every player name on Fantrax.
 
 How it works
 - A small link icon sits next to each player on your roster, the player pool, matchups and other Fantrax pages.
-- Hover over it and three logos pop out: Fangraphs, Baseball Savant and Baseball-Reference.
+- Hover over it and the logos pop out: Fangraphs, Baseball Savant and Baseball-Reference, plus Prospect Savant for players who still have rookie eligibility.
 - Click a logo to open that player's page. Prospects go to their minor league pages.
 
 Also
@@ -21,7 +21,7 @@ Also
 Privacy
 The extension collects no data. It only reads player names already shown on Fantrax pages, inside your browser.
 
-Not affiliated with or endorsed by Fantrax, Fangraphs, MLB or Sports Reference.
+Not affiliated with or endorsed by Fantrax, Fangraphs, MLB, Sports Reference or Prospect Savant.
 ```
 
 **Category:** Sports
@@ -39,7 +39,7 @@ Not affiliated with or endorsed by Fantrax, Fangraphs, MLB or Sports Reference.
 **Single purpose description:**
 
 ```
-Adds links to each player's Fangraphs, Baseball Savant and Baseball-Reference pages next to player names on Fantrax.
+Adds links to each player's Fangraphs, Baseball Savant, Baseball-Reference and Prospect Savant pages next to player names on Fantrax.
 ```
 
 **Permission justifications:**

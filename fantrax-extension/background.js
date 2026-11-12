@@ -62,13 +62,16 @@ function parseCSV(csvText) {
             const name = cols[3] ? cleanCol(cols[3]) : '';
             const team = cols[4] ? cleanCol(cols[4]) : '';
             const position = cols[5] ? cleanCol(cols[5]) : '';
+            // "1" means the player still has rookie eligibility
+            const rookie = cols[6] ? cleanCol(cols[6]) === '1' : false;
 
             const playerData = {
                 mlbam: mlbId || null,
                 fg: fgId || null,
                 name: name || null,
                 team: team || null,
-                position: position || null
+                position: position || null,
+                rookie: rookie
             };
 
             // Every row has a Fantrax ID, so this one list is all we store.
